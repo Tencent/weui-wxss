@@ -29,4 +29,4 @@ The MIT License(http://opensource.org/licenses/MIT)
 
 ## 贡献
 
-如果你有好的意见或建议，欢迎给我们提issue或pull request，为提升微信web体验贡献力量。
+如果你有好的意见或建议，欢迎给我们提issue或pull request。
