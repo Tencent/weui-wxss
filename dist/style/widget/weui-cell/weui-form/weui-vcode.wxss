@@ -1,0 +1,23 @@
+.weui-cell_vcode {
+  padding-right: 0;
+}
+.weui-vcode-img {
+  margin-left: 5px;
+  height: 2.58823529em;
+  vertical-align: middle;
+}
+.weui-vcode-btn {
+  display: inline-block;
+  height: 2.58823529em;
+  margin-left: 5px;
+  padding: 0 0.6em 0 0.7em;
+  border-left: 1px solid #E5E5E5;
+  line-height: 2.58823529em;
+  vertical-align: middle;
+  font-size: 17px;
+  color: #3CC51F;
+  white-space: nowrap;
+}
+.weui-vcode-btn:active {
+  color: #52a341;
+}

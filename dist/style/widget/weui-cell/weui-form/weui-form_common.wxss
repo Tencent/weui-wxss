@@ -1,0 +1,46 @@
+.weui-cell_input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.weui-label {
+  width: 105px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.weui-input {
+  height: 2.58823529em;
+  min-height: 2.58823529em;
+  line-height: 2.58823529em;
+}
+.weui-toptips {
+  position: fixed;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 5000;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.weui-toptips_warn {
+  background-color: #E64340;
+}
+.weui-textarea {
+  display: block;
+  width: 100%;
+}
+.weui-textarea-counter {
+  color: #B2B2B2;
+  text-align: right;
+}
+.weui-textarea-counter_warn {
+  color: #E64340;
+}
+.weui-cell_warn {
+  color: #E64340;
+}

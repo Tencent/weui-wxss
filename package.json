@@ -1,0 +1,26 @@
+{
+  "name": "weui-wxss",
+  "version": "0.1.0",
+  "description": "weui-wxss",
+  "main": "dist/app.wxss",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weui/weui-wxss/"
+  },
+  "keywords": ["weui", "wxss"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

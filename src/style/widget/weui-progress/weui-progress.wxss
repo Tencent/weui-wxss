@@ -1,0 +1,15 @@
+@import "../../base/fn.wxss";
+
+.weui-progress {
+    display: flex;
+    align-items: center;
+}
+
+.weui-progress__bar {
+    flex: 1;
+}
+
+.weui-progress__opr {
+    margin-left: 15px;
+    font-size: 0;
+}

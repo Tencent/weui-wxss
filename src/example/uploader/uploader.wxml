@@ -1,0 +1,51 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Uploader</view>
+        <view class="page__desc">上传组件</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="weui-uploader">
+                        <view class="weui-uploader__hd">
+                            <view class="weui-uploader__title">图片上传</view>
+                            <view class="weui-uploader__info">{{files.length}}/2</view>
+                        </view>
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for-items="{{files}}" wx:key="{{index}}">
+                                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+                                <view class="weui-uploader__file">
+                                    <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                                </view>
+                                <view class="weui-uploader__file">
+                                    <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                                </view>
+                                <view class="weui-uploader__file">
+                                    <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                                </view>
+                                <view class="weui-uploader__file weui-uploader__file_status">
+                                    <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                                    <view class="weui-uploader__file-content">
+                                        <icon type="warn" size="23" color="#F43530"></icon>
+                                    </view>
+                                </view>
+                                <view class="weui-uploader__file weui-uploader__file_status">
+                                    <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                                    <view class="weui-uploader__file-content">50%</view>
+                                </view>
+                            </view>
+                            <view class="weui-uploader__input-box">
+                                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

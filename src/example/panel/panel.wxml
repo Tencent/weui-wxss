@@ -1,0 +1,93 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Panel</view>
+        <view class="page__desc">面板</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">图文组合列表</view>
+            <view class="weui-panel__bd">
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">标题一</view>
+                        <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">标题二</view>
+                        <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="weui-panel__ft">
+                <view class="weui-cell weui-cell_access weui-cell_link">
+                    <view class="weui-cell__bd">查看更多</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">文字组合列表</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+                    <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                </view>
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题二</view>
+                    <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                </view>
+            </view>
+            <view class="weui-panel__ft">
+                <view class="weui-cell weui-cell_access weui-cell_link">
+                    <view class="weui-cell__bd">查看更多</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel">
+            <view class="weui-panel__hd">小图文组合列表</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 5px" /></view>
+                            <view class="weui-cell__bd weui-cell_primary">
+                                <view>文字标题</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 5px" /></view>
+                            <view class="weui-cell__bd weui-cell_primary">
+                                <view>文字标题</view>
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel">
+            <view class="weui-panel__hd">文字列表附来源</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+                    <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">文字来源</view>
+                        <view class="weui-media-box__info__meta">时间</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

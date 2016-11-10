@@ -1,0 +1,25 @@
+@import "../../../base/fn.wxss";
+
+.weui-cell_vcode {
+    padding-right: 0;
+}
+.weui-vcode-img{
+    margin-left: 5px;
+    height: unit(@weuiCellHeight / @weuiCellFontSize, em);
+    vertical-align: middle;
+}
+.weui-vcode-btn {
+    display: inline-block;
+    height: unit(@weuiCellHeight / @weuiCellFontSize, em);
+    margin-left: 5px;
+    padding: 0 0.6em 0 0.7em;
+    border-left: 1px solid @weuiLineColorLight;
+    line-height: unit(@weuiCellHeight / @weuiCellFontSize, em);
+    vertical-align: middle;
+    font-size: @weuiCellFontSize;
+    color: @weuiDialogLinkColor;
+    white-space: nowrap;
+    &:active {
+        color: desaturate(@weuiDialogLinkColor, 30%);
+    }
+}

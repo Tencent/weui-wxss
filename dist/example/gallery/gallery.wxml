@@ -1,0 +1,6 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Gallery</view>
+        <view class="page__desc">画廊，建议采用小程序原生的wx.previewImage来实现。详情请看小程序文档。</view>
+    </view>
+</view>

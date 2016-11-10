@@ -1,0 +1,33 @@
+@import "../../../base/fn.wxss";
+
+.weui-cell_select {
+    padding: 0;
+}
+.weui-select {
+    position: relative;
+    padding-left: @weuiCellGapH;
+    padding-right: 30px;
+
+    height: @weuiCellHeightEm;
+    min-height: @weuiCellHeightEm;
+    line-height: @weuiCellHeightEm;
+
+    border-right: 1rpx solid @weuiCellBorderColor;
+
+    &:before{
+        content: " ";
+        .setArrow(right, 6px, #C8C8CD, 2px);
+
+        position: absolute;
+        top: 50%;
+        right: @weuiCellGapH;
+        margin-top: -4px;
+    }
+    &_in-select-after{
+        padding-left: 0;
+    }
+}
+.weui-cell__hd_in-select-after,
+.weui-cell__bd_in-select-before{
+    padding-left: @weuiCellGapH;
+}

@@ -1,0 +1,32 @@
+@import "../../base/fn.wxss";
+
+.weui-cell_access {
+    color: inherit;
+}
+.weui-cell__ft_in-access {
+    padding-right: 13px;
+    position: relative;
+    &:after {
+        content: " ";
+        .setArrow(right, 6px, #C8C8CD, 2px);
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        right: 2px;
+    }
+}
+.weui-cell_link{
+    color: @weuiLinkColorDefault;
+    font-size: 14px;
+
+    &:active{
+        background-color: @weuiCellActiveBg;
+    }
+
+    // 由于weui-cell:first-child的:before为隐藏，所以这里要重新显示出来
+    &:first-child{
+        &:before{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+// mixin
+@import "mixin/setOnepx.wxss";
+@import "mixin/setArrow.wxss";
+@import "mixin/text.wxss";
+
+
+// variable
+@import "variable/global.wxss";
+@import "variable/color.wxss";
+
+
+@import "variable/weui-cell.wxss";
+@import "variable/weui-button.wxss";
+@import "variable/weui-msg.wxss";
+@import "variable/weui-grid.wxss";
+@import "variable/weui-progress.wxss";
+@import "variable/weui-dialog.wxss";

@@ -1,0 +1,57 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Preview</view>
+        <view class="page__desc">表单预览</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-form-preview">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">付款金额</view>
+                    <view class="weui-form-preview__value_in-hd">¥2400.00</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">商品</view>
+                    <view class="weui-form-preview__value">电动打蛋机</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">标题标题</view>
+                    <view class="weui-form-preview__value">名字名字名字</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">标题标题</view>
+                    <view class="weui-form-preview__value">很长很长的名字很长很长的名字很长很长的名字很长很长的名字很长很长的名字</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__ft">
+                <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">操作</navigator>
+            </view>
+        </view>
+        <view class="weui-form-preview">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__label">付款金额</view>
+                <view class="weui-form-preview__value_in-hd">¥2400.00</view>
+            </view>
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">商品</view>
+                    <view class="weui-form-preview__value">电动打蛋机</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">标题标题</view>
+                    <view class="weui-form-preview__value">名字名字名字</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">标题标题</view>
+                    <view class="weui-form-preview__value">很长很长的名字很长很长的名字很长很长的名字很长很长的名字很长很长的名字</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__ft">
+                <navigator class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active">辅助操作</navigator>
+                <navigator class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">操作</navigator>
+            </view>
+        </view>
+    </view>
+</view>

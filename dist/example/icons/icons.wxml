@@ -1,0 +1,53 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Icons</view>
+        <view class="page__desc">图标</view>
+    </view>
+    <view class="page__bd">
+        <view class="icon-box">
+            <icon type="success" size="93"></icon>
+            <view class="icon-box__ctn">
+                <view class="icon-box__title">成功</view>
+                <view class="icon-box__desc">用于表示操作顺利达成</view>
+            </view>
+        </view>
+        <view class="icon-box">
+            <icon type="info" size="93"></icon>
+            <view class="icon-box__ctn">
+                <view class="icon-box__title">提示</view>
+                <view class="icon-box__desc">用于表示信息提示；也常用于缺乏条件的操作拦截，提示用户所需信息</view>
+            </view>
+        </view>
+        <view class="icon-box">
+            <icon type="warn" size="93" color="#C9C9C9"></icon>
+            <view class="icon-box__ctn">
+                <view class="icon-box__title">普通警告</view>
+                <view class="icon-box__desc">用于表示操作后将引起一定后果的情况</view>
+            </view>
+        </view>
+        <view class="icon-box">
+            <icon type="warn" size="93"></icon>
+            <view class="icon-box__ctn">
+                <view class="icon-box__title">强烈警告</view>
+                <view class="icon-box__desc">用于表示操作后将引起严重的不可挽回的后果的情况</view>
+            </view>
+        </view>
+        <view class="icon-box">
+            <icon type="waiting" size="93"></icon>
+            <view class="icon-box__ctn">
+                <view class="icon-box__title">等待</view>
+                <view class="icon-box__desc">用于表示等待</view>
+            </view>
+        </view>
+        <view class="icon_sp_area">
+            <icon type="success" size="23"></icon>
+            <icon type="success_no_circle" size="23"></icon>
+            <icon type="circle" size="23"></icon>
+            <icon type="warn" size="23" color="#F43530"></icon>
+            <icon type="download" size="23"></icon>
+            <icon type="info_circle" size="23"></icon>
+            <icon type="cancel" size="23"></icon>
+            <icon type="search" size="20"></icon>
+        </view>
+    </view>
+</view>

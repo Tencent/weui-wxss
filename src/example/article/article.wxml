@@ -1,0 +1,36 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Article</view>
+        <view class="page__desc">文章</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">大标题</view>
+            <view class="weui-article__section">
+                <view class="weui-article__title">章标题</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">1.1 节标题</view>
+                    <view class="weui-article__p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </view>
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                        <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">1.2 节标题</view>
+                    <view class="weui-article__p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

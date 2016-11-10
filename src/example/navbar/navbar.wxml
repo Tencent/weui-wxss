@@ -1,0 +1,16 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">{{item}}</view>
+                </block>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">选项一的内容</view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+            </view>
+        </view>
+    </view>
+</view>

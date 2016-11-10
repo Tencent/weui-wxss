@@ -1,0 +1,42 @@
+.weui-navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  z-index: 500;
+  top: 0;
+  width: 100%;
+  background-color: #fafafa;
+  border-bottom: 1rpx solid #CCCCCC;
+}
+.weui-navbar__item {
+  position: relative;
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 13px 0;
+  text-align: center;
+  font-size: 15px;
+  border-right: 1rpx solid #CCCCCC;
+}
+.weui-navbar__item:active {
+  background-color: #ededed;
+}
+.weui-navbar__item.weui-bar__item_on {
+  background-color: #eaeaea;
+}
+.weui-navbar__item:last-child:after {
+  display: none;
+}
+.weui-tab {
+  position: relative;
+  height: 100%;
+}
+.weui-tab__panel {
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 50px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}

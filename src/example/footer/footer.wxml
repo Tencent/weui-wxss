@@ -1,0 +1,36 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Footer</view>
+        <view class="page__desc">页脚</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+        </view>
+
+
+        <view class="weui-footer">
+            <view class="weui-footer__links">
+                <navigator url="" class="weui-footer__link">底部链接</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+        </view>
+
+
+        <view class="weui-footer">
+            <view class="weui-footer__links">
+                <navigator url="" class="weui-footer__link">底部链接</navigator>
+                <navigator url="" class="weui-footer__link">底部链接</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+        </view>
+
+
+        <view class="weui-footer weui-footer_fixed-bottom">
+            <view class="weui-footer__links">
+                <navigator url="" class="weui-footer__link">WeUI首页</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+.placeholder{
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+    margin: 5px;
+    color: #cfcfcf;
+}

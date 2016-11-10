@@ -1,0 +1,11 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">ActionSheet</view>
+        <view class="page__desc">弹出式菜单，采用小程序原生的actionsheet</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-btn-area">
+            <button type="default" bindtap="open">ActionSheet</button>
+        </view>
+    </view>
+</view>
