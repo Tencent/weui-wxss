@@ -1,12 +1,12 @@
 @import "../../base/fn.wxss";
 
+@weuiNavBarColor: #1AAD19;
 .weui-navbar {
     display: flex;
     position: absolute;
     z-index: 500;
     top: 0;
     width: 100%;
-    background-color: #fafafa;
     border-bottom: 1rpx solid #CCCCCC;
 }
 
@@ -16,20 +16,25 @@
     flex: 1;
     padding: 13px 0;
     text-align: center;
-    font-size: 15px;
-    border-right: 1rpx solid #CCCCCC;
-
-    &:active {
-        background-color: #ededed;
-    }
+    font-size: 0;
 
     &.weui-bar__item_on {
-        background-color: #eaeaea;
+        color: @weuiNavBarColor;
     }
-
-    &:last-child {
-        &:after {
-            display: none;
-        }
-    }
+}
+.weui-navbar__slider {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0;
+    width: 6em;
+    height: 3px;
+    background-color: @weuiNavBarColor;
+    transition: transform .3s;
+}
+.weui-navbar__title{
+    display: inline-block;
+    font-size: 15px;
+    max-width: 8em;
+    .ellipsis();
 }

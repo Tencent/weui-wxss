@@ -6,7 +6,6 @@
   z-index: 500;
   top: 0;
   width: 100%;
-  background-color: #fafafa;
   border-bottom: 1rpx solid #CCCCCC;
 }
 .weui-navbar__item {
@@ -17,17 +16,33 @@
           flex: 1;
   padding: 13px 0;
   text-align: center;
-  font-size: 15px;
-  border-right: 1rpx solid #CCCCCC;
-}
-.weui-navbar__item:active {
-  background-color: #ededed;
+  font-size: 0;
 }
 .weui-navbar__item.weui-bar__item_on {
-  background-color: #eaeaea;
+  color: #1AAD19;
 }
-.weui-navbar__item:last-child:after {
-  display: none;
+.weui-navbar__slider {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 6em;
+  height: 3px;
+  background-color: #1AAD19;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+.weui-navbar__title {
+  display: inline-block;
+  font-size: 15px;
+  max-width: 8em;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
 }
 .weui-tab {
   position: relative;
