@@ -14,6 +14,8 @@ WeUI for 小程序 为微信小程序量身设计
 
 用微信web开发者工具打开dist目录
 
+<img src='https://cloud.githubusercontent.com/assets/2395166/20168869/48a75b02-a75f-11e6-89aa-503d65c8ad8e.png' width='320' alt='preview' />
+
 ## 使用
 
 - 组件的wxml结构请看`dist/example/`下的组件
@@ -27,4 +29,4 @@ The MIT License(http://opensource.org/licenses/MIT)
 
 ## 贡献
 
-如果你有好的意见或建议，欢迎给我们提issue或pull request，为提升微信web体验贡献力量-
+如果你有好的意见或建议，欢迎给我们提issue或pull request，为提升微信web体验贡献力量。
