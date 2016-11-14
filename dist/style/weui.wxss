@@ -958,8 +958,6 @@ icon {
 }
 .weui-icon-search {
   margin-right: 8px;
-  padding-top: 7px;
-  vertical-align: top;
 }
 .weui-icon-search_in-box {
   position: absolute;
@@ -969,7 +967,7 @@ icon {
 .weui-search-bar__text {
   display: inline-block;
   font-size: 14px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .weui-search-bar__form {
   position: relative;
