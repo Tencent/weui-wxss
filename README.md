@@ -1,6 +1,9 @@
 WeUI for 小程序 为微信小程序量身设计  
 =====
 
+[![npm version](https://img.shields.io/npm/v/weui-wxss.svg)](https://www.npmjs.org/package/weui-wxss)
+[![Gitter](https://badges.gitter.im/weui/weui.svg)](https://gitter.im/weui/weui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![QQ](http://pub.idqqimg.com/wpa/images/group.png)](http://jq.qq.com/?_wv=1027&k=413HLfV)
 
 ## 概述
 
