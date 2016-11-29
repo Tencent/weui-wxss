@@ -15,7 +15,7 @@
     "url": "https://github.com/weui/weui-wxss/"
   },
   "keywords": ["weui", "wxss"],
-  "author": "",
+  "author": "wechat ui team",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.5.1",
