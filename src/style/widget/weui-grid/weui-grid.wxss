@@ -3,6 +3,7 @@
 .weui-grids {
     border-top: 1rpx solid @weuiGridBorderColor;
     border-left: 1rpx solid @weuiGridBorderColor;
+    overflow: hidden;
 }
 .weui-grid {
     position: relative;
