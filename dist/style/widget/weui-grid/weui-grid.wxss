@@ -1,6 +1,7 @@
 .weui-grids {
   border-top: 1rpx solid #D9D9D9;
   border-left: 1rpx solid #D9D9D9;
+  overflow: hidden;
 }
 .weui-grid {
   position: relative;
