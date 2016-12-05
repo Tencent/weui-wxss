@@ -22,6 +22,7 @@
 
 @import "./widget/weui-loading/weui-loading.wxss";
 
+@import "./widget/weui-tips/weui-badge.wxss";
 @import "./widget/weui-tips/weui-loadmore.wxss";
 
 @import "./widget/weui-panel/weui-panel.wxss";

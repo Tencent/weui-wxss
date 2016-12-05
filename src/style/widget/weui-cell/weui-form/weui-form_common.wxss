@@ -28,7 +28,7 @@
     .text_wrap();
 }
 .weui-toptips_warn{
-    background-color: @weuiTextColorWarn;
+    background-color: @weuiColorWarn;
 }
 .weui-textarea{
     display: block;
