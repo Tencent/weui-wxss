@@ -11,6 +11,7 @@
 }
 .weui-icon-search {
   margin-right: 8px;
+  font-size: inherit;
 }
 .weui-icon-search_in-box {
   position: absolute;
