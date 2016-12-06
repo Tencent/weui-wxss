@@ -1,0 +1,11 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Slider</view>
+        <view class="page__desc">滑块，这里采用小程序原生的slider。</view>
+    </view>
+
+    <view class="page__bd page__bd_spacing">
+        <slider/>
+        <slider show-value value="50"/>
+    </view>
+</view>
