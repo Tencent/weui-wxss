@@ -5,9 +5,11 @@
     "example/button/button",
     "example/list/list",
     "example/input/input",
+    "example/slider/slider",
     "example/uploader/uploader",
 
     "example/article/article",
+    "example/badge/badge",
     "example/flex/flex",
     "example/footer/footer",
     "example/gallery/gallery",

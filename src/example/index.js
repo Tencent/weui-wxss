@@ -5,13 +5,13 @@ Page({
                 id: 'form',
                 name: '表单',
                 open: false,
-                pages: ['button', 'list', 'input', 'uploader']
+                pages: ['button', 'list', 'input', 'slider', 'uploader']
             },
             {
                 id: 'widget',
                 name: '基础组件',
                 open: false,
-                pages: ['article', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loadmore', 'panel', 'preview', 'progress']
+                pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loadmore', 'panel', 'preview', 'progress']
             },
             {
                 id: 'feedback',

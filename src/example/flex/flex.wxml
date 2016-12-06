@@ -22,5 +22,10 @@
             <view class="weui-flex__item"><view class="placeholder">weui</view></view>
             <view class="weui-flex__item"><view class="placeholder">weui</view></view>
         </view>
+        <view class="weui-flex">
+            <view><view class="placeholder">weui</view></view>
+            <view class="weui-flex__item"><view class="placeholder">weui</view></view>
+            <view><view class="placeholder">weui</view></view>
+        </view>
     </view>
 </view>
