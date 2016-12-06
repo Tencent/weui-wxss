@@ -25,6 +25,7 @@
     "example/msg/msg",
     "example/msg/msg_success",
     "example/msg/msg_fail",
+    "example/picker/picker",
     "example/toast/toast",
 
     "example/navbar/navbar",
