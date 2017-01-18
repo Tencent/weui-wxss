@@ -1,3 +1,9 @@
+#### v 1.1.1 (2017-01-18)
+
+- 【同步weui】 增加扩展类.weui-loading_transparent
+- 【同步weui】 更新普通警告图标颜色
+- 【修复】 fix navbar的activeIndex #20
+
 #### v 1.1.0 (2016-12-06)
 
 - 【优化】 跟随weui的版本号
