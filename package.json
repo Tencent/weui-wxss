@@ -1,6 +1,6 @@
 {
   "name": "weui-wxss",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "weui-wxss",
   "main": "dist/app.wxss",
   "directories": {
