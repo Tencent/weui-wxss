@@ -29,7 +29,7 @@
                 <label class="weui-cell weui-check__label" wx:for="{{checkboxItems}}" wx:key="value">
                     <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
 
-                    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                    <view class="weui-cell__hd weui-cell__hd_in-checkbox">
                         <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
                         <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
                     </view>
