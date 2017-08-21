@@ -2,7 +2,7 @@
   "name": "weui-wxss",
   "version": "1.1.1",
   "description": "weui-wxss",
-  "main": "dist/app.wxss",
+  "main": "dist/style/weui.wxss",
   "directories": {
     "example": "example"
   },
@@ -14,12 +14,18 @@
     "type": "git",
     "url": "https://github.com/weui/weui-wxss/"
   },
-  "keywords": ["weui", "wxss"],
+  "homepage": "https://github.com/weui/weui-wxss",
+  "keywords": [
+    "weui",
+    "wxss"
+  ],
   "author": "wechat ui team",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.5.1",
     "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-header": "^1.8.8",
     "gulp-less": "^3.1.0",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2"
