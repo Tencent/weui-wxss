@@ -1,7 +1,7 @@
 <view class="page">
     <view class="page__hd">
-        <view class="page__title">SearchBar</view>
-        <view class="page__desc">搜索栏</view>
+        <view class="page__title">SearchBarTop</view>
+        <view class="page__desc">搜索栏点击置顶</view>
     </view>
     <view class="page__bd">
         <view class="weui-search-bar">
