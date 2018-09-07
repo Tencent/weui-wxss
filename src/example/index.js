@@ -29,7 +29,7 @@ Page({
                 id: 'search',
                 name: '搜索相关',
                 open: false,
-                pages: ['searchbar']
+                pages: ['searchbar','searchbartop']
             }
         ]
     },
