@@ -21,8 +21,9 @@
 @import "../../base/fn.wxss";
 
 .weui-footer {
-    color: @weuiTextColorGray;
+    color: @weuiTextColorTips;
     font-size: 14px;
+    line-height:1.4;
     text-align: center;
 }
 .weui-footer_fixed-bottom{
@@ -37,13 +38,13 @@
 .weui-footer__link{
     display: inline-block;
     vertical-align: top;
-    margin: 0 .62em;
+    margin: 0 8px;
     position: relative;
     font-size: 14px;
     color: @weuiLinkColorDefault;
     &:before{
         .setLeftLine();
-        left: -.65em;
+        left: -8px;
         top: .36em;
         bottom: .36em;
     }

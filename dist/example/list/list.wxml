@@ -14,16 +14,16 @@
 
         <view class="weui-cells__title">带图标、说明的列表项</view>
         <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell">
+            <view class="weui-cell weui-cell_example ">
                 <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                    <image src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
                 </view>
                 <view class="weui-cell__bd">标题文字</view>
                 <view class="weui-cell__ft">说明文字</view>
             </view>
-            <view class="weui-cell">
+            <view class="weui-cell weui-cell_example ">
                 <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                    <image src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
                 </view>
                 <view class="weui-cell__bd">标题文字</view>
                 <view class="weui-cell__ft">说明文字</view>
@@ -58,14 +58,14 @@
         <view class="weui-cells weui-cells_after-title">
             <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                    <image src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
                 </view>
                 <view class="weui-cell__bd">cell standard</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                    <image src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
                 </view>
                 <view class="weui-cell__bd">cell standard</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>

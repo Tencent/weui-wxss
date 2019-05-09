@@ -5,7 +5,7 @@
     </view>
     <view class="page__bd">
         <view class="weui-btn-area">
-            <button type="default" bindtap="open">ActionSheet</button>
+            <button class="weui-btn" type="default" bindtap="open">ActionSheet</button>
         </view>
     </view>
 </view>

@@ -54,3 +54,5 @@
 @import "./widget/weui-tab/weui-tab.wxss";
 
 @import "./widget/weui-searchbar/weui-searchbar.wxss";
+
+@import "./widget/weui-icon/weui-icon.wxss";

@@ -100,5 +100,5 @@
     color: @weuiTextColorGray;
 }
 .weui-form-preview__btn_primary {
-    color: #0BB20C;
+    color: @weuiLinkColorDefault;
 }

@@ -23,6 +23,8 @@
     "example/actionsheet/actionsheet",
     "example/dialog/dialog",
     "example/msg/msg",
+    "example/msg/msg_text",
+    "example/msg/msg_text_primary",
     "example/msg/msg_success",
     "example/msg/msg_fail",
     "example/picker/picker",

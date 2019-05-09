@@ -17,5 +17,61 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
+@import "../fn.wxss";
 
-@weuiBtnDefaultGap:15px;
+@weuiBtnWidth:184px;
+@weuiBtnHeight:40px;
+@weuiBtnFontSize:17px;
+@weuiBtnBorderRadius:4px;
+@weuiBtnDefaultGap:16px;
+
+@weuiBtnMiniFontSize:16px;
+@weuiBtnMiniHeight:32px;
+
+@weuiBtnCellHeight:56px;
+@weuiBtnCellGap:16px;
+@weuiBtnCellLineHeight: unit((@weuiBtnCellHeight - 2 * @weuiBtnCellGap) / @weuiBtnFontSize);
+
+@weuiBtnFontColor:#FFFFFF;
+@weuiBtnActiveFontColor:#FFFFFF;
+@weuiBtnDisabledFontColor:rgba(0,0,0,.18);
+@weuiBtnDisabledBg:overlay(rgba(0,0,0,.02),#FFFFFF);
+@weuiBtnHoverDefaultMask:@weuiActiveMaskWhite;
+@weuiBtnHoverPrimaryMask:@weuiActiveMaskColored;
+
+@weuiBtnDefaultFontColor:#06AE56;
+@weuiBtnDefaultActiveFontColor:#06AE56;
+@weuiBtnDefaultDisabledFontColor:@weuiBtnDisabledFontColor;
+
+@weuiBtnDefaultBg:#F2F2F2;
+@weuiBtnDefaultActiveBg:#D9D9D9;
+@weuiBtnDefaultDisabledBg:@weuiBtnDisabledBg;
+
+
+@weuiBtnPrimaryFontColor:#FFFFFF;
+@weuiBtnPrimaryActiveFontColor:#FFFFFF;
+@weuiBtnPrimaryDisabledFontColor:@weuiBtnDisabledFontColor;
+
+@weuiBtnPrimaryBg:#07C160;
+@weuiBtnPrimaryActiveBg:#06AD56;
+@weuiBtnPrimaryDisabledBg:@weuiBtnDisabledBg;
+
+
+@weuiBtnWarnFontColor:@weuiColorWarn;
+@weuiBtnWarnActiveFontColor:@weuiColorWarn;
+@weuiBtnWarnDisabledFontColor:@weuiBtnDisabledFontColor;
+
+@weuiBtnWarnBg:#F2F2F2;
+@weuiBtnWarnActiveBg:#D9D9D9;
+@weuiBtnwarnDisabledBg:@weuiBtnDisabledBg;
+
+
+@weuiBtnPlainPrimaryColor:#07C160;
+@weuiBtnPlainPrimaryBorderColor:rgba(26,173,25,1);
+@weuiBtnPlainPrimaryActiveColor:overlay(@weuiBtnHoverPrimaryMask,@weuiBtnPlainPrimaryColor);
+@weuiBtnPlainPrimaryActiveBorderColor:overlay(@weuiBtnHoverPrimaryMask,@weuiBtnPlainPrimaryBorderColor);
+
+@weuiBtnPlainDefaultColor:rgba(53,53,53,1);
+@weuiBtnPlainDefaultBorderColor:rgba(53,53,53,1);
+@weuiBtnPlainDefaultActiveColor:overlay(@weuiBtnHoverDefaultMask,@weuiBtnPlainDefaultColor);
+@weuiBtnPlainDefaultActiveBorderColor:overlay(@weuiBtnHoverDefaultMask,@weuiBtnPlainDefaultBorderColor);

@@ -7,7 +7,7 @@
         <view class="weui-article">
             <view class="weui-article__h1">大标题</view>
             <view class="weui-article__section">
-                <view class="weui-article__title">章标题</view>
+                <view class="weui-article__h2">章标题</view>
                 <view class="weui-article__section">
                     <view class="weui-article__h3">1.1 节标题</view>
                     <view class="weui-article__p">

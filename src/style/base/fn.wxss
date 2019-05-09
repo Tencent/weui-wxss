@@ -22,6 +22,7 @@
 @import "mixin/setOnepx.wxss";
 @import "mixin/setArrow.wxss";
 @import "mixin/text.wxss";
+@import "mixin/mobile.wxss";
 
 
 // variable

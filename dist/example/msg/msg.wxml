@@ -7,6 +7,8 @@
         <view class="weui-btn-area">
             <button class="weui-btn" type="default" bindtap="openSuccess">成功提示页</button>
             <button class="weui-btn" type="default" bindtap="openFail">失败提示页</button>
+            <button class="weui-btn" type="default" bindtap="openText">无图标提示页</button>
+            <button class="weui-btn" type="default" bindtap="openTextPrimary">无图标提示页</button>
         </view>
     </view>
 </view>

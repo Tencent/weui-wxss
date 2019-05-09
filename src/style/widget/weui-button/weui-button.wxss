@@ -20,12 +20,138 @@
 
 @import "../../base/fn.wxss";
 
-.weui-btn{
-    margin-top: @weuiBtnDefaultGap;
-    &:first-child{
-        margin-top: 0;
+button, input {
+    &.weui-btn {
+        border-width: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        &:focus {
+            outline: 0;
+        }
+    }
+    &.weui-btn_inline,&.weui-btn_mini {
+        width: auto;
+    }
+    &.weui-btn_plain-primary,&.weui-btn_plain-default{
+        border-width: 1px;
+        background-color: transparent;
     }
 }
-.weui-btn-area{
-    margin: @weuiCellsMarginTop @weuiBtnDefaultGap .3em;
+
+.weui-btn_mini {
+    display: inline-block;
+    width:auto;
+    padding: 0 unit(12px/@weuiBtnMiniFontSize,em);
+    line-height: unit(@weuiBtnMiniHeight/@weuiBtnMiniFontSize);
+    font-size: @weuiBtnMiniFontSize;
+}
+
+
+/*gap between btn*/
+.weui-btn + .weui-btn {
+    margin-top: @weuiBtnDefaultGap;
+}
+
+.weui-btn.weui-btn_inline + .weui-btn.weui-btn_inline {
+    margin-top: auto;
+    margin-left: @weuiBtnDefaultGap;
+}
+
+.weui-btn-area {
+    margin: 48px @weuiBtnDefaultGap 8px; 
+
+}
+.weui-btn-area_inline {
+    display: flex;
+    .weui-btn {
+        margin-top: auto;
+        margin-right: @weuiBtnDefaultGap;
+        width: 100%;
+        flex: 1;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+
+.weui-btn {
+    position: relative;
+    display: block;
+    width:@weuiBtnWidth;
+    margin-left: auto;
+    margin-right: auto;
+    padding:8px 24px;
+    box-sizing: border-box;
+    font-weight:700;
+    font-size: @weuiBtnFontSize;
+    text-align: center;
+    text-decoration: none;
+    color: @weuiBtnFontColor;
+    line-height: unit((@weuiBtnHeight - 16) / @weuiBtnFontSize);
+    border-radius: @weuiBtnBorderRadius;
+    .setTapColor();
+    overflow: hidden;
+    border-width:0;
+}
+.weui-btn:after{display:none;}
+.weui-btn_block {
+	width:auto;
+}
+.weui-btn[size=mini]{
+  width:auto;
+}
+button[type=primary]{
+  background-color: @weuiBtnPrimaryBg;
+  color: @weuiBtnPrimaryFontColor;
+}
+.button-hover[type=primary]{
+  color: @weuiBtnPrimaryActiveFontColor;
+  background-color: @weuiBtnPrimaryActiveBg;
+}
+button[type=default]{
+  color: @weuiBtnDefaultFontColor;
+  background-color: @weuiBtnDefaultBg;
+}
+.button-hover[type=default]{
+  color: @weuiBtnDefaultActiveFontColor;
+  background-color: @weuiBtnDefaultActiveBg;
+}
+button[type=warn]{
+  color:@weuiBtnWarnFontColor;
+  background-color: @weuiBtnWarnBg;
+}
+.button-hover[type=warn]{
+  color: @weuiBtnWarnActiveFontColor;
+  background-color:@weuiBtnWarnActiveBg;
+}
+
+button[disabled][type=primary],button[disabled][type=warn]{
+  color: @weuiBtnDisabledFontColor;
+  background-color: @weuiBtnDisabledBg;
+}
+button[type=primary][plain]{
+  color: @weuiBtnPlainPrimaryColor;
+  border: 1px solid @weuiBtnPlainPrimaryBorderColor;
+}
+.button-hover[type=primary][plain]{
+  color:@weuiBtnPlainPrimaryActiveColor;
+  border-color: @weuiBtnPlainPrimaryActiveBorderColor;
+  background-color:rgba(0,0,0,.1);
+}
+button[type=default][plain]{
+  color: @weuiBtnPlainDefaultColor;
+  border: 1px solid @weuiBtnPlainDefaultBorderColor;
+}
+.button-hover[type=default][plain]{
+  color:@weuiBtnPlainDefaultActiveColor;
+  border-color: @weuiBtnPlainDefaultActiveBorderColor;
+  background-color:rgba(0,0,0,.1);
+}
+button[disabled][type=primary],
+button[disabled][type=default]{
+  color:rgba(0,0,0,.2);
+  border-color:rgba(0,0,0,.2);
+  background-color:transparent;
 }
