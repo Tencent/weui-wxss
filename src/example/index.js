@@ -5,25 +5,25 @@ Page({
                 id: 'form',
                 name: '表单',
                 open: false,
-                pages: ['button', 'list', 'input', 'slider', 'uploader']
+                pages: ['button', 'list', 'slideview', 'input', 'slider', 'uploader']
             },
             {
                 id: 'widget',
                 name: '基础组件',
                 open: false,
-                pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loadmore', 'panel', 'preview', 'progress']
+                pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loading', 'loadmore', 'panel', 'preview', 'progress']
             },
             {
                 id: 'feedback',
                 name: '操作反馈',
                 open: false,
-                pages: ['actionsheet', 'dialog', 'msg', 'picker', 'toast']
+                pages: ['actionsheet', 'dialog', 'half-screen-dialog', 'msg', 'picker', 'toast']
             },
             {
                 id: 'nav',
                 name: '导航相关',
                 open: false,
-                pages: ['navbar', 'tabbar']
+                pages: ['navigation-bar', 'tabbar']
             },
             {
                 id: 'search',

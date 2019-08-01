@@ -9,8 +9,13 @@
                 <view class="weui-cell__bd">
                     <view class="weui-uploader">
                         <view class="weui-uploader__hd">
-                            <view class="weui-uploader__title">图片上传</view>
-                            <view class="weui-uploader__info">{{files.length}}/2</view>
+                          <view class="weui-uploader__overview">
+                              <view class="weui-uploader__title">图片上传</view>
+                              <view class="weui-uploader__info">{{files.length}}/2</view>
+                          </view>
+                          <view class="weui-uploader__tips">
+                            上传提示
+                          </view>
                         </view>
                         <view class="weui-uploader__bd">
                             <view class="weui-uploader__files" id="uploaderFiles">
@@ -25,8 +30,11 @@
                                 <view class="weui-uploader__file">
                                     <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
                                 </view>
-                                <view class="weui-uploader__file">
+                                <view class="weui-uploader__file weui-uploader__file_status">
                                     <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                                    <view class="weui-uploader__file-content">
+                                      <view class="weui-loading"></view>
+                                    </view>
                                 </view>
                                 <view class="weui-uploader__file weui-uploader__file_status">
                                     <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />

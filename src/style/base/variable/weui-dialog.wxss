@@ -21,7 +21,7 @@
 @import "../fn.wxss";
 
 @weuiDialogBackgroundColor: #FFFFFF;
-@weuiDialogLineColor: @weuiLineColorLight;
+@weuiDialogLineColor: rgba(0,0,0,.1);
 @weuiDialogLinkColor: @weuiLinkColorDefault;
 @weuiDialogLinkActiveBc: @weuiBgColorActive;
-@weuiDialogGapWidth: 1.6em;
+@weuiDialogGapWidth: 24px;

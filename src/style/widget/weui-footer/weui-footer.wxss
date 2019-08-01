@@ -28,7 +28,9 @@
 }
 .weui-footer_fixed-bottom{
     position: fixed;
-    bottom: .52em;
+    bottom: 16px;
+    bottom: calc(16px ~"+ constant(safe-area-inset-bottom)");
+    bottom: calc(16px ~"+ env(safe-area-inset-bottom)");
     left: 0;
     right: 0;
 }

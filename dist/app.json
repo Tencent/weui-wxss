@@ -1,13 +1,12 @@
 {
   "pages": [
     "example/index",
-
     "example/button/button",
     "example/list/list",
+    "example/slideview/slideview",
     "example/input/input",
     "example/slider/slider",
     "example/uploader/uploader",
-
     "example/article/article",
     "example/badge/badge",
     "example/flex/flex",
@@ -15,12 +14,13 @@
     "example/gallery/gallery",
     "example/grid/grid",
     "example/icons/icons",
+    "example/loading/loading",
     "example/loadmore/loadmore",
     "example/panel/panel",
     "example/preview/preview",
     "example/progress/progress",
-
     "example/actionsheet/actionsheet",
+    "example/half-screen-dialog/half-screen-dialog",
     "example/dialog/dialog",
     "example/msg/msg",
     "example/msg/msg_text",
@@ -29,17 +29,15 @@
     "example/msg/msg_fail",
     "example/picker/picker",
     "example/toast/toast",
-
-    "example/navbar/navbar",
+    "example/navigation-bar/navigation-bar",
     "example/tabbar/tabbar",
-
     "example/searchbar/searchbar"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "WeUI for 小程序",
-    "navigationBarBackgroundColor": "#f8f8f8",
-    "backgroundColor": "#f8f8f8"
+    "navigationBarBackgroundColor": "#EDEDED",
+    "backgroundColor": "#EDEDED"
   },
   "networkTimeout": {
     "request": 10000,
@@ -47,5 +45,7 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap42.json"
 }

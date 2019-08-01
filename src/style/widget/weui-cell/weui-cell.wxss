@@ -82,3 +82,16 @@
     text-align: right;
     color: @weuiTextColorDesc;
 }
+
+.weui-cell_wxss{
+  &&:before{display:block;}
+}
+.weui-cell_label-block{
+  display:block;
+  .weui-label{
+    width:auto;
+    word-break:initial;
+    -webkit-hyphens:auto;
+    hyphens:auto;
+  }
+}

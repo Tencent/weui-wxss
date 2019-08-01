@@ -33,15 +33,17 @@
 }
 .weui-icon-search {
     margin-right: 8px;
-    font-size:20px;
+    font-size:14px;
     vertical-align:top;
-    margin-top:-.05em;
+    margin-top:.64em;
+    height:1em;
+    line-height:1em;
 }
 .weui-icon-search_in-box {
     position: absolute;
     left: 12px;
     top: 50%;
-    margin-top:-6px;
+    margin-top:-8px;
 }
 .weui-search-bar__text{
     display: inline-block;

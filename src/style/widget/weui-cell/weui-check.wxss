@@ -20,17 +20,15 @@
 
 @import "../../base/fn.wxss";
 
-// icon
-.weui-icon-radio{
-    margin-left: 3.2px;
-    margin-right: 3.2px;
-}
-.weui-icon-checkbox_circle,
-.weui-icon-checkbox_success{
-    margin-left: 4.6px;
-    margin-right: 4.6px;
+.weui-cells_checkbox{
+  .weui-check__label{
+    &:before{
+      left:55px;
+    }
+  }
 }
 
+// icon
 .weui-check__label{
     &:active{
         background-color: @weuiCellActiveBg;

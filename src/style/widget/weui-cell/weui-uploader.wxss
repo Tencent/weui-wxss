@@ -22,12 +22,21 @@
 
 .weui-uploader{}
 .weui-uploader__hd{
-    display: flex;
     padding-bottom: @weuiCellGapV;
+    padding-bottom: 16px;
+}
+.weui-uploader__overview{
+    display: flex;
     align-items: center;
 }
 .weui-uploader__title{
     flex: 1;
+}
+.weui-uploader__tips{
+    color: @weuiTextColorTips;
+    font-size:14px;
+    line-height:1.4;
+    padding-top:4px;
 }
 .weui-uploader__info{
     color: @weuiTextColorTips;

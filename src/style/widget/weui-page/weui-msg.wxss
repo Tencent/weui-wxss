@@ -71,7 +71,7 @@
 .weui-msg__opr-area {
     margin-bottom: 16px;
 }
-.weui-msg__opr-area .weui-btn-area{margin:0}
+.weui-msg__opr-area .weui-btn-area{margin:0 16px;}
 .weui-msg__opr-area .weui-btn + .weui-btn{margin-bottom:16px;}
 .weui-msg__opr-area:last-child{margin-bottom:96px;}
 .weui-msg__opr-area + .weui-msg__extra-area{

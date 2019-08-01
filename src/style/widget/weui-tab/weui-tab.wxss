@@ -20,6 +20,7 @@
 
 @import "../../base/fn.wxss";
 @import "weui-navbar.wxss";
+@import "weui-tabbar.wxss";
 
 .weui-tab {
   display: flex;

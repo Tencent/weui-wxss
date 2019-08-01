@@ -17,9 +17,12 @@ page{
 }
 
 .page__ft{
-    padding-bottom: 10px;
     text-align: center;
+    padding:0 0 10px;
+    padding:0 0 calc(10px + constant(safe-area-inset-bottom));
+    padding:0 0 calc(10px + env(safe-area-inset-bottom));
 }
+
 
 .page__title {
     text-align: left;

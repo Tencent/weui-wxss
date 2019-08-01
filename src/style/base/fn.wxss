@@ -36,3 +36,4 @@
 @import "variable/weui-grid.wxss";
 @import "variable/weui-progress.wxss";
 @import "variable/weui-dialog.wxss";
+@import "variable/weui-tab.wxss";
