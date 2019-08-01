@@ -22,12 +22,21 @@
 
 .weui-uploader{}
 .weui-uploader__hd{
-    display: flex;
     padding-bottom: @weuiCellGapV;
+    padding-bottom: 16px;
+}
+.weui-uploader__overview{
+    display: flex;
     align-items: center;
 }
 .weui-uploader__title{
     flex: 1;
+}
+.weui-uploader__tips{
+    color: @weuiTextColorTips;
+    font-size:14px;
+    line-height:1.4;
+    padding-top:4px;
 }
 .weui-uploader__info{
     color: @weuiTextColorTips;
@@ -71,9 +80,10 @@
     position: relative;
     margin-right: @weuiUploaderFileSpacing;
     margin-bottom: @weuiUploaderFileSpacing;
-    width: @weuiUploaderSize - @weuiUploaderBorderWidth * 2;
-    height: @weuiUploaderSize - @weuiUploaderBorderWidth * 2;
-    border: @weuiUploaderBorderWidth solid @weuiUploaderBorderColor;
+    width: @weuiUploaderSize;
+    height: @weuiUploaderSize;
+    box-sizing:border-box;
+    background-color:@weuiBgColorDefault;
     &:before, &:after{
         content: " ";
         position: absolute;
@@ -84,10 +94,10 @@
     }
     &:before{
         width: @weuiUploaderBorderWidth + 1;
-        height: @weuiUploaderSize / 2;
+        height: @weuiUploaderSize / 3;
     }
     &:after{
-        width: @weuiUploaderSize / 2;
+        width: @weuiUploaderSize / 3;
         height: @weuiUploaderBorderWidth + 1;
     }
     &:active{

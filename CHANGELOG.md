@@ -1,3 +1,16 @@
+#### v 2.0.0 (2019-08-01)
+
+- 【同步weui】 颜色规范、字体大小规范、间距规范对齐微信7.0新视觉风格
+- 【同步weui】 更新weui-cell、weui-uploader、weui-article、weui-footer、weui-msg、weui-panel、weui-search-bar等组件的UI
+- 【增强】 增加组件 slideview 右滑操作 
+- 【增强】 增加组件 gallery 模拟原生全屏预览 
+- 【增强】 增加组件 loading 加载中 
+- 【增强】 增加组件 dialog 模拟原生弹窗 
+- 【增强】 增加组件 half-screen-dialog 半屏弹窗
+- 【增强】 增加组件 navigation-bar 模拟原生顶部导航条
+- 【增强】 增加组件 tabbar 模拟原生底部tab
+- 【优化】 废弃组件 navbar
+
 #### v 1.1.1 (2017-01-18)
 
 - 【同步weui】 增加扩展类.weui-loading_transparent

@@ -1,6 +1,20 @@
 <view class="page">
     <view class="page__hd">
         <view class="page__title">Gallery</view>
-        <view class="page__desc">画廊，建议采用小程序原生的wx.previewImage来实现。详情请看小程序文档。</view>
+        <view class="page__desc">画廊，模拟小程序原生的wx.previewImage。</view>
+    </view>
+    <view class="page__bd">
+      <view class="weui-btn-area">
+          <button class="weui-btn" type="default" bindtap="openGallery">Gallery</button>
+      </view>
+      <view class="weui-gallery {{istrue ? 'weui-gallery_show' : ''}}" bindtap="closeGallery">
+        <view class="weui-gallery__info">1/17</view>
+        <view class="weui-gallery__img__wrp">
+              <image mode="aspectFit" class="weui-gallery__img" src="../images/pic_160.png"></image>
+        </view>
+        <view class="weui-gallery__opr">
+          <navigator href="javascript:" class="weui-gallery__del">删除</navigator>
+        </view>
+      </view>
     </view>
 </view>

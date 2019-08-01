@@ -18,8 +18,10 @@
 * limitations under the License.
 */
 
+@import "../fn.wxss";
+
 @weuiDialogBackgroundColor: #FFFFFF;
-@weuiDialogLineColor: #D5D5D6;
-@weuiDialogLinkColor: #3CC51F;
-@weuiDialogLinkActiveBc: #EEEEEE;
-@weuiDialogGapWidth: 1.6em;
+@weuiDialogLineColor: rgba(0,0,0,.1);
+@weuiDialogLinkColor: @weuiLinkColorDefault;
+@weuiDialogLinkActiveBc: @weuiBgColorActive;
+@weuiDialogGapWidth: 24px;

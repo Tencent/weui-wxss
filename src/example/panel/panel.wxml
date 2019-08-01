@@ -57,15 +57,15 @@
             <view class="weui-panel__bd">
                 <view class="weui-media-box weui-media-box_small-appmsg">
                     <view class="weui-cells weui-cells_in-small-appmsg">
-                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                            <view class="weui-cell__hd"><image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 5px" /></view>
+                        <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 16px;vertical-align:middle;" /></view>
                             <view class="weui-cell__bd weui-cell_primary">
                                 <view>文字标题</view>
                             </view>
                             <view class="weui-cell__ft weui-cell__ft_in-access"></view>
                         </navigator>
-                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                            <view class="weui-cell__hd"><image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 5px" /></view>
+                        <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                            <view class="weui-cell__hd"><image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 16px;vertical-align:middle;" /></view>
                             <view class="weui-cell__bd weui-cell_primary">
                                 <view>文字标题</view>
                             </view>

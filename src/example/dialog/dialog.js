@@ -1,5 +1,8 @@
 Page({
-    openConfirm: function () {
+    data: {
+        showDialog: false
+    },
+     openConfirm: function () {
         wx.showModal({
             title: '弹窗标题',
             content: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
@@ -15,15 +18,14 @@ Page({
             }
         });
     },
-    openAlert: function () {
-        wx.showModal({
-            content: '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
-            showCancel: false,
-            success: function (res) {
-                if (res.confirm) {
-                    console.log('用户点击确定')
-                }
-            }
-        });
+    openDialog: function () {
+        this.setData({
+            istrue: true
+        })
+    },
+    closeDialog: function () {
+        this.setData({
+            istrue: false
+        })
     }
 });

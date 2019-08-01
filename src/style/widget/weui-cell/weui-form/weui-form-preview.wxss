@@ -55,7 +55,7 @@
 }
 .weui-form-preview__ft{
     position: relative;
-    line-height: 50px;
+    line-height: 56px;
     display: flex;
     &:after {
         .setTopLine(@weuiDialogLineColor);
@@ -84,6 +84,8 @@
     flex: 1;
     color: @weuiDialogLinkColor;
     text-align: center;
+    font-weight:700;
+    font-size:17px;
     &:after {
         .setLeftLine(@weuiDialogLineColor);
     }
@@ -97,8 +99,8 @@
     background-color: @weuiDialogLinkActiveBc;
 }
 .weui-form-preview__btn_default {
-    color: @weuiTextColorGray;
+    color: @weuiTextColorTitle;
 }
 .weui-form-preview__btn_primary {
-    color: #0BB20C;
+    color: @weuiLinkColorDefault;
 }

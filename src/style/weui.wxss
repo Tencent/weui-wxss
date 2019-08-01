@@ -41,9 +41,10 @@
 @import "./widget/weui-grid/weui-grid.wxss";
 
 @import "./widget/weui-loading/weui-loading.wxss";
+@import "./widget/weui-loading/weui-dot-loading.wxss";
+@import "./widget/weui-tips/weui-loadmore.wxss";
 
 @import "./widget/weui-tips/weui-badge.wxss";
-@import "./widget/weui-tips/weui-loadmore.wxss";
 
 @import "./widget/weui-panel/weui-panel.wxss";
 
@@ -52,5 +53,15 @@
 @import "./widget/weui-progress/weui-progress.wxss";
 
 @import "./widget/weui-tab/weui-tab.wxss";
+@import "./widget/weui-cell/weui-slideview.wxss";
+@import "./widget/weui-cell/weui-gallery.wxss";
 
 @import "./widget/weui-searchbar/weui-searchbar.wxss";
+
+@import "./widget/weui-icon/weui-icon.wxss";
+
+@import "./widget/weui-tips/weui-mask.wxss";
+@import "./widget/weui-tips/weui-dialog.wxss";
+@import "./widget/weui-tips/weui-half-screen-dialog.wxss";
+@import "./widget/weui-tips/weui-toptips.wxss";
+@import "./widget/weui-navigation-bar/weui-navigation-bar.wxss";

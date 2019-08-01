@@ -20,12 +20,32 @@
 
 @import "../../base/fn.wxss";
 
-.weui-btn{
+
+/*gap between btn*/
+.weui-btn + .weui-btn {
     margin-top: @weuiBtnDefaultGap;
-    &:first-child{
-        margin-top: 0;
+}
+
+.weui-btn.weui-btn_inline + .weui-btn.weui-btn_inline {
+    margin-top: auto;
+    margin-left: @weuiBtnDefaultGap;
+}
+
+.weui-btn-area {
+    margin: 48px @weuiBtnDefaultGap 8px; 
+
+}
+.weui-btn-area_inline {
+    display: flex;
+    .weui-btn {
+        margin-top: auto;
+        margin-right: @weuiBtnDefaultGap;
+        width: 100%;
+        flex: 1;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
-.weui-btn-area{
-    margin: @weuiCellsMarginTop @weuiBtnDefaultGap .3em;
-}
+
+

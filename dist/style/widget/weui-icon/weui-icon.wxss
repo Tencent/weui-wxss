@@ -1,0 +1,6 @@
+/*!
+ * WeUI v2.0.0 (https://github.com/weui/weui-wxss)
+ * Copyright 2019 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+icon[type=success]:after,icon[type=success]:before{color:#07c160!important}

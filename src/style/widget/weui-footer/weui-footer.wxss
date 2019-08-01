@@ -21,13 +21,16 @@
 @import "../../base/fn.wxss";
 
 .weui-footer {
-    color: @weuiTextColorGray;
+    color: @weuiTextColorTips;
     font-size: 14px;
+    line-height:1.4;
     text-align: center;
 }
 .weui-footer_fixed-bottom{
     position: fixed;
-    bottom: .52em;
+    bottom: 16px;
+    bottom: calc(16px ~"+ constant(safe-area-inset-bottom)");
+    bottom: calc(16px ~"+ env(safe-area-inset-bottom)");
     left: 0;
     right: 0;
 }
@@ -37,13 +40,13 @@
 .weui-footer__link{
     display: inline-block;
     vertical-align: top;
-    margin: 0 .62em;
+    margin: 0 8px;
     position: relative;
     font-size: 14px;
     color: @weuiLinkColorDefault;
     &:before{
         .setLeftLine();
-        left: -.65em;
+        left: -8px;
         top: .36em;
         bottom: .36em;
     }
