@@ -1,0 +1,132 @@
+/**
+* Tencent is pleased to support the open source community by making
+* WeUI-WXSS available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company.
+* All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use
+* this file except in compliance with the License. You may obtain a copy of
+* the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+@import "../../base/fn.wxss";
+
+.weui-dialog__wrp {
+  position: fixed;
+  z-index: 5000;
+  top: 16px;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  text-align:center;
+  font-size:0;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  align-items:center;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  .weui-dialog {
+    max-height:100%;
+  }
+}
+.weui-dialog {
+    background-color: @weuiDialogBackgroundColor;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    max-height:90%;
+}
+.weui-dialog__hd {
+    padding: 32px @weuiDialogGapWidth 16px;
+}
+.weui-dialog__title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height:1.4;
+}
+.weui-dialog__bd {
+    flex:1;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    padding: 0 @weuiDialogGapWidth;
+    margin-bottom:32px;
+    min-height: 40px;
+    font-size: 17px;
+    line-height: 1.4;
+    overflow-wrap:break-word;
+    -webkit-hyphens:auto;
+    hyphens:auto;
+    color: @weuiTextColorDesc;
+    &:first-child{
+        padding:32px @weuiDialogGapWidth 0;
+        font-weight:700;
+        color:@weuiTextColorTitle;
+        display:-webkit-box;
+        display:-webkit-flex;
+        display:flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack:center;
+        -webkit-justify-content:center;
+        justify-content:center;
+    }
+}
+.weui-dialog__ft {
+    position: relative;
+    line-height: 64px;
+    min-height: 64px;
+    font-size: 17px;
+    display: flex;
+    &:after {
+        content: " ";
+        .setTopLine(@weuiDialogLineColor);
+    }
+}
+.weui-dialog__btn {
+    display: block;
+    flex: 1;
+    color: @weuiDialogLinkColor;
+    font-weight:700;
+    text-decoration: none;
+    .setTapColor();
+    &:active {
+        background-color: @weuiDialogLinkActiveBc;
+    }
+
+    position: relative;
+    &:after {
+        content: " ";
+        .setLeftLine(@weuiDialogLineColor);
+    }
+    &:first-child {
+        &:after {
+            display: none;
+        }
+    }
+}
+.weui-dialog__btn_default {
+    color: @weuiTextColorTitle;
+}
+
+@media screen and (min-width: 352px) {
+    .weui-dialog {
+        width: 320px;
+        margin:0 auto;
+    }
+}

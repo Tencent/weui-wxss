@@ -1,0 +1,9 @@
+page{
+    background-color: #FFFFFF;
+}
+.weui-loading__wrp{
+  padding:16px;text-align:center;
+}
+.weui-loading__wrp:last-child{
+  background-color:rgba(0,0,0,.1);
+}

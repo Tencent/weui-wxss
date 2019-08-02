@@ -1,0 +1,15 @@
+.weui-slidecells{
+  margin:8px;
+}
+.weui-slidecell{
+  background-color:#FFFFFF;
+  border-radius:8px;
+  padding:24px;
+  line-height:1.4;
+  font-size:17px;
+  color:rgba(0,0,0,.9);
+  text-align:right;
+}
+.weui-slidecell__tips{
+  color:rgba(0,0,0,.5);
+}

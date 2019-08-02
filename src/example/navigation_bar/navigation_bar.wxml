@@ -1,0 +1,29 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Navigation Bar</view>
+        <view class="page__desc">导航栏，模拟小程序原生顶部导航栏。</view>
+    </view>
+    <view class="page__bd">
+      <view class="weui-navigation-bar">
+        <view class="weui-navigation-bar__placeholder" style="visible: hidden;"></view>
+        <view class="weui-navigation-bar__inner">
+
+          <view class='weui-navigation-bar__left'>
+              <view class="weui-navigation-bar__buttons">
+                <view bindtap="back" class="weui-navigation-bar__button weui-navigation-bar__btn_goback"></view>
+              </view>
+          </view>
+
+          <view class='weui-navigation-bar__center'>
+            <view class="weui-navigation-bar__loading">
+              <view class="weui-loading"></view>
+            </view>
+            <text>标题</text>
+          </view>
+
+          <view class='weui-navigation-bar__right'>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

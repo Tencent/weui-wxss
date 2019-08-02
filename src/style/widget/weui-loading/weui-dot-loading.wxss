@@ -1,0 +1,88 @@
+/**
+* Tencent is pleased to support the open source community by making
+* WeUI-WXSS available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company.
+* All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use
+* this file except in compliance with the License. You may obtain a copy of
+* the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+
+@import "../../base/fn.wxss";
+
+.wx_dot_loading,.wx_dot_loading:before,.wx_dot_loading:after{
+    display:inline-block;vertical-align:middle;width:6px;height:6px;-webkit-border-radius:50%;border-radius:50%;background-color:rgba(0,0,0,.3);
+    font-size:0;
+    animation: dot2 1.6s step-start infinite;
+}
+.wx_dot_loading{
+    position:relative;
+    &:before{
+      content:"";
+      position:absolute;
+      left:-12px;
+      background-color:rgba(0,0,0,.1);
+      animation: dot1 1.6s step-start infinite;
+    }
+    &:after{
+      content:"";
+      position:absolute;
+      right:-12px;
+      background-color:rgba(0,0,0,.5);
+      animation: dot3 1.6s step-start infinite;
+    }
+}
+
+@keyframes dot1 {
+  0%,100%{background-color:rgba(0,0,0,.1);}
+  30%{background-color:rgba(0,0,0,.5);}
+  60%{background-color:rgba(0,0,0,.3);}
+}
+@keyframes dot2 {
+  0%,100%{background-color:rgba(0,0,0,.3);}
+  30%{background-color:rgba(0,0,0,.1);}
+  60%{background-color:rgba(0,0,0,.5);}
+}
+@keyframes dot3 {
+  0%,100%{background-color:rgba(0,0,0,.5);}
+  30%{background-color:rgba(0,0,0,.3);}
+  60%{background-color:rgba(0,0,0,.1);}
+}
+.wx_dot_loading_white{
+  background-color:rgba(255,255,255,.3);
+  animation: dotw2 1.6s step-start infinite;
+  &:before{
+    background-color:rgba(255,255,255,.5);
+    animation: dotw1 1.6s step-start infinite;
+  }
+  &:after{
+    background-color:rgba(255,255,255,.1);
+    animation: dotw3 1.6s step-start infinite;
+  }
+}
+@keyframes dotw1 {
+  0%,100%{background-color:rgba(255,255,255,.5);}
+  30%{background-color:rgba(255,255,255,.1);}
+  60%{background-color:rgba(255,255,255,.3);}
+}
+@keyframes dotw2 {
+  0%,100%{background-color:rgba(255,255,255,.3);}
+  30%{background-color:rgba(255,255,255,.5);}
+  60%{background-color:rgba(255,255,255,.1);}
+}
+@keyframes dotw3 {
+  0%,100%{background-color:rgba(255,255,255,.1);}
+  30%{background-color:rgba(255,255,255,.3);}
+  60%{background-color:rgba(255,255,255,.5);}
+}
