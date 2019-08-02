@@ -4,3 +4,6 @@
 node_modules
 npm-debug.log
 .DS_Store
+dist/project.config.json
+dist/sitemap*
+
