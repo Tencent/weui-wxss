@@ -1,0 +1,17 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Loading</view>
+        <view class="page__desc">加载中</view>
+    </view>
+    <view class="page__bd">
+      <view class="weui-loading__wrp">
+          <view class="weui-loading"></view>
+      </view>
+      <view class="weui-loading__wrp">
+          <view class="loading wx_dot_loading"></view>
+      </view>
+      <view class="weui-loading__wrp">
+          <view class="loading wx_dot_loading wx_dot_loading_white"></view>
+      </view>
+    </view>
+</view>
