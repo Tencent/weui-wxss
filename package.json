@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "weui-wxss",
   "main": "dist/style/weui.wxss",
+  "miniprogram": "dist",
   "directories": {
     "example": "example"
   },
