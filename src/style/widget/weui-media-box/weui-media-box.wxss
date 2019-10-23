@@ -21,11 +21,11 @@
 @import "../../base/fn.wxss";
 
 .weui-media-box {
-    padding: 15px;
+    padding: 16px;
     position: relative;
     &:before {
         .setTopLine(@weuiLineColorLight);
-        left: 15px;
+        left: 1s6px;
     }
     &:first-child {
         &:before {
@@ -36,19 +36,22 @@
 .weui-media-box__title {
     font-weight: 400;
     font-size: 17px;
+    line-height:1.4;
+    color:@weuiTextColorTitle;
     .ellipsis();
     word-wrap: break-word;
     word-break: break-all;
 }
 .weui-media-box__desc {
     color: @weuiTextColorGray;
-    font-size: 13px;
-    line-height: 1.2;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-top:4px;
     .ellipsisLn(2);
 }
 .weui-media-box__info {
-    margin-top: 15px;
-    padding-bottom: 5px;
+    margin-top: 16px;
+    padding-bottom: 4px;
     font-size: 13px;
     color: #CECECE;
     line-height: 1em;
@@ -78,7 +81,7 @@
     vertical-align: top;
 }
 .weui-media-box__hd_in-appmsg {
-    margin-right: .8em;
+    margin-right: 16px;
     width: 60px;
     height: 60px;
     line-height: 60px;

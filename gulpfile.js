@@ -27,6 +27,7 @@ gulp.task('build:style', function() {
       cssnano({
         zindex: false,
         autoprefixer: false,
+        svgo: false,
         discardComments: { removeAll: true }
       })
     )

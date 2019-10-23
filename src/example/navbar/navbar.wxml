@@ -7,7 +7,6 @@
                         <view class="weui-navbar__title">{{item}}</view>
                     </view>
                 </block>
-                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
             </view>
             <view class="weui-tab__panel">
                 <view class="weui-tab__content" hidden="{{activeIndex != 0}}">选项一的内容</view>

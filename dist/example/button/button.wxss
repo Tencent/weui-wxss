@@ -1,8 +1,9 @@
+page{background-color:#EDEDED;}
 .button-sp-area{
     margin: 0 auto;
     padding-top: 15px;
-    width: 60%;
+    text-align:center;
 }
 .mini-btn{
-    margin-right: 5px;
+    margin: 0 4px;
 }

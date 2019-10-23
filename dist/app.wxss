@@ -1,7 +1,7 @@
 @import 'style/weui.wxss';
 
 page{
-    background-color: #F8F8F8;
+    background-color: #EDEDED;
     font-size: 16px;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
 }
@@ -17,9 +17,12 @@ page{
 }
 
 .page__ft{
-    padding-bottom: 10px;
     text-align: center;
+    padding:0 0 10px;
+    padding:0 0 calc(10px + constant(safe-area-inset-bottom));
+    padding:0 0 calc(10px + env(safe-area-inset-bottom));
 }
+
 
 .page__title {
     text-align: left;
@@ -32,4 +35,7 @@ page{
     color: #888888;
     text-align: left;
     font-size: 14px;
+}
+.weui-cell_example:before{
+    left:52px;
 }

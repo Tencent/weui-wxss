@@ -3,4 +3,21 @@
         <view class="page__title">Tabbar</view>
         <view class="page__desc">底部导航，建议采用小程序原生的tabbar，通过设置app.json来实现。详情请看小程序文档。</view>
     </view>
+    <view class="page__bd">
+      <view class="weui-tabbar">
+          <view class="weui-tabbar__item weui-bar__item_on">
+              <view style="position: relative;display:inline-block;">
+                <image src="../images/pic_160.png" class="weui-tabbar__icon"></image>
+              </view>
+              <view class="weui-tabbar__label">标题</view>
+          </view>
+          <view class="weui-tabbar__item">
+              <view style="position: relative;display:inline-block;">
+                <image src="../images/pic_160.png" class="weui-tabbar__icon"></image>
+                <view class="weui-badge weui-badge_dot" style="position:absolute;top:-2px;left:calc(100% - 3px);"></view>
+              </view>
+              <view class="weui-tabbar__label">标题</view>
+          </view>
+      </view>
+    </view>
 </view>

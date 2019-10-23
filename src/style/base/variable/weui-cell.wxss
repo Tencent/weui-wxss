@@ -18,27 +18,29 @@
 * limitations under the License.
 */
 
+@import "../fn.wxss";
+
 @weuiCellBg:#FFFFFF;
-@weuiCellBorderColor:#D9D9D9;
-@weuiCellGapV:10px;
-@weuiCellGapH:15px;
-@weuiCellInnerGapH:.35em;
+@weuiCellBorderColor:@weuiLineColorLight;
+@weuiCellGapV:16px;
+@weuiCellGapH:16px;
+@weuiCellInnerGapH:16px;
 @weuiCellFontSize:17px;
-@weuiCellHeight: 44px;
+@weuiCellHeight: 56px;
 @weuiCellHeightEm: unit(@weuiCellHeight / @weuiCellFontSize, em);
 @weuiCellTipsFontSize:14px;
 @weuiCellLabelWidth:105px;
-@weuiCellActiveBg: #ECECEC;
+@weuiCellActiveBg: @weuiBgColorActive;
 
-@weuiCellLineHeight: unit((@weuiCellHeight - 2 * @weuiCellGapV) / @weuiCellFontSize); // 高度为44px，减去上下padding的行高
-@weuiCellsMarginTop:unit(20 / @weuiCellFontSize, em);
+@weuiCellLineHeight: unit((@weuiCellHeight - 2 * @weuiCellGapV) / @weuiCellFontSize); // 高度减去上下padding的行高
+@weuiCellsMarginTop:8px;
 
 // weui switch
 @weuiSwitchHeight: 32px;
 
 // weui uploader
-@weuiUploaderBorderColor:#D9D9D9;
-@weuiUploaderActiveBorderColor:#999999;
-@weuiUploaderFileSpacing: 9px;
-@weuiUploaderSize: 79px;
+@weuiUploaderBorderColor:#A3A3A3;
+@weuiUploaderActiveBorderColor:overlay(@weuiActiveMaskBlack,@weuiUploaderBorderColor);
+@weuiUploaderFileSpacing: 8px;
+@weuiUploaderSize: 96px;
 @weuiUploaderBorderWidth: 1px;
