@@ -41,6 +41,12 @@
     font-size: @weuiCellFontSize;
     color: @weuiLinkColorDefault;
     white-space: nowrap;
+    button&{
+      min-height:0;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+    }
     &:active {
         color: desaturate(@weuiDialogLinkColor, 30%);
     }

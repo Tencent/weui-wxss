@@ -20,7 +20,7 @@
 
 @import "../../base/fn.wxss";
 
-.weui-uploader{}
+.weui-uploader{flex:1;}
 .weui-uploader__hd{
     padding-bottom: @weuiCellGapV;
     padding-bottom: 16px;

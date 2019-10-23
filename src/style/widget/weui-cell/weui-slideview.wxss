@@ -23,9 +23,14 @@
 :host {
   width: 100%;
 }
+.weui-slideview__wrp{
+}
+.weui-slideview{
+  overflow:hidden;
+  position: relative;
+}
 .weui-slideview{
   position: relative;
-  overflow: hidden;
 }
 
 .weui-slideview__left {
@@ -90,6 +95,10 @@
   .weui-slideview__btn__wrp{
     background: transparent;
     font-size:0;
+    &:after{
+      content:"";
+      width:0;height:100%;vertical-align:middle;display:inline-block;
+    }
     &:first-child{
       padding-left:16px;
     }
