@@ -1,0 +1,40 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Half Screen Dialog</view>
+        <view class="page__desc">半屏弹窗，辅助完成当前页面任务时；提醒用户并引导用户的下一步操作；用户主动发起的任务时。</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="default" bindtap="openDialog">Half Screen Dialog</button>
+        </view>
+        <view class="weui-demo-dialog {{istrue ? 'weui-demo-dialog_show' : ''}}">
+          <view class="weui-mask" bindtap="closeDialog"></view>
+          <view class="weui-half-screen-dialog" catchtap="stopEvent">
+            <view class="weui-half-screen-dialog__hd">
+              <view class="weui-half-screen-dialog__hd__side">
+                <view bindtap="closeDialog" class="weui-icon-btn weui-icon-btn_close">关闭</view>
+              </view>
+              <view class="weui-half-screen-dialog__hd__main">
+                <text class="weui-half-screen-dialog__title">标题</text>
+                <text class="weui-half-screen-dialog__subtitle">标题</text>
+              </view>
+              <view class="weui-half-screen-dialog__hd__side">
+                <view class="weui-icon-btn weui-icon-btn_more">更多</view>
+              </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd">
+              <view class="weui-half-screen-dialog__desc">
+                辅助描述内容，可根据实际需要安排
+              </view>
+              <view class="weui-half-screen-dialog__tips">
+                辅助提示内容，可根据实际需要安排
+              </view>
+            </view>
+            <view class="weui-half-screen-dialog__ft">
+                <button type="default" class="weui-btn">辅助操作</button>
+                <button type="primary" class="weui-btn">主操作</button>
+            </view>
+          </view>
+        </view>
+    </view>
+</view>

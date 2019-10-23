@@ -1,0 +1,59 @@
+/**
+* Tencent is pleased to support the open source community by making
+* WeUI-WXSS available.
+* 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company.
+* All rights reserved.
+* 
+* Licensed under the MIT License (the "License"); you may not use
+* this file except in compliance with the License. You may obtain a copy of
+* the License at
+* 
+*       http://opensource.org/licenses/MIT
+* 
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+@import "../../base/fn.wxss";
+
+.weui-toptips{
+    position: fixed;
+    -webkit-transform: translateZ(0) translateY(calc(-100% - 8px));
+    transform: translateZ(0) translateY(calc(-100% - 8px));
+    text-align: center;
+    top:8px;
+    left:16px;
+    right:16px;
+    border-radius:4px;
+    padding:8px;
+    -webkit-border-radius:4px;
+    color:rgba(255,255,255,.9);
+    font-size:17px;
+    line-height:1.4;
+    background:rgba(250,81,81,.9);
+    z-index: 5000;
+    .text_wrap();
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.weui-toptips_show {
+  -webkit-transform: translateZ(0) translateY(0);
+  transform:translateZ(0) translateY(0);
+  opacity: 1;
+}
+.weui-toptips_warn{
+    background-color: @weuiColorWarn;
+}
+.weui-toptips_success {
+  background-color: #09BB07;
+}
+.weui-toptips_error {
+  background-color:#FA5151;
+}
+.weui-toptips_info {
+  background-color: #10AEFF;
+}
