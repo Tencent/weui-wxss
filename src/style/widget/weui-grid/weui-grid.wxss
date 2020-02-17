@@ -21,17 +21,18 @@
 @import "../../base/fn.wxss";
 
 .weui-grids {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     border-top: 1rpx solid @weuiGridBorderColor;
     border-left: 1rpx solid @weuiGridBorderColor;
     overflow: hidden;
 }
 .weui-grid {
     position: relative;
-    float: left;
     padding: 20px 10px;
     width: 100% / @weuiGridColumnCount;
     box-sizing: border-box;
-
     border-right: 1rpx solid @weuiGridBorderColor;
     border-bottom: 1rpx solid @weuiGridBorderColor;
     &_active{
