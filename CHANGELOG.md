@@ -3,6 +3,7 @@
 #### Features
 * feat: 兼容小程序的navigator标签
 * feat: input的placeholder更改颜色
+* feat: 更改cell的点击态背景颜色
 * feat: 适配小程序的darkmode
 
 #### Bugfixes
