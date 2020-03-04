@@ -1,25 +1,23 @@
 Page({
-    open: function(){
-        wx.showActionSheet({
-            itemList: ['A', 'B', 'C'],
-            success: function(res) {
-                if (!res.cancel) {
-                    console.log(res.tapIndex)
-                }
-            }
+    mixins: [require('../../mixin/themeChanged')],
+    data: {
+        showIOSDialog: false,
+        showAndroidDialog: false,
+    },
+    close: function() {
+        this.setData({
+            showIOSDialog: false,
+            showAndroidDialog: false
         });
     },
-    data: {
-        showDialog: false
-    },
-    openDialog: function () {
+    openIOS: function () {
         this.setData({
-            istrue: true
-        })
+            showIOSDialog: true
+        });
     },
-    closeDialog: function () {
+    openAndroid: function () {
         this.setData({
-            istrue: false
-        })
+            showAndroidDialog: true
+        });
     }
 });

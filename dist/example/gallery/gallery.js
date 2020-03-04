@@ -1,12 +1,16 @@
 Page({
-    openGallery: function () {
-        this.setData({
-            istrue: true
-        })
+    mixins: [require('../../mixin/themeChanged')],
+    data: {
+        gallery: false,
     },
-    closeGallery: function () {
+    close: function() {
         this.setData({
-            istrue: false
-        })
-    }
+            gallery: false,
+        });
+    },
+    open: function () {
+        this.setData({
+            gallery: true
+        });
+    },
 });

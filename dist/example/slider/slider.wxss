@@ -1,3 +1,6 @@
-slider{
-    margin-bottom: 30px;
-}
+/*!
+ * WeUI v2.3.0 (https://github.com/weui/weui-wxss)
+ * Copyright 2020 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+slider{margin-bottom:30px}

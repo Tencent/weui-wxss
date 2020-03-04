@@ -1,14 +1,16 @@
 {
   "name": "weui-wxss",
-  "version": "2.0.1",
+  "version": "2.3.0",
   "description": "weui-wxss",
   "main": "dist/style/weui.wxss",
-  "miniprogram": "dist",
   "directories": {
     "example": "example"
   },
   "scripts": {
     "start": "gulp",
+    "build": "gulp build",
+    "version": "git add -A .",
+    "postversion": "git push && git push --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

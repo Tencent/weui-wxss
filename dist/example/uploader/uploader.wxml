@@ -1,4 +1,4 @@
-<view class="page">
+<view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
         <view class="page__title">Uploader</view>
         <view class="page__desc">上传组件</view>

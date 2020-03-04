@@ -1,15 +1,15 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var rename = require('gulp-rename');
-var postcss = require('gulp-postcss');
-var cssnano = require('gulp-cssnano');
-var header = require('gulp-header');
-var autoprefixer = require('autoprefixer');
-var pkg = require('./package.json');
+const path = require('path');
+const gulp = require('gulp');
+const less = require('gulp-less');
+const rename = require('gulp-rename');
+const postcss = require('gulp-postcss');
+const cssnano = require('gulp-cssnano');
+const header = require('gulp-header');
+const autoprefixer = require('autoprefixer');
+const pkg = require('./package.json');
 
-gulp.task('watch', function() {
-  gulp.watch('src/**', ['build:style', 'build:example']);
-});
+let watchTimeout = null;
+
 gulp.task('build:style', function() {
   var banner = [
     '/*!',
@@ -20,15 +20,15 @@ gulp.task('build:style', function() {
     ''
   ].join('\n');
   gulp
-    .src(['src/style/**/*.wxss', 'src/example/*.wxss'], { base: 'src' })
+    .src(['src/**/*.less'], { base: 'src' })
     .pipe(less())
     .pipe(postcss([autoprefixer(['iOS >= 8', 'Android >= 4.1'])]))
     .pipe(
       cssnano({
         zindex: false,
         autoprefixer: false,
-        svgo: false,
-        discardComments: { removeAll: true }
+        discardComments: { removeAll: true },
+        svgo: false
       })
     )
     .pipe(header(banner, { pkg: pkg }))
@@ -43,15 +43,21 @@ gulp.task('build:example', function() {
   gulp
     .src(
       [
-        'src/app.js',
-        'src/app.json',
-        'src/app.wxss',
-        'src/example/**',
-        '!src/example/*.wxss'
+        'src/*.!(less)',
+        'src/**/*.!(less)',
       ],
       { base: 'src' }
     )
     .pipe(gulp.dest('dist'));
 });
+gulp.task('build', ['build:style', 'build:example']);
 
-gulp.task('default', ['watch', 'build:style', 'build:example']);
+gulp.task('default', ['build:style', 'build:example'], function() {
+    gulp.watch(path.resolve(__dirname, 'src/**/*')).on('change', function() {
+        clearTimeout(watchTimeout);
+
+        watchTimeout = setTimeout(() => {
+            gulp.run(['build:style', 'build:example']);
+        }, 300);
+    });
+});

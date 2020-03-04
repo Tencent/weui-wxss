@@ -1,22 +1,33 @@
-<view class="page">
-    <view class="page__hd">
-        <view class="page__title">Button</view>
-        <view class="page__desc">按钮，WeUI采用小程序原生的按钮为主体，加入一些间距的样式。</view>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <button class="weui-btn" type="primary">页面主操作</button>
-        <button class="weui-btn" type="primary" disabled="true">页面主操作</button>
-
-        <button class="weui-btn" type="default">页面次要操作</button>
-        <button class="weui-btn" type="default" disabled="true">页面次要操作</button>
-
-        <button class="weui-btn" type="warn">警告类操作</button>
-        <button class="weui-btn" type="warn" disabled="true">警告类操作</button>
-
-        <view class="button-sp-area">
-            <button class="weui-btn mini-btn" type="primary" size="mini">按钮</button>
-            <button class="weui-btn mini-btn" type="default" size="mini">按钮</button>
-            <button class="weui-btn mini-btn" type="warn" size="mini">按钮</button>
-        </view>
-    </view>
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">Button</view>
+		<view class="page__desc">按钮</view>
+	</view>
+	<view class="page__bd">
+		<view class="button-sp-area">
+			<a class="weui-btn weui-btn_primary">页面主操作</a>
+			<a class="weui-btn weui-btn_primary weui-btn_loading"><i class="weui-loading"></i>页面主操作</a>
+			<a class="weui-btn weui-btn_disabled weui-btn_primary">页面主操作</a>
+			<a class="weui-btn weui-btn_default">页面次要操作</a>
+			<a class="weui-btn weui-btn_default weui-btn_loading"><i class="weui-loading"></i>页面次操作</a>
+			<a class="weui-btn weui-btn_disabled weui-btn_default">页面次要操作</a>
+			<a class="weui-btn weui-btn_warn">警告类操作</a>
+			<a class="weui-btn weui-btn_warn weui-btn_loading"><i class="weui-loading"></i>警告类操作</a>
+			<a class="weui-btn weui-btn_disabled weui-btn_warn">警告类操作</a>
+		</view>
+		<view class="button-sp-area cell">
+			<a class="weui-btn_cell weui-btn_cell-default">普通行按钮</a>
+			<a class="weui-btn_cell weui-btn_cell-primary">强调行按钮</a>
+			<a class="weui-btn_cell weui-btn_cell-primary">
+				<image class="weui-btn_cell__icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII="></image>
+强调行按钮
+			</a>
+			<a class="weui-btn_cell weui-btn_cell-warn">警告行按钮</a>
+		</view>
+		<view class="button-sp-area">
+			<a class="weui-btn weui-btn_mini weui-btn_primary">按钮</a>
+			<a class="weui-btn weui-btn_mini weui-btn_default">按钮</a>
+			<a class="weui-btn weui-btn_mini weui-btn_warn">按钮</a>
+		</view>
+	</view>
 </view>
