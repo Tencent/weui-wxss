@@ -1,12 +1,6 @@
-page,
-.page,
-.page__bd{
-    height: 100%;
-}
-.page__bd{
-    padding-bottom: 0;
-}
-.weui-tab__content{
-    padding-top: 60px;
-    text-align: center;
-}
+/*!
+ * WeUI v2.3.0 (https://github.com/weui/weui-wxss)
+ * Copyright 2020 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.page,.page__bd{height:100%}.page__bd{padding-bottom:0}.weui-tab__content{padding-top:60px;text-align:center}

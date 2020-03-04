@@ -1,16 +1,41 @@
 Page({
-    openToast: function () {
-        wx.showToast({
-            title: '已完成',
-            icon: 'success',
-            duration: 3000
-        });
+    mixins: [require('../../mixin/themeChanged')],
+    data: {
+        toast: false,
+        loading: false,
+        hideToast: false,
+        hideLoading: false,
     },
-    openLoading: function () {
-        wx.showToast({
-            title: '数据加载中',
-            icon: 'loading',
-            duration: 3000
+    openToast: function() {
+        this.setData({
+            toast: true
         });
+        setTimeout(() => {
+            this.setData({
+                hideToast: true
+            });
+            setTimeout(() => {
+                this.setData({
+                    toast: false,
+                    hideToast: false,
+                });
+            }, 300);
+        }, 3000);
+    },
+    openLoading: function() {
+        this.setData({
+            loading: true
+        });
+        setTimeout(() => {
+            this.setData({
+                hideLoading: true
+            });
+            setTimeout(() => {
+                this.setData({
+                    loading: false,
+                    hideLoading: false,
+                });
+            }, 300);
+        }, 3000);
     }
 });

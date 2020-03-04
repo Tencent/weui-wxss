@@ -1,0 +1,29 @@
+@import 'vars/light';
+@import 'vars/dark';
+
+.dark(@rule) {
+    [data-weui-theme='dark'] & {
+        @rule();
+    }
+}
+
+.setColor(@var, @color) {
+    .setColor(@var, @color, @color);
+}
+
+.setColor(@var, @light, @dark) {
+    ._setColor({
+        @{var}: @light;
+    }, {
+        @{var}: @dark;
+    });
+}
+._setColor(@lightRule, @darkRule) {
+    page,
+    [data-weui-theme='light'] {
+        @lightRule();
+    }
+    [data-weui-theme='dark'] {
+        @darkRule();
+    }
+}

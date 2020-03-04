@@ -1,0 +1,83 @@
+@import 'style/weui.less';
+
+page {
+    height: 100%;
+}
+.page{
+    min-height: 100%;
+    background-color: var(--weui-BG-0);
+    color: var(--weui-FG-0);
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+image {
+    max-width: 100%;
+    max-height: 100%;
+}
+.link {
+    display: inline;
+    color: var(--weui-LINK);
+}
+.fadeIn {
+    animation: fadeIn 0.3s forwards;
+}
+.fadeOut {
+    animation: fadeOut 0.3s forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.weui-msg__extra-area {
+    position: static;
+}
+.page__hd {
+    padding: 40px;
+}
+.page__bd {
+    padding-bottom: 40px;
+}
+.page__bd_spacing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.page__ft {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-bottom: calc(10px ~"+ constant(safe-area-inset-bottom)");
+    padding-bottom: calc(10px ~"+ env(safe-area-inset-bottom)");
+    text-align: center;
+    image {
+        .dark({
+            filter: invert(100) hue-rotate(180deg);
+        });
+    }
+}
+
+.page__title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page__desc {
+    margin-top: 5px;
+    color: var(--weui-FG-1);
+    text-align: left;
+    font-size: 14px;
+}
+.weui-cell_example:before{
+    left:52px;
+}

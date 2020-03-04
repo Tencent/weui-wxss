@@ -1,9 +1,0 @@
-.weui-demo-dialog{
-  visibility:hidden;
-  opacity:0;
-  transition:all .3s;
-}
-.weui-demo-dialog_show{
-  visibility:visible;
-  opacity:1;
-}
