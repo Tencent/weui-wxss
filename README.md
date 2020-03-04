@@ -8,6 +8,8 @@ WeUI for 小程序 为微信小程序量身设计
 
 [WeUI](https://github.com/weui/weui) 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。包含`button`、`cell`、`dialog`、 `progress`、 `toast`、`article`、`actionsheet`、`icon`等各式元素。
 
+以下内容是纯UI库，如果想使用逻辑封装版本，请看[小程序组件库 - WeUI](https://developers.weixin.qq.com/miniprogram/dev/extended/weui/)
+
 
 ## 预览
 用[微信web开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)打开`dist`目录（请注意，是dist目录，不是整个项目）

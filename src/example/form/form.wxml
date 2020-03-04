@@ -1,0 +1,43 @@
+<view class="page">
+    <view class="weui-form">
+      <view class="weui-form__text-area">
+        <view class="weui-form__title">表单标题</view>
+        <view class="weui-form__desc">表单描述示意</view>
+      </view>
+      <view class="weui-form__control-area">
+        <view class="weui-cells__group weui-cells__group_form">
+            <view class="weui-cells__title">输入框</view>
+            <view class="weui-cells weui-cells_form">
+              <view class="weui-cell">
+                <view class="weui-cell__hd"><label class="weui-label">QQ号</label></view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入QQ号"/>
+                </view>
+              </view>
+            </view>
+        </view>
+      </view>
+      <view class="weui-form__tips-area">
+        <label for="weuiAgree" class="weui-agree">
+          <input id="weuiAgree" type="checkbox" class="weui-agree__checkbox"/><span class="weui-agree__text">阅读并同意<a href="javascript:void(0);">《相关条款》</a>
+          </span>
+        </label>
+      </view>
+      <view class="weui-form__opr-area">
+        <button type="primary">确定</button>
+      </view>
+      <view class="weui-form__tips-area">
+        <view class="weui-form__tips">
+          点击下一步即表示<navigator href="javascript:;">同意用户协议</navigator>
+        </view>
+      </view>
+      <view class="weui-form__extra-area">
+        <view class="weui-footer">
+          <view class="weui-footer__links">
+            <navigator href="javascript:void(0);" class="weui-footer__link">底部链接文本</navigator>
+          </view>
+          <view class="weui-footer__text">Copyright © 2008-2019 weui.io</view>
+        </view>
+      </view>
+    </view>
+</view>

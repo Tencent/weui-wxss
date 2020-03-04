@@ -1,3 +1,9 @@
+#### v 2.0.1 (2019-10-23)
+- 【增强】 增加组件 form 表单页 
+- 【增强】 增加组件 actionsheet 模拟原生actionsheet 
+- 【优化】 优化 slideview 右滑操作UI 
+- 【修复】 修复在[weui-miniprogram](https://github.com/wechat-miniprogram/weui-miniprogram) v0.2下的一些兼容问题 
+
 #### v 2.0.0 (2019-08-01)
 
 - 【同步weui】 颜色规范、字体大小规范、间距规范对齐微信7.0新视觉风格
