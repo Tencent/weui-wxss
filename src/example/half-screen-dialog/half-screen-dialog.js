@@ -1,15 +1,23 @@
 Page({
+    mixins: [require('../../mixin/themeChanged')],
     data: {
-        showDialog: false
+        dialog1: false,
+        dialog2: false
     },
-    openDialog: function () {
+    close: function() {
         this.setData({
-            istrue: true
-        })
+            dialog1: false,
+            dialog2: false
+        });
     },
-    closeDialog: function () {
+    open1() {
         this.setData({
-            istrue: false
-        })
-    }
+            dialog1: true
+        });
+    },
+    open2() {
+        this.setData({
+            dialog2: true
+        });
+    },
 });

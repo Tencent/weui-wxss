@@ -1,8 +1,6 @@
-/* 作为展示用的样式 */
-
-.weui-footer{
-    margin-bottom: 50px;
-}
-.weui-footer_fixed-bottom{
-    margin-bottom: 0;
-}
+/*!
+ * WeUI v2.3.0 (https://github.com/weui/weui-wxss)
+ * Copyright 2020 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.weui-footer{margin-bottom:50px}.weui-footer_fixed-bottom{margin-bottom:0}

@@ -1,9 +1,6 @@
-page{background-color:#EDEDED;}
-.button-sp-area{
-    margin: 0 auto;
-    padding-top: 15px;
-    text-align:center;
-}
-.mini-btn{
-    margin: 0 4px;
-}
+/*!
+ * WeUI v2.3.0 (https://github.com/weui/weui-wxss)
+ * Copyright 2020 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.button-sp-area{padding-top:15px;text-align:center}.weui-btn_mini{margin-right:4px}

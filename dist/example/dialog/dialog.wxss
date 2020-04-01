@@ -1,12 +1,6 @@
-page{
-    background-color: #FFFFFF;
-}
-.weui-demo-dialog{
-  visibility:hidden;
-  opacity:0;
-  transition:opacity .3s;
-}
-.weui-demo-dialog_show{
-  visibility:visible;
-  opacity:1;
-}
+/*!
+ * WeUI v2.3.0 (https://github.com/weui/weui-wxss)
+ * Copyright 2020 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.page{background-color:var(--weui-BG-2)}

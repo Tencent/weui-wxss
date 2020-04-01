@@ -15,6 +15,7 @@ function _next(){
 }
 
 Page({
+    mixins: [require('../../mixin/themeChanged')],
     data: {
         progress: 0,
         disabled: false

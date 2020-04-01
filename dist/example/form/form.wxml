@@ -1,43 +1,16 @@
-<view class="page">
-    <view class="weui-form">
-      <view class="weui-form__text-area">
-        <view class="weui-form__title">表单标题</view>
-        <view class="weui-form__desc">表单描述示意</view>
-      </view>
-      <view class="weui-form__control-area">
-        <view class="weui-cells__group weui-cells__group_form">
-            <view class="weui-cells__title">输入框</view>
-            <view class="weui-cells weui-cells_form">
-              <view class="weui-cell">
-                <view class="weui-cell__hd"><label class="weui-label">QQ号</label></view>
-                <view class="weui-cell__bd">
-                    <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入QQ号"/>
-                </view>
-              </view>
-            </view>
-        </view>
-      </view>
-      <view class="weui-form__tips-area">
-        <label for="weuiAgree" class="weui-agree">
-          <input id="weuiAgree" type="checkbox" class="weui-agree__checkbox"/><span class="weui-agree__text">阅读并同意<a href="javascript:void(0);">《相关条款》</a>
-          </span>
-        </label>
-      </view>
-      <view class="weui-form__opr-area">
-        <button type="primary">确定</button>
-      </view>
-      <view class="weui-form__tips-area">
-        <view class="weui-form__tips">
-          点击下一步即表示<navigator href="javascript:;">同意用户协议</navigator>
-        </view>
-      </view>
-      <view class="weui-form__extra-area">
-        <view class="weui-footer">
-          <view class="weui-footer__links">
-            <navigator href="javascript:void(0);" class="weui-footer__link">底部链接文本</navigator>
-          </view>
-          <view class="weui-footer__text">Copyright © 2008-2019 weui.io</view>
-        </view>
-      </view>
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+        <view class="page__title">Form</view>
+        <view class="page__desc">表单页</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <a bindtap="open" data-url="form_page" class="weui-btn weui-btn_default">表单结构</a>
+        <a bindtap="open" data-url="form_input_status" class="weui-btn weui-btn_default">输入框状态</a>
+        <a bindtap="open" data-url="form_vcode" class="weui-btn weui-btn_default">验证码</a>
+        <a bindtap="open" data-url="form_checkbox" class="weui-btn weui-btn_default">复选框</a>
+        <a bindtap="open" data-url="form_radio" class="weui-btn weui-btn_default">单选框</a>
+        <a bindtap="open" data-url="form_switch" class="weui-btn weui-btn_default">开关</a>
+        <a bindtap="open" data-url="form_select" class="weui-btn weui-btn_default">选择框</a>
+        <a bindtap="open" data-url="form_textarea" class="weui-btn weui-btn_default">文本域</a>
     </view>
 </view>

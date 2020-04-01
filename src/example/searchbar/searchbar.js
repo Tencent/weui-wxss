@@ -1,4 +1,5 @@
 Page({
+    mixins: [require('../../mixin/themeChanged')],
     data: {
         inputShowed: false,
         inputVal: ""

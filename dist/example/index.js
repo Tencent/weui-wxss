@@ -1,14 +1,15 @@
 Page({
+    mixins: [require('../mixin/themeChanged')],
     data: {
         list: [
             {
                 id: 'form',
                 name: '表单',
                 open: false,
-                pages: ['button', 'list', 'slideview', 'input', 'form', 'slider', 'uploader']
+                pages: ['button', 'input', 'form', 'list', 'slideview', 'slider', 'uploader']
             },
             {
-                id: 'widget',
+                id: 'layout',
                 name: '基础组件',
                 open: false,
                 pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loading', 'loadmore', 'panel', 'preview', 'progress']
@@ -17,7 +18,7 @@ Page({
                 id: 'feedback',
                 name: '操作反馈',
                 open: false,
-                pages: ['actionsheet', 'dialog', 'half-screen-dialog', 'msg', 'picker', 'toast']
+                pages: ['actionsheet', 'dialog', 'half-screen-dialog', 'msg', 'picker', 'toast', 'top-tips']
             },
             {
                 id: 'nav',
@@ -45,5 +46,9 @@ Page({
         this.setData({
             list: list
         });
+    },
+    changeTheme: function() {
+        console.log(this.data);
+        getApp().themeChanged(this.data.theme === 'light' ? 'dark' : 'light');
     }
 });

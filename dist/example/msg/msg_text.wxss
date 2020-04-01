@@ -1,4 +1,6 @@
-page{
-    background-color: #FFFFFF;
-}
-page,.page{height:100%;}
+/*!
+ * WeUI v2.3.0 (https://github.com/weui/weui-wxss)
+ * Copyright 2020 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.page{height:100%;background-color:var(--weui-BG-2)}

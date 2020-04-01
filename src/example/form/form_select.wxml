@@ -1,0 +1,43 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="weui-form">
+		<view class="weui-form__text-area">
+			<h2 class="weui-form__title">原生选择框</h2>
+		</view>
+		<view class="weui-form__control-area">
+			<view class="weui-cells__group weui-cells__group_form">
+				<view class="weui-cells">
+					<view class="weui-cell weui-cell_active weui-cell_select">
+						<view class="weui-cell__bd">
+                            <picker bindchange="bindPicker1Change" range="{{array1}}">
+                                <view class="weui-select">{{array1[value1]}}</view>
+                            </picker>
+						</view>
+					</view>
+					<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-before">
+						<view class="weui-cell__hd">
+                            <picker bindchange="bindPicker2Change" range="{{array2}}">
+                                <view class="weui-select" style="width: 3em">{{array2[value2]}}</view>
+                            </picker>
+						</view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" type="number" placeholder="请输入号码" value="12345678907"></input>
+						</view>
+					</view>
+					<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after">
+						<view class="weui-cell__hd">
+							<label class="weui-label" style="width: 3em">国家</label>
+						</view>
+						<view class="weui-cell__bd">
+                            <picker bindchange="bindPicker3Change" range="{{array3}}">
+                                <view class="weui-select">{{array3[value3]}}</view>
+                            </picker>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="weui-form__opr-area">
+			<a class="weui-btn weui-btn_primary">确定</a>
+		</view>
+	</view>
+</view>

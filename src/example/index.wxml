@@ -1,4 +1,4 @@
-<view class="page">
+<view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
         <view class="page__title">WeUI</view>
         <view class="page__desc">WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。</view>
@@ -25,7 +25,7 @@
             </block>
         </view>
     </view>
-    <view class="page__ft">
+    <view class="page__ft" bindtap="changeTheme">
         <image src="images/icon_footer.png" style="width: 84px; height: 19px;"></image>
     </view>
 </view>

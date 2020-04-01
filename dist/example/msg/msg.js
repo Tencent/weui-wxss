@@ -1,4 +1,5 @@
 Page({
+    mixins: [require('../../mixin/themeChanged')],
     openSuccess: function () {
         wx.navigateTo({
             url: 'msg_success'
@@ -16,7 +17,7 @@ Page({
     },
     openFail: function () {
         wx.navigateTo({
-            url: 'msg_fail'
+            url: 'msg_warn'
         })
     }
 });
