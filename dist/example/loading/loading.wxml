@@ -6,6 +6,12 @@
     <view class="page__bd">
       <view class="weui-loading__wrp">
           <view class="weui-loading"></view>
+          <view class="weui-primary-loading">
+            <view class="weui-primary-loading__dot"></view>
+          </view>
+          <view class="weui-primary-loading weui-primary-loading_brand">
+            <view class="weui-primary-loading__dot"></view>
+          </view>
       </view>
       <view class="weui-loading__wrp">
           <view class="loading wx_dot_loading"></view>

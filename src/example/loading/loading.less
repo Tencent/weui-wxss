@@ -2,7 +2,13 @@
     background-color: var(--weui-BG-2);
 }
 .weui-loading__wrp{
-  padding:16px;text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  .weui-loading,.weui-primary-loading{
+    margin:0 10px;
+  }
 }
 .weui-loading__wrp:last-child{
   background-color:rgba(0,0,0,.1);

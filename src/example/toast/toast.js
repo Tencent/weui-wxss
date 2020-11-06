@@ -2,9 +2,13 @@ Page({
     mixins: [require('../../mixin/themeChanged')],
     data: {
         toast: false,
+        warnToast: false,
+        textToast: false,
         loading: false,
         hideToast: false,
-        hideLoading: false,
+        hideWarnToast: false,
+        hideTextToast: false,
+        hideLoading: false
     },
     openToast: function() {
         this.setData({
@@ -18,6 +22,38 @@ Page({
                 this.setData({
                     toast: false,
                     hideToast: false,
+                });
+            }, 300);
+        }, 3000);
+    },
+    openWarnToast: function() {
+        this.setData({
+            warnToast: true
+        });
+        setTimeout(() => {
+            this.setData({
+                hidewarnToast: true
+            });
+            setTimeout(() => {
+                this.setData({
+                    warnToast: false,
+                    hidewarnToast: false,
+                });
+            }, 300);
+        }, 3000);
+    },
+    openTextToast: function() {
+        this.setData({
+            textToast: true
+        });
+        setTimeout(() => {
+            this.setData({
+                hideTextToast: true
+            });
+            setTimeout(() => {
+                this.setData({
+                    textToast: false,
+                    hideTextToast: false,
                 });
             }, 300);
         }, 3000);

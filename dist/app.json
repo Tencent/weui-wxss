@@ -1,7 +1,6 @@
 {
   "pages": [
     "example/index",
-
     "example/button/button",
     "example/input/input",
     "example/form/form",
@@ -17,7 +16,6 @@
     "example/slideview/slideview",
     "example/slider/slider",
     "example/uploader/uploader",
-
     "example/article/article",
     "example/badge/badge",
     "example/flex/flex",
@@ -30,7 +28,6 @@
     "example/panel/panel",
     "example/preview/preview",
     "example/progress/progress",
-
     "example/actionsheet/actionsheet",
     "example/half-screen-dialog/half-screen-dialog",
     "example/dialog/dialog",
@@ -42,10 +39,8 @@
     "example/picker/picker",
     "example/toast/toast",
     "example/top-tips/top-tips",
-
     "example/navigation-bar/navigation-bar",
     "example/tabbar/tabbar",
-
     "example/searchbar/searchbar"
   ],
   "window": {
@@ -61,5 +56,6 @@
     "downloadFile": 10000
   },
   "style": "v2",
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }
