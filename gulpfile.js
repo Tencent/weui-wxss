@@ -7,6 +7,7 @@ const cssnano = require('gulp-cssnano');
 const header = require('gulp-header');
 const autoprefixer = require('autoprefixer');
 const pkg = require('./package.json');
+var exec = require('child_process').exec;
 
 let watchTimeout = null;
 
@@ -60,4 +61,9 @@ gulp.task('default', ['build:style', 'build:example'], function() {
             gulp.run(['build:style', 'build:example']);
         }, 300);
     });
+});
+
+gulp.task('tag', function() {
+    const tag = `v${pkg.version}`;
+    exec(`git tag ${tag}`);
 });
