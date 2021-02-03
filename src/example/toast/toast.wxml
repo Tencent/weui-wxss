@@ -6,6 +6,7 @@
 	<view class="page__bd page__bd_spacing">
         <a class="weui-btn weui-btn_default" bindtap="openToast">成功提示</a>
         <a class="weui-btn weui-btn_default" bindtap="openWarnToast">失败提示</a>
+        <a class="weui-btn weui-btn_default" bindtap="openTextMoreToast">长文案提示</a>
         <a class="weui-btn weui-btn_default" bindtap="openLoading">加载中提示</a>
         <a class="weui-btn weui-btn_default" bindtap="openTextToast">文字提示</a>
 	</view>
@@ -15,6 +16,14 @@
 		<view class="weui-toast">
 			<i class="weui-icon-success-no-circle weui-icon_toast"></i>
 			<view class="weui-toast__content">已完成</view>
+		</view>
+	</view>
+
+	<view class="fadeIn {{hideTextMoreToast ? 'fadeOut' : ''}}" wx:if="{{textMoreToast}}">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast weui-toast_text-more">
+			<i class="weui-icon-warn weui-icon_toast"></i>
+			<view class="weui-toast__content">长文案详情，长文案详情</view>
 		</view>
 	</view>
 

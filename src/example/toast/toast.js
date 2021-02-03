@@ -3,10 +3,12 @@ Page({
     data: {
         toast: false,
         warnToast: false,
+        textMoreToast: false,
         textToast: false,
         loading: false,
         hideToast: false,
         hideWarnToast: false,
+        hideTextMoreToast: false,
         hideTextToast: false,
         hideLoading: false
     },
@@ -38,6 +40,22 @@ Page({
                 this.setData({
                     warnToast: false,
                     hidewarnToast: false,
+                });
+            }, 300);
+        }, 3000);
+    },
+    openTextMoreToast: function() {
+        this.setData({
+            textMoreToast: true
+        });
+        setTimeout(() => {
+            this.setData({
+                hideTextMoreToast: true
+            });
+            setTimeout(() => {
+                this.setData({
+                    textMoreToast: false,
+                    hideTextMoreToast: false,
                 });
             }, 300);
         }, 3000);

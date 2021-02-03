@@ -9,41 +9,41 @@
 			<view class="weui-cell weui-cell_active weui-cell_access">
 				<view class="weui-cell__bd">单行列表</view>
 				<view class="weui-cell__ft" style="font-size: 0;">
-					<text style="vertical-align: middle; font-size: 17px;">详细信息</text>
-					<text class="weui-badge weui-badge_dot" style="margin-left: 5px; margin-right: 5px;"></text>
+					<text class="demo_badge_tips">详细信息</text>
+					<text class="weui-badge weui-badge_dot"></text>
 				</view>
 			</view>
 		</view>
 		<view class="weui-cells__title">未读数红点跟在主题信息后，统一在列表左侧</view>
-		<view class="weui-cells">
+		<view class="weui-cells demo_badge_cells">
 			<view class="weui-cell weui-cell_active">
-				<view class="weui-cell__hd" style="position: relative; margin-right: 10px;">
-					<image src="../images/pic_160.png" style="width: 50px; display: block;"></image>
-					<text class="weui-badge" style="position: absolute; top: -0.4em; right: -0.4em;">8</text>
+				<view class="weui-cell__hd">
+					<image src="../images/pic_160.png"></image>
+					<text class="weui-badge">8</text>
 				</view>
 				<view class="weui-cell__bd">
 					<view>联系人名称</view>
-					<view style="font-size: 13px; color: #888;">摘要信息</view>
+					<view class="demo_badge_desc">摘要信息</view>
 				</view>
 			</view>
 			<view class="weui-cell weui-cell_active weui-cell_access">
 				<view class="weui-cell__bd">
-					<text style="vertical-align: middle;">单行列表</text>
-					<text class="weui-badge" style="margin-left: 5px;">8</text>
+					<text class="demo_badge_title">单行列表</text>
+					<text class="weui-badge">8</text>
 				</view>
 				<view class="weui-cell__ft"></view>
 			</view>
 			<view class="weui-cell weui-cell_active weui-cell_access">
 				<view class="weui-cell__bd">
-					<text style="vertical-align: middle;">单行列表</text>
-					<text class="weui-badge" style="margin-left: 5px;">8</text>
+					<text class="demo_badge_title">单行列表</text>
+					<text class="weui-badge">8</text>
 				</view>
 				<view class="weui-cell__ft">详细信息</view>
 			</view>
 			<view class="weui-cell weui-cell_active weui-cell_access">
 				<view class="weui-cell__bd">
-					<text style="vertical-align: middle;">单行列表</text>
-					<text class="weui-badge" style="margin-left: 5px;">New</text>
+					<text class="demo_badge_title">单行列表</text>
+					<text class="weui-badge">New</text>
 				</view>
 				<view class="weui-cell__ft"></view>
 			</view>

@@ -1,0 +1,21 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="weui-form">
+		<view class="weui-form__text-area">
+			<h2 class="weui-form__title">跳转列表项</h2>
+		</view>
+		<view class="weui-form__control-area">
+			<view class="weui-cells__group weui-cells__group_form">
+				<view class="weui-cells">
+					<a class="weui-cell weui-cell_access">
+						<view class="weui-cell__bd"><view>cell standard</view></view>
+						<view class="weui-cell__ft"></view>
+					</a>
+					<a class="weui-cell weui-cell_access">
+						<view class="weui-cell__bd"><view>cell standard</view></view>
+						<view class="weui-cell__ft"></view>
+					</a>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

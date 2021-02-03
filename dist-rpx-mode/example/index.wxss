@@ -1,0 +1,6 @@
+/*!
+ * WeUI v2.4.3 (https://github.com/weui/weui-wxss)
+ * Copyright 2021 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.weui-flex{-webkit-box-align:center;-webkit-align-items:center;align-items:center}.weui-cells{margin-top:0;opacity:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:.3s;transition:.3s}.weui-cells:after,.weui-cells:before{display:none}.weui-cells_show{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}.weui-cell:before{right:30rpx}.kind-list__item{margin:20rpx 0;background-color:var(--weui-BG-2);border-radius:4rpx;overflow:hidden}.kind-list__item:first-child{margin-top:0}.kind-list__img{width:60rpx;height:60rpx}[data-weui-theme=dark] .kind-list__img{-webkit-filter:invert(100) hue-rotate(180deg);filter:invert(100) hue-rotate(180deg)}.kind-list__item-hd{padding:40rpx;-webkit-transition:opacity .3s;transition:opacity .3s}.kind-list__item-hd_show{opacity:.4}.kind-list__item-bd{height:0;overflow:hidden}.kind-list__item-bd_show{height:auto}

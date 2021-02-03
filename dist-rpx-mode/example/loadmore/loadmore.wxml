@@ -1,0 +1,20 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">Loadmore</view>
+		<view class="page__desc">加载更多</view>
+	</view>
+	<view class="page__bd">
+		<view class="weui-loadmore">
+			<text class="weui-primary-loading">
+				<i class="weui-primary-loading__dot"></i>
+			</text>
+			<text class="weui-loadmore__tips">正在加载</text>
+		</view>
+		<view class="weui-loadmore weui-loadmore_line">
+			<text class="weui-loadmore__tips">暂无数据</text>
+		</view>
+		<view class="weui-loadmore weui-loadmore_line weui-loadmore_dot">
+			<text class="weui-loadmore__tips"></text>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,23 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+        <view class="page__title">Gallery</view>
+        <view class="page__desc">画廊，模拟小程序原生的wx.previewImage。</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-btn-area">
+            <a class="weui-btn weui-btn_default" bindtap="open">Gallery</a>
+        </view>
+    </view>
+
+    <view wx:if="{{gallery}}" class="weui-gallery fadeIn" bindtap="close">
+        <view class="weui-gallery__info">1/17</view>
+        <view class="weui-gallery__img__wrp">
+            <image mode="aspectFit" class="weui-gallery__img" src="../images/pic_article.png"></image>
+        </view>
+        <view class="weui-gallery__opr">
+            <view class="weui-gallery__del">
+                <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+            </view>
+        </view>
+    </view>
+</view>

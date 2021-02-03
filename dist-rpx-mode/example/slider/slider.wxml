@@ -1,0 +1,24 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">Slider</view>
+		<view class="page__desc">滑块</view>
+	</view>
+	<view class="page__bd page__bd_spacing">
+		<view class="weui-slider">
+			<view class="weui-slider__inner">
+				<view style="width: 0;" class="weui-slider__track"></view>
+				<view style="left: 0;" class="weui-slider__handler"></view>
+			</view>
+		</view>
+		
+		<view class="weui-slider-box">
+			<view class="weui-slider">
+				<view class="weui-slider__inner">
+					<view style="width: 50%;" class="weui-slider__track"></view>
+					<view style="left: 50%;" class="weui-slider__handler"></view>
+				</view>
+			</view>
+			<view class="weui-slider-box__value">50</view>
+		</view>
+	</view>
+</view>

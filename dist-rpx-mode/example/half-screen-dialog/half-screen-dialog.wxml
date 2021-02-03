@@ -1,0 +1,56 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">Half-screen Dialog</view>
+		<view class="page__desc">半屏组件</view>
+	</view>
+	<view class="page__bd page__bd_spacing">
+		<a class="weui-btn weui-btn_default" bindtap="open1">样式一</a>
+		<a class="weui-btn weui-btn_default" bindtap="open2">样式二</a>
+	</view>
+    
+    <view class="fadeIn" wx:if="{{dialog1}}">
+        <view class="weui-mask" bindtap="close"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <a class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></a>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">标题</strong>
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
+                可放自定义内容
+            </view>
+        </view>
+    </view>
+    <view class="fadeIn" wx:if="{{dialog2}}">
+        <view class="weui-mask" bindtap="close"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <a class="weui-icon-btn">返回<i class="weui-icon-back-arrow-thin"></i></a>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">标题</strong>
+                    <view class="weui-half-screen-dialog__subtitle">标题</view>
+                </view>
+                <view class="weui-half-screen-dialog__hd__side">
+                    <a class="weui-icon-btn">更多<i class="weui-icon-more"></i></a>
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd">
+                <view class="weui-half-screen-dialog__desc">
+                    辅助描述内容，可根据实际需要安排
+                </view>
+                <view class="weui-half-screen-dialog__tips">
+                    辅助提示内容，可根据实际需要安排
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__ft">
+                <a class="weui-btn weui-btn_default" bindtap="close">辅助操作</a>
+                <a class="weui-btn weui-btn_primary" bindtap="close">主操作</a>
+            </view>
+        </view>
+    </view>
+</view>
