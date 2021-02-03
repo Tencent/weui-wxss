@@ -7,7 +7,9 @@
 * feat: 表单状态新增当前位置报错场景
 * feat: 表单组件新增跳转列表项
 * feat: 新增链接点击态色值变量
-* feat: 更新License年份 & 提供rpx版本
+* feat: 更新License年份
+* feat: 提供rpx版本，rpx版本样式库目录为`weui-wxss/dist-rpx-mode`
+
 
 #### Bugfixes
 * fix: 修复Input组件placeholde字体颜色
