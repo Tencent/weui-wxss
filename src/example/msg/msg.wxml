@@ -9,6 +9,9 @@
             <a class="weui-btn weui-btn_default" bindtap="openFail">失败提示页</a>
             <a class="weui-btn weui-btn_default" bindtap="openText">无图标提示页</a>
             <a class="weui-btn weui-btn_default" bindtap="openTextPrimary">无图标提示页</a>
+            <a class="weui-btn weui-btn_default" bindtap="openCustomAreaPreview">key-value列表场景</a>
+            <a class="weui-btn weui-btn_default" bindtap="openCustomAreaTips">提示列表场景</a>
+            <a class="weui-btn weui-btn_default" bindtap="openCustomAreaCell">跳转列表场景</a>
         </view>
     </view>
 </view>

@@ -1,0 +1,37 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">Progress</view>
+		<view class="page__desc">进度条</view>
+	</view>
+	<view class="page__bd page__bd_spacing">
+		<view class="weui-progress">
+			<view class="weui-progress__bar">
+				<view class="weui-progress__inner-bar js_progress" style="width: 0%;"></view>
+			</view>
+			<a class="weui-progress__opr">
+				<i class="weui-icon-cancel"></i>
+			</a>
+		</view>
+		
+		<view class="weui-progress">
+			<view class="weui-progress__bar">
+				<view class="weui-progress__inner-bar js_progress" style="width: 50%;"></view>
+			</view>
+			<a class="weui-progress__opr">
+				<i class="weui-icon-cancel"></i>
+			</a>
+		</view>
+		
+		<view class="weui-progress">
+			<view class="weui-progress__bar">
+				<view class="weui-progress__inner-bar js_progress" style="width: 80%;"></view>
+			</view>
+			<a class="weui-progress__opr">
+				<i class="weui-icon-cancel"></i>
+			</a>
+		</view>
+		<view class="weui-btn-area">
+			<a class="weui-btn weui-btn_primary">上传</a>
+		</view>
+	</view>
+</view>

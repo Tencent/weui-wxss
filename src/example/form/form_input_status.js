@@ -4,6 +4,15 @@ Page({
         value: '',
         showClearBtn: false,
         isWaring: false,
+
+        currentValue: '',
+        isCurrentWaring: false,
+    },
+    onCurrentInput(evt) {
+        const { currentValue } = evt.detail;
+        this.setData({
+            isCurrentWaring: true,
+        });
     },
     onInput(evt) {
         const { value } = evt.detail;

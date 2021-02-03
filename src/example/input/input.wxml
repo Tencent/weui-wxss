@@ -56,7 +56,7 @@
                     <view class="weui-label">qq</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入qq"/>
+                    <input class="weui-input" placeholder-class="weui-input__placeholder"  placeholder="请输入qq"/>
                 </view>
             </view>
             <view class="weui-cell weui-cell_vcode">
@@ -64,7 +64,7 @@
                     <view class="weui-label">手机号</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入手机号" />
+                    <input class="weui-input" placeholder-class="weui-input__placeholder" placeholder="请输入手机号" />
                 </view>
                 <view class="weui-cell__ft">
                     <view class="weui-vcode-btn">获取验证码</view>
@@ -95,10 +95,10 @@
                     <view class="weui-label">验证码</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入验证码" />
+                    <input class="weui-input" placeholder-class="weui-input__placeholder" placeholder="请输入验证码" />
                 </view>
                 <view class="weui-cell__ft">
-                    <image class="weui-vcode-img" src="../images/vcode.jpg" style="width: 108px"></image>
+                    <image class="weui-vcode-img" src="../images/vcode.jpg"></image>
                 </view>
             </view>
         </view>
@@ -111,10 +111,10 @@
                     <view class="weui-label">卡号</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入卡号"/>
+                    <input class="weui-input" placeholder-class="weui-input__placeholder" placeholder="请输入卡号"/>
                 </view>
                 <view class="weui-cell__ft">
-                    <icon type="warn" size="23" color="#E64340"></icon>
+                    <icon type="warn" size="46rpx" color="#E64340"></icon>
                 </view>
             </view>
         </view>
@@ -142,7 +142,7 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入文本" />
+                    <input class="weui-input" placeholder-class="weui-input__placeholder" placeholder="请输入文本" />
                 </view>
             </view>
         </view>
@@ -151,7 +151,7 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__bd">
-                    <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em" />
+                    <textarea class="weui-textarea" placeholder-class="weui-input__placeholder" placeholder="请输入文本" style="height: 3.3em" />
                     <view class="weui-textarea-counter">0/200</view>
                 </view>
             </view>
@@ -166,7 +166,7 @@
                     </picker>
                 </view>
                 <view class="weui-cell__bd weui-cell__bd_in-select-before">
-                    <input class="weui-input" placeholder="请输入号码" />
+                    <input class="weui-input" placeholder-class="weui-input__placeholder" placeholder="请输入号码" />
                 </view>
             </view>
         </view>

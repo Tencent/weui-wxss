@@ -1,0 +1,20 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="weui-msg">
+		<view class="weui-msg__icon-area"><i class="weui-icon-success weui-icon_msg"></i></view>
+		<view class="weui-msg__text-area">
+			<h2 class="weui-msg__title">操作成功</h2>
+			<view class="weui-msg__desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现<a>文字链接</a></view>
+			<view class="weui-msg__custom-area">
+				<view class="weui-form-preview__list">
+					<view class="weui-form-preview__item"><label class="weui-form-preview__label">姓名</label><view class="weui-form-preview__value">张三</view></view>
+					<view class="weui-form-preview__item"><label class="weui-form-preview__label">微信号</label><view class="weui-form-preview__value">zhangsan</view></view>
+				</view>
+			</view>
+		</view>
+		<view class="weui-msg__opr-area">
+			<view class="weui-btn-area">
+				<a href="javascript:history.back();" class="weui-btn weui-btn_primary">推荐操作</a>
+			</view>
+		</view>
+	</view>
+</view>

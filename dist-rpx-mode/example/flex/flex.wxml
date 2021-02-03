@@ -1,0 +1,31 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">Flex</view>
+		<view class="page__desc">Flex布局</view>
+	</view>
+	<view class="page__bd page__bd_spacing">
+		<view class="weui-flex">
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+		</view>
+		<view class="weui-flex">
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+		</view>
+		<view class="weui-flex">
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+		</view>
+		<view class="weui-flex">
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+		</view>
+		<view class="weui-flex">
+			<view><view class="placeholder">weui</view></view>
+			<view class="weui-flex__item"><view class="placeholder">weui</view></view>
+			<view><view class="placeholder">weui</view></view>
+		</view>
+	</view>
+</view>

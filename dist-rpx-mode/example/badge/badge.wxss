@@ -1,0 +1,6 @@
+/*!
+ * WeUI v2.4.3 (https://github.com/weui/weui-wxss)
+ * Copyright 2021 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+image{height:100rpx}.demo_badge_cells .weui-cell__hd{position:relative;margin-right:20rpx}.demo_badge_cells .weui-cell__hd image{width:100rpx;display:block}.demo_badge_cells .weui-cell__hd .weui-badge{position:absolute;top:-.4em;right:-.4em}.demo_badge_cells .weui-cell__bd .demo_badge_title{vertical-align:middle}.demo_badge_cells .weui-cell__bd .demo_badge_title+.weui-badge{margin-left:10rpx}.demo_badge_cells .weui-cell__bd .demo_badge_desc{font-size:26rpx;color:#888}

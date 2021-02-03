@@ -1,0 +1,57 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+        <view class="page__title">Dialog</view>
+        <view class="page__desc">对话框</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <a class="weui-btn weui-btn_default" bindtap="openIOS1">iOS Dialog样式一</a>
+        <a class="weui-btn weui-btn_default" bindtap="openIOS2">iOS Dialog样式二</a>
+        <a class="weui-btn weui-btn_default" bindtap="openAndroid1">Android Dialog样式一</a>
+        <a class="weui-btn weui-btn_default" bindtap="openAndroid2">Android Dialog样式二</a>
+    </view>
+    <view class="fadeIn" wx:if="{{iosDialog1}}">
+        <view class="weui-mask"></view>
+        <view class="weui-dialog">
+            <view class="weui-dialog__hd"><strong class="weui-dialog__title">弹窗标题</strong></view>
+            <view class="weui-dialog__bd">弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</view>
+            <view class="weui-dialog__ft">
+                <a class="weui-dialog__btn weui-dialog__btn_default" bindtap="close">辅助操作</a>
+                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="close">主操作</a>
+            </view>
+        </view>
+    </view>
+    <view class="fadeIn" wx:if="{{iosDialog2}}">
+        <view class="weui-mask"></view>
+        <view class="weui-dialog">
+            <view class="weui-dialog__bd">弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</view>
+            <view class="weui-dialog__ft">
+                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="close">知道了</a>
+            </view>
+        </view>
+    </view>
+    <view class="fadeIn" wx:if="{{androidDialog1}}">
+        <view class="weui-mask"></view>
+        <view class="weui-dialog weui-skin_android">
+            <view class="weui-dialog__hd"><strong class="weui-dialog__title">弹窗标题</strong></view>
+            <view class="weui-dialog__bd">
+                弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内
+            </view>
+            <view class="weui-dialog__ft">
+                <a class="weui-dialog__btn weui-dialog__btn_default" bindtap="close">辅助操作</a>
+                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="close">主操作</a>
+            </view>
+        </view>
+    </view>
+    <view class="fadeIn" wx:if="{{androidDialog2}}">
+        <view class="weui-mask"></view>
+        <view class="weui-dialog weui-skin_android">
+            <view class="weui-dialog__bd">
+                弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内
+            </view>
+            <view class="weui-dialog__ft">
+                <a class="weui-dialog__btn weui-dialog__btn_default" bindtap="close">辅助操作</a>
+                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="close">主操作</a>
+            </view>
+        </view>
+    </view>
+</view>
