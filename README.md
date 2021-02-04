@@ -16,7 +16,8 @@ WeUI for 小程序 为微信小程序量身设计
 - 样式文件可直接引用`dist/style/weui.wxss`，或者单独引用`dist/style/widget`下的组件的`wxss`
 - 组件的wxml结构请看`dist/example/`下的组件
 
-- **另提供rpx版本**，文件在`dist-rpx-mode`目录下
+### rpx版本 
+默认版本使用的是`px`。这里也提供`rpx`版本，文件在[`dist-rpx-mode`](https://github.com/Tencent/weui-wxss/tree/master/dist-rpx-mode)目录下。
 
 
 ## WeUI 黑暗模式
