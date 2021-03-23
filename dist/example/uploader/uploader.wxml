@@ -5,7 +5,7 @@
     </view>
     <view class="page__bd">
         <view class="weui-cells">
-            <view class="weui-cell">
+            <view class="weui-cell weui-cell_uploader">
                 <view class="weui-cell__bd">
                     <view class="weui-uploader">
                         <view class="weui-uploader__hd">
