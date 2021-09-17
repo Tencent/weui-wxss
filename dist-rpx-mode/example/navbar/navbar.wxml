@@ -1,19 +1,21 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="page__bd" style="height: 100%;">
 		<view class="weui-tab">
 			<view class="weui-navbar">
-				<view class="weui-navbar__item weui-bar__item_on">
+				<view aria-selected="true" aria-controls="panel1" id="tab1" class="weui-navbar__item weui-bar__item_on" aria-role="tab">
 选项一
 				</view>
-				<view class="weui-navbar__item">
+				<view aria-selected="true" aria-controls="panel2" id="tab2" class="weui-navbar__item" aria-role="tab">
 选项二
 				</view>
-				<view class="weui-navbar__item">
+				<view aria-selected="true" aria-controls="panel3" id="tab3" class="weui-navbar__item" aria-role="tab">
 选项三
 				</view>
 			</view>
-			<view class="weui-tab__panel">
-			</view>
+			<view id="panel1" aria-labelledby="tab1" class="weui-tab__panel" aria-role="tabpanel">Sit sit quibusdam assumenda facilis magnam temporibus? Molestiae qui ad accusantium minus mollitia Esse maiores voluptates suscipit fugit veritatis numquam repellat omnis. Dolores facilis deleniti reiciendis ea beatae Quaerat soluta</view>
+			<view style="display:none" id="panel2" aria-labelledby="tab2" class="weui-tab__panel" aria-role="tabpanel">Consectetur neque facere modi recusandae tempore. Sit repellendus qui voluptatibus voluptas porro perspiciatis. Incidunt iusto soluta esse ipsum ex. Consectetur blanditiis dolor facere dignissimos minus quam libero? Nemo voluptas aperiam?</view>
+			<view style="display:none" id="panel3" aria-labelledby="tab3" class="weui-tab__panel" aria-role="tabpanel">Dolor magnam expedita ex beatae maiores assumenda Doloribus et totam numquam officiis beatae Sint eos saepe magnam error aut Doloremque necessitatibus eligendi quod fuga debitis. Error ad optio repellendus amet.</view>
 		</view>
 	</view>
 </view>

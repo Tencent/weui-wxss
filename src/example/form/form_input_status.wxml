@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="weui-form">
 		<view class="weui-form__text-area">
@@ -9,17 +10,17 @@
 				<view class="weui-cells__title">表单报错：置顶tipsbar报错信息</view>
 				<view class="weui-cells weui-cells_form">
 					<view class="weui-cell weui-cell_active {{isWaring ? 'weui-cell_warn' : ''}}">
-						<view class="weui-cell__hd"><label class="weui-label">卡号</label></view>
+						<view class="weui-cell__hd"><view class="weui-label">卡号</view></view>
 						<view class="weui-cell__bd weui-flex">
-							<input 
-                                class="weui-input" 
-                                type="text" 
-                                placeholder="请输入16位数卡号" 
+							<input
+                                class="weui-input"
+                                type="password"
+                                placeholder="请输入16位数卡号"
                                 placeholder-class="weui-input__placeholder"
                                 value="{{value}}"
                                 bindinput="onInput"
                             />
-							<view wx:if="{{showClearBtn}}" class="weui-btn_reset weui-btn_icon weui-btn_input-clear" bindtap="onClear">
+							<view wx:if="{{showClearBtn}}" aria-role="button" class="weui-btn_reset weui-btn_icon weui-btn_input-clear" bindtap="onClear">
 								<i class="weui-icon-clear"></i>
 							</view>
 						</view>
@@ -27,10 +28,10 @@
 					<view class="weui-cell weui-cell_active">
 						<view class="weui-cell__hd"><label class="weui-label">持卡人</label></view>
 						<view class="weui-cell__bd weui-flex">
-							<input 
-                                class="weui-input" 
-                                type="text" 
-                                placeholder="请输入持卡人姓名" 
+							<input
+                                class="weui-input"
+                                type="text"
+                                placeholder="请输入持卡人姓名"
                                 placeholder-class="weui-input__placeholder"
                             />
 						</view>
@@ -43,10 +44,10 @@
 					<view class="weui-cell weui-cell_active ">
 						<view class="weui-cell__hd"><label class="weui-label">金额</label></view>
 						<view class="weui-cell__bd weui-flex">
-							<input 
-                                class="weui-input" 
-                                type="text" 
-                                placeholder="请输入金额" 
+							<input
+                                class="weui-input"
+                                type="text"
+                                placeholder="请输入金额"
                                 placeholder-class="weui-input__placeholder"
                                 value="{{currentValue}}"
                                 bindinput="onCurrentInput"
@@ -60,7 +61,7 @@
 				<view class="weui-cells__title">表单置灰</view>
 				<view class="weui-cells weui-cells_form">
 					<view class="weui-cell weui-cell_active weui-cell_disabled">
-						<view class="weui-cell__hd">							
+						<view class="weui-cell__hd">
                             <label class="weui-label">微信号</label>
                         </view>
 						<view class="weui-cell__bd">
@@ -71,8 +72,8 @@
 			</view>
 		</view>
 		<view class="weui-form__opr-area">
-			<a class="weui-btn weui-btn_primary" bindtap="onConfirm">确定</a>
+			<view aria-role="button" class="weui-btn weui-btn_primary" bindtap="onConfirm">确定</view>
 		</view>
 	</view>
-  <view class="weui-toptips weui-toptips_warn {{isWaring ? 'show_toptips' : ''}}">错误提示</view>
+  <view aria-role="alert" class="weui-toptips weui-toptips_warn {{isWaring ? 'show_toptips' : ''}}">错误提示</view>
 </view>

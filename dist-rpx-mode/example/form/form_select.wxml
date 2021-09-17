@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="weui-form">
 		<view class="weui-form__text-area">
@@ -8,14 +9,14 @@
 				<view class="weui-cells">
 					<view class="weui-cell weui-cell_active weui-cell_select">
 						<view class="weui-cell__bd">
-                            <picker bindchange="bindPicker1Change" range="{{array1}}">
+                            <picker aria-role="combobox" bindchange="bindPicker1Change" range="{{array1}}">
                                 <view class="weui-select">{{array1[value1]}}</view>
                             </picker>
 						</view>
 					</view>
 					<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-before">
 						<view class="weui-cell__hd">
-                            <picker bindchange="bindPicker2Change" range="{{array2}}">
+                            <picker aria-role="combobox" bindchange="bindPicker2Change" range="{{array2}}">
                                 <view class="weui-select" style="width: 3em">{{array2[value2]}}</view>
                             </picker>
 						</view>
@@ -28,7 +29,7 @@
 							<label class="weui-label" style="width: 3em">国家</label>
 						</view>
 						<view class="weui-cell__bd">
-                            <picker bindchange="bindPicker3Change" range="{{array3}}">
+                            <picker aria-role="combobox" bindchange="bindPicker3Change" range="{{array3}}">
                                 <view class="weui-select">{{array3[value3]}}</view>
                             </picker>
 						</view>
@@ -37,7 +38,7 @@
 			</view>
 		</view>
 		<view class="weui-form__opr-area">
-			<a class="weui-btn weui-btn_primary">确定</a>
+			<view class="weui-btn weui-btn_primary" aria-role="button">确定</view>
 		</view>
 	</view>
 </view>

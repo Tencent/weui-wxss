@@ -1,6 +1,6 @@
 {
   "name": "weui-wxss",
-  "version": "2.4.4",
+  "version": "2.5.0",
   "description": "weui-wxss",
   "main": "dist/style/weui.wxss",
   "directories": {
@@ -24,12 +24,13 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.5.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.2",
     "gulp-header": "^1.8.8",
     "gulp-less": "^3.1.0",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-replace": "^1.0.0"
+    "gulp-replace": "^1.0.0",
+    "miniprogram-elder-transform": "0.0.2"
   }
 }

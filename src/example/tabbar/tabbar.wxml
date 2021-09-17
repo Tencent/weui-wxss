@@ -1,30 +1,33 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="page__bd" style="height: 100%;">
 		<view class="weui-tab">
-			<view class="weui-tab__panel">
-			</view>
-			<view class="weui-tabbar">
-				<view class="weui-tabbar__item weui-bar__item_on">
-					<view style="display: inline-block; position: relative;">
+			<view id="panel1" aria-labelledby="tab1" class="weui-tab__panel" aria-role="tabpanel">Lorem repellat eius consectetur ab pariatur! Facere cum dignissimos sequi error perferendis quis Ipsa reiciendis earum cumque reprehenderit tenetur ab vero modi. Soluta tempore minima tempora quae voluptate! Sunt delectus?</view>
+			<view id="panel2" aria-labelledby="tab2" class="weui-tab__panel" style="display:none" aria-role="tabpanel">Dolor eum rerum magnam voluptatem omnis fuga, dolore libero quibusdam cupiditate Sequi vero rem corrupti hic veritatis Atque exercitationem odit odit ducimus esse, sapiente laborum inventore! Ipsum harum quo minus</view>
+			<view id="panel3" aria-labelledby="tab3" class="weui-tab__panel" style="display:none" aria-role="tabpanel">Elit deserunt dolore nemo harum neque libero numquam, minima nam Atque nesciunt iusto aperiam eligendi praesentium ratione? Quasi iste odio itaque doloribus hic? Est aliquam recusandae dolore ratione quos. Saepe</view>
+			<view id="panel4" aria-labelledby="tab4" class="weui-tab__panel" style="display:none" aria-role="tabpanel">Amet dignissimos doloribus voluptate maxime dolorem quia Deleniti eligendi similique nisi corrupti eius aut Unde nesciunt quos quos sapiente dolorem? Odit soluta repudiandae accusantium ducimus totam accusamus. Rem ad numquam</view>
+			<view aria-label="选项卡标题" class="weui-tabbar" aria-role="tablist">
+				<view id="tab1" aria-labelledby="t1_title" aria-describedby="t1_tips" aria-selected="true" aria-controls="panel1" class="weui-tabbar__item weui-bar__item_on" aria-role="tab">
+					<view id="t1_tips" aria-hidden="true" style="display: inline-block; position: relative;">
 						<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
 						<text class="weui-badge" style="position: absolute; top: -2px; right: -13px;">8</text>
 					</view>
-					<view class="weui-tabbar__label">微信</view>
+					<view id="t1_title" aria-hidden="true" class="weui-tabbar__label">微信</view>
 				</view>
-				<view class="weui-tabbar__item">
+				<view id="tab2" aria-labelledby="t2_title" aria-selected="false" aria-controls="panel2" class="weui-tabbar__item" aria-role="tab">
 					<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
-					<view class="weui-tabbar__label">通讯录</view>
+					<view aria-hidden="true" id="t2_title" class="weui-tabbar__label">通讯录</view>
 				</view>
-				<view class="weui-tabbar__item">
-					<view style="display: inline-block; position: relative;">
+				<view id="tab3" aria-labelledby="t3_title" aria-describedby="t3_tips" aria-selected="false" aria-controls="panel3" class="weui-tabbar__item" aria-role="tab">
+					<view id="t3_tips" aria-hidden="true" style="display: inline-block; position: relative;">
 						<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
-						<text class="weui-badge weui-badge_dot" style="position: absolute; top: 0; right: -6px;"></text>
+						<text class="weui-badge weui-badge_dot" alt="new" style="position: absolute; top: 0; right: -6px;" aria-role="img"></text>
 					</view>
-					<view class="weui-tabbar__label">发现</view>
+					<view id="t3_title" aria-hidden="true" class="weui-tabbar__label">发现</view>
 				</view>
-				<view class="weui-tabbar__item">
+				<view id="tab4" aria-labelledby="t4_title" aria-selected="false" aria-controls="panel4" class="weui-tabbar__item" aria-role="tab">
 					<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
-					<view class="weui-tabbar__label">我</view>
+					<view class="weui-tabbar__label" aria-hidden="true" id="t4_title">我</view>
 				</view>
 			</view>
 		</view>

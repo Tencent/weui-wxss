@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
         <view class="page__title">Gallery</view>
@@ -5,17 +6,16 @@
     </view>
     <view class="page__bd">
         <view class="weui-btn-area">
-            <a class="weui-btn weui-btn_default" bindtap="open">Gallery</a>
+            <view aria-role="button" class="weui-btn weui-btn_default" bindtap="open">Gallery</view>
         </view>
     </view>
-
-    <view wx:if="{{gallery}}" class="weui-gallery fadeIn" bindtap="close">
+    <view wx:if="{{gallery}}" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close">
         <view class="weui-gallery__info">1/17</view>
         <view class="weui-gallery__img__wrp">
             <image mode="aspectFit" class="weui-gallery__img" src="../images/pic_article.png"></image>
         </view>
         <view class="weui-gallery__opr">
-            <view class="weui-gallery__del">
+            <view aria-role="button" aria-label="删除" class="weui-gallery__del">
                 <i class="weui-icon-delete weui-icon_gallery-delete"></i>
             </view>
         </view>

@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="page__hd">
 		<view class="page__title">TopTips</view>
@@ -7,5 +8,5 @@
 		<a class="weui-btn weui-btn_default" bindtap="open">显示提示条</a>
 		<a class="weui-btn weui-btn_default" bindtap="close">隐藏提示条</a>
 	</view>
-	<view wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn fadeIn {{hide ? 'fadeOut' : ''}}">错误提示</view>
+	<view aria-role="alert" wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn fadeIn {{hide ? 'fadeOut' : ''}}">错误提示</view>
 </view>

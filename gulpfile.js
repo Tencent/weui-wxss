@@ -21,8 +21,9 @@ const banner = [
 
 let watchTimeout = null;
 
-gulp.task('build:style', function() {
-    gulp
+function buildStyle() {
+    console.log('buildStyle');
+    return gulp
     .src(['src/**/*.less'], { base: 'src' })
     .pipe(less())
     .pipe(postcss([autoprefixer(['iOS >= 8', 'Android >= 4.1'])]))
@@ -50,9 +51,9 @@ gulp.task('build:style', function() {
         })
     )
     .pipe(gulp.dest('dist-rpx-mode'));
-});
-gulp.task('build:example', function() {
-    gulp
+}
+function buildExample() {
+    return gulp
     .src(
         [
             'src/*.!(less)',
@@ -62,20 +63,47 @@ gulp.task('build:example', function() {
     )
     .pipe(gulp.dest('dist-rpx-mode'))
     .pipe(gulp.dest('dist'));
-});
-gulp.task('build', ['build:style', 'build:example']);
+}
+function buildExampleStyle() {
+    return gulp
+    .src(
+        [
+            'dist/example/**/*.wxss',
+            'dist/app.wxss',
+        ],
+        { base: 'src' }
+    )
+    .pipe(
+        replace(/font-size\s*:\s*([\d\.]+)px/g, function(w, m) {
+            // 小程序采用rem方式从客户端拿的默认字号，客户端默认是17px
+            return `font-size:${m / 17}rem`
+        })
+    )
+    .pipe(gulp.dest('dist'));
+}
 
-gulp.task('default', ['build:style', 'build:example'], function() {
-    gulp.watch(path.resolve(__dirname, 'src/**/*')).on('change', function() {
+gulp.task('build:style', buildStyle);
+gulp.task('build:example', gulp.parallel(buildExample, buildExampleStyle));
+gulp.task('build', gulp.series('build:style', 'build:example'));
+
+gulp.task('default', gulp.parallel('build', function() {
+    return gulp.watch(path.resolve(__dirname, 'src/**/*')).on('change', function(path) {
         clearTimeout(watchTimeout);
 
+        console.log('wxss change');
         watchTimeout = setTimeout(() => {
-            gulp.run(['build:style', 'build:example']);
+            buildStyle().on('end', function() {
+                console.log('buildStyle End');
+                buildExample().on('end', function() { console.log('buildExample End'); });
+                buildExampleStyle().on('end', function() { console.log('buildExampleStyle End'); });
+            });
         }, 300);
     });
-});
+}));
 
 gulp.task('tag', function() {
-    const tag = `v${pkg.version}`;
-    exec(`git tag ${tag}`);
+    return new Promise(resolve => {
+        const tag = `v${pkg.version}`;
+        exec(`git tag ${tag}`).then(resolve);
+    });
 });

@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="page__hd">
 		<view class="page__title">Footer</view>
@@ -11,7 +12,7 @@
 		
 		<view class="weui-footer">
 			<view class="weui-footer__links">
-				<a class="weui-footer__link">底部链接</a>
+				<navigator class="weui-footer__link weui-wa-hotarea" url="javascript:">底部链接</navigator>
 			</view>
 			<view class="weui-footer__text">Copyright &copy; 2008-2016 weui.io</view>
 		</view>
@@ -19,14 +20,14 @@
 		
 		<view class="weui-footer">
 			<view class="weui-footer__links">
-				<a class="weui-footer__link">底部链接</a>
-				<a class="weui-footer__link">底部链接</a>
+				<navigator class="weui-footer__link weui-wa-hotarea" url="javascript:">底部链接</navigator>
+				<navigator class="weui-footer__link weui-wa-hotarea" url="javascript:">底部链接</navigator>
 			</view>
 			<view class="weui-footer__text">Copyright &copy; 2008-2016 weui.io</view>
 		</view>
 		<view class="weui-footer weui-footer_fixed-bottom">
 			<view class="weui-footer__links">
-				<a href="javascript:home();" class="weui-footer__link">WeUI首页</a>
+				<navigator class="weui-footer__link weui-wa-hotarea" url="javascript:home();">WeUI首页</navigator>
 			</view>
 			<view class="weui-footer__text">Copyright &copy; 2008-2016 weui.io</view>
 		</view>
