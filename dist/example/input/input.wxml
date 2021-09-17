@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
         <view class="page__title">Input</view>
@@ -22,7 +23,7 @@
                     </view>
                 </label>
             </radio-group>
-            <view class="weui-cell weui-cell_link">
+            <view class="weui-cell weui-cell_link" aria-role="button">
                 <view class="weui-cell__bd">添加更多</view>
             </view>
         </view>
@@ -44,7 +45,7 @@
                     </view>
                 </label>
             </checkbox-group>
-            <view class="weui-cell weui-cell_link">
+            <view class="weui-cell weui-cell_link" aria-role="button">
                 <view class="weui-cell__bd">添加更多</view>
             </view>
         </view>
@@ -67,25 +68,25 @@
                     <input class="weui-input" placeholder-class="weui-input__placeholder" placeholder="请输入手机号" />
                 </view>
                 <view class="weui-cell__ft">
-                    <view class="weui-vcode-btn">获取验证码</view>
+                    <view class="weui-vcode-btn" aria-role="button">获取验证码</view>
                 </view>
             </view>
             <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__hd">
-                    <view class="weui-label">日期</view>
+                    <view class="weui-label" id="js_date" aria-hidden="true">日期</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                    <picker mode="date" aria-role="combobox" aria-labelledby="js_date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
                         <view class="weui-input">{{date}}</view>
                     </picker>
                 </view>
             </view>
             <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__hd">
-                    <view class="weui-label">时间</view>
+                    <view class="weui-label" aria-hidden="true" id="js_time">时间</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+                    <picker aria-role="combobox" aria-labelledby="js_time" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
                         <view class="weui-input">{{time}}</view>
                     </picker>
                 </view>
@@ -121,21 +122,21 @@
 
         <view class="weui-cells__title">开关</view>
         <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell weui-cell_switch">
-                <view class="weui-cell__bd">原生开关</view>
+            <label class="weui-cell weui-cell_switch">
+                <view class="weui-cell__bd" id="js_switch">原生开关</view>
                 <view class="weui-cell__ft">
                     <switch checked />
                 </view>
-            </view>
-            <view class="weui-cell weui-cell_switch">
+            </label>
+            <label class="weui-cell weui-cell_switch">
                 <view class="weui-cell__bd">模拟开关</view>
                 <view class="weui-cell__ft">
-                    <label class="weui-switch-cp">
+                    <view class="weui-switch-cp">
                         <checkbox class="weui-switch-cp__input" checked="true" />
                         <view class="weui-switch-cp__box"></view>
-                    </label>
+                    </view>
                 </view>
-            </view>
+            </label>
         </view>
 
         <view class="weui-cells__title">文本框</view>
@@ -152,7 +153,7 @@
             <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__bd">
                     <textarea class="weui-textarea" placeholder-class="weui-input__placeholder" placeholder="请输入文本" style="height: 3.3em" />
-                    <view class="weui-textarea-counter">0/200</view>
+                    <view aria-role="option" title="字数统计" class="weui-textarea-counter">0/200</view>
                 </view>
             </view>
         </view>
@@ -161,7 +162,7 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_select weui-cell_select-before">
                 <view class="weui-cell__hd">
-                    <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                    <picker aria-role="combobox" bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
                         <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
                     </picker>
                 </view>
@@ -175,29 +176,28 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_active weui-cell_select">
                 <view class="weui-cell__bd">
-                    <picker bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}">
+                    <picker aria-role="combobox" bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}">
                         <view class="weui-select">{{accounts[accountIndex]}}</view>
                     </picker>
                 </view>
             </view>
-            <view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after">
+            <label for="js_area" class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after">
                 <view class="weui-cell__hd">
                     <view class="weui-label">国家/地区</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+                    <picker aria-role="combobox" id="js_area" bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
                         <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
                     </picker>
                 </view>
-            </view>
+            </label>
         </view>
 
 
-        <label class="weui-agree">
-            <checkbox class="weui-agree__checkbox-check" />
-
-            <span class="weui-agree__checkbox"></span>
-            <span class="weui-agree__text">阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator></span>
+        <label class="weui-agree" aria-role="">
+            <checkbox class="weui-agree__checkbox-check" aria-labelledby="js_agree_txt js_agree_link"/>
+            <i class="weui-agree__checkbox"></i>
+            <span class="weui-agree__text"><text aria-hidden="true" id="js_agree_txt">阅读并同意</text><navigator id="js_agree_link" url="/example/index" class="weui-agree__link">《相关条款》</navigator></span>
         </label>
 
         <view class="weui-btn-area">

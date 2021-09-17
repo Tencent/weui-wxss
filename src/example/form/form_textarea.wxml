@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="weui-form">
 		<view class="weui-form__text-area">
@@ -11,14 +12,14 @@
             <view class="weui-cell">
                 <view class="weui-cell__bd">
                     <textarea class="weui-textarea" placeholder="请描述你所发生的问题" placeholder-class="weui-input__placeholder" rows="3"></textarea>
-                    <view class="weui-textarea-counter"><span>0</span>/200</view>
+                    <view aria-role="option" class="weui-textarea-counter"><span>0</span>/200</view>
                 </view>
             </view>
         </view>
       </view>
 		</view>
 		<view class="weui-form__opr-area">
-			<a class="weui-btn weui-btn_primary">确定</a>
+			<view class="weui-btn weui-btn_primary" aria-role="button">确定</view>
 		</view>
 	</view>
 </view>

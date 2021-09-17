@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
         <view class="page__title">slideview</view>
@@ -7,7 +8,7 @@
         <view class="weui-cells__title">右滑 文字按钮</view>
         <view class="weui-cells weui-cells_after-title btn_slideview_demo">
           <view class="weui-slideview">
-            <view class="weui-slideview__left">
+            <view aria-role="option" class="weui-slideview__left">
                 <view class="weui-cell">
                     <view class="weui-cell__bd">标题文字</view>
                     <view class="weui-cell__ft">说明文字</view>
@@ -15,13 +16,13 @@
             </view>
             <view class="weui-slideview__right">
               <view class="weui-slideview__buttons">
-                <view class="weui-slideview__btn__wrp weui-slideview__btn-group_default slideview_btn_1">
+                <view aria-role="button" class="weui-slideview__btn__wrp weui-slideview__btn-group_default slideview_btn_1">
                   <view class="weui-slideview__btn">普通</view>
                 </view>
-                <view class="weui-slideview__btn__wrp weui-slideview__btn-group_default slideview_btn_2">
+                <view aria-role="button" class="weui-slideview__btn__wrp weui-slideview__btn-group_default slideview_btn_2">
                   <view class="weui-slideview__btn">普通</view>
                 </view>
-                <view class="weui-slideview__btn__wrp weui-slideview__btn-group_warn slideview_btn_3">
+                <view aria-role="button" class="weui-slideview__btn__wrp weui-slideview__btn-group_warn slideview_btn_3">
                   <view class="weui-slideview__btn">警示</view>
                 </view>
               </view>
@@ -33,7 +34,7 @@
         <view class="weui-cells__title">右滑 图标按钮</view>
         <view class="weui-slidecells">
           <view class="weui-slideview weui-slideview_icon icon_slideview_demo">
-            <view class="weui-slideview__left">
+            <view aria-role="option" class="weui-slideview__left">
                 <view class="weui-slidecell">
                   <view class="weui-slidecell__tips">
                     提示文字
@@ -42,19 +43,19 @@
             </view>
             <view class="weui-slideview__right">
               <view class="weui-slideview__buttons">
-                <view class="weui-slideview__btn__wrp slideview_btn_1">
+                <view aria-role="button" class="weui-slideview__btn__wrp slideview_btn_1">
                   <view class="weui-slideview__btn">
-                    <image class="weui-slideview__btn__icon" src="../images/icon_love.svg"></image>
+                    <image aria-label="喜欢" class="weui-slideview__btn__icon" src="../images/icon_love.svg"></image>
                   </view>
                 </view>
-                <view class="weui-slideview__btn__wrp  slideview_btn_2">
+                <view aria-role="button" class="weui-slideview__btn__wrp  slideview_btn_2">
                   <view class="weui-slideview__btn">
-                    <image class="weui-slideview__btn__icon" src="../images/icon_star.svg"></image>
+                    <image aria-label="星标" class="weui-slideview__btn__icon" src="../images/icon_star.svg"></image>
                   </view>
                 </view>
-                <view class="weui-slideview__btn__wrp  slideview_btn_3">
+                <view aria-role="button" class="weui-slideview__btn__wrp  slideview_btn_3">
                   <view class="weui-slideview__btn">
-                    <image class="weui-slideview__btn__icon" src="../images/icon_del.svg"></image>
+                    <image aria-label="删除" class="weui-slideview__btn__icon" src="../images/icon_del.svg"></image>
                   </view>
                 </view>
               </view>

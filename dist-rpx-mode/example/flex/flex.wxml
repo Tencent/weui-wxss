@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="page__hd">
 		<view class="page__title">Flex</view>

@@ -1,0 +1,69 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">Half-screen Dialog</view>
+		<view class="page__desc">半屏组件</view>
+	</view>
+	<view class="page__bd page__bd_spacing">
+		<navigator class="weui-btn weui-btn_default" id="btn1" aria-role="button" url="javascript:">样式一</navigator>
+		<navigator class="weui-btn weui-btn_default" id="btn2" aria-role="button" url="javascript:">样式二</navigator>
+	</view>
+	<view id="dialogs">
+		<!--BEGIN dialog1-->
+		<view aria-modal="false" aria-labelledby="title1" tabindex="0" class="js_dialog" id="dialog1" style="display: none;" aria-role="dialog">
+			<view id="close1" class="weui-mask" aria-role="option"></view>
+			<view id="dialog_1" class="weui-half-screen-dialog">
+				<view class="weui-half-screen-dialog__hd">
+					<view class="weui-half-screen-dialog__hd__side">
+						<button class="js_close weui-icon-btn">关闭<text class="weui-icon-close-thin"></text></button>
+					</view>
+					<view class="weui-half-screen-dialog__hd__main">
+						<text id="title1" class="weui-half-screen-dialog__title">标题</text>
+					</view>
+				</view>
+				<view class="weui-half-screen-dialog__bd">
+					
+					
+可放自定义内容
+					
+					
+					
+					
+				</view>
+			</view>
+		</view>
+		<!--END dialog1-->
+		<!--BEGIN dialog2-->
+		<view aria-modal="false" aria-labelledby="title2" tabindex="0" class="js_dialog" id="dialog2" style="display: none;" aria-role="dialog">
+			<view id="close2" class="weui-mask" aria-role="option"></view>
+			<view id="dialog_2" class="weui-half-screen-dialog">
+				<view class="weui-half-screen-dialog__hd">
+					<view class="weui-half-screen-dialog__hd__side">
+						<button style="display: none;" class="weui-icon-btn">返回<text class="weui-icon-back-arrow-thin"></text></button>
+						<button class="js_close weui-icon-btn">关闭<text class="weui-icon-close-thin"></text></button>
+					</view>
+					<view class="weui-half-screen-dialog__hd__main">
+						<text class="weui-half-screen-dialog__title" id="title2">标题</text>
+						<text class="weui-half-screen-dialog__subtitle">标题</text>
+					</view>
+					<view class="weui-half-screen-dialog__hd__side">
+						<button class="weui-icon-btn">更多<text class="weui-icon-more"></text></button>
+					</view>
+				</view>
+				<view class="weui-half-screen-dialog__bd">
+					<view class="weui-half-screen-dialog__desc">
+辅助描述内容，可根据实际需要安排
+					</view>
+					<view class="weui-half-screen-dialog__tips">
+辅助提示内容，可根据实际需要安排
+					</view>
+				</view>
+				<view class="weui-half-screen-dialog__ft">
+					<navigator class="weui-btn weui-btn_default" aria-role="button" url="javascript:">辅助操作</navigator>
+					<navigator class="weui-btn weui-btn_primary" aria-role="button" url="javascript:">主操作</navigator>
+				</view>
+			</view>
+		</view>
+		<!--END dialog2-->
+	</view>
+</view>

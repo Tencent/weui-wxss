@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="weui-form">
 		<view class="weui-form__text-area">
@@ -15,7 +16,7 @@
 						</view>
 					</view>
 					<view class="weui-cell weui-cell_active">
-						<view class="weui-cell__hd">							
+						<view class="weui-cell__hd">
                             <label class="weui-label">昵称</label>
                         </view>
 						<view class="weui-cell__bd">
@@ -23,7 +24,7 @@
 						</view>
 					</view>
 					<view class="weui-cell weui-cell_active">
-						<view class="weui-cell__hd">							
+						<view class="weui-cell__hd">
                             <label class="weui-label">联系电话</label>
                         </view>
 						<view class="weui-cell__bd">
@@ -39,7 +40,7 @@
 			</view>
 		</view>
 		<view class="weui-form__opr-area">
-			<a class="weui-btn weui-btn_primary">确定</a>
+			<a aria-role="button" class="weui-btn weui-btn_primary">确定</a>
 		</view>
 		<view class="weui-form__tips-area">
 			<view class="weui-form__tips">
@@ -49,7 +50,7 @@
 		<view class="weui-form__extra-area">
 			<view class="weui-footer">
 				<view class="weui-footer__links">
-					<a href="javascript:" class="weui-footer__link">底部链接文本</a>
+					<navigator url="javascript:" class="weui-footer__link">底部链接文本</navigator>
 				</view>
 				<view class="weui-footer__text">Copyright © 2008-2019 weui.io</view>
 			</view>

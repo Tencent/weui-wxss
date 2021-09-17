@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="page__hd">
 		<view class="page__title">Toast</view>
@@ -11,7 +12,7 @@
         <a class="weui-btn weui-btn_default" bindtap="openTextToast">文字提示</a>
 	</view>
 
-	<view class="fadeIn {{hideToast ? 'fadeOut' : ''}}" wx:if="{{toast}}">
+	<view aria-role="alert" class="fadeIn {{hideToast ? 'fadeOut' : ''}}" wx:if="{{toast}}">
 		<view class="weui-mask_transparent"></view>
 		<view class="weui-toast">
 			<i class="weui-icon-success-no-circle weui-icon_toast"></i>
@@ -19,7 +20,7 @@
 		</view>
 	</view>
 
-	<view class="fadeIn {{hideTextMoreToast ? 'fadeOut' : ''}}" wx:if="{{textMoreToast}}">
+	<view aria-role="alert" class="fadeIn {{hideTextMoreToast ? 'fadeOut' : ''}}" wx:if="{{textMoreToast}}">
 		<view class="weui-mask_transparent"></view>
 		<view class="weui-toast weui-toast_text-more">
 			<i class="weui-icon-warn weui-icon_toast"></i>
@@ -27,7 +28,7 @@
 		</view>
 	</view>
 
-	<view class="fadeIn {{hideWarnToast ? 'fadeOut' : ''}}" wx:if="{{warnToast}}">
+	<view aria-role="alert" class="fadeIn {{hideWarnToast ? 'fadeOut' : ''}}" wx:if="{{warnToast}}">
 		<view class="weui-mask_transparent"></view>
 		<view class="weui-toast">
 			<i class="weui-icon-warn weui-icon_toast"></i>
@@ -35,7 +36,7 @@
 		</view>
 	</view>
 
-	<view class="fadeIn {{hideLoading ? 'fadeOut' : ''}}" wx:if="{{loading}}">
+	<view aria-role="alert" class="fadeIn {{hideLoading ? 'fadeOut' : ''}}" wx:if="{{loading}}">
 		<view class="weui-mask_transparent"></view>
 		<view class="weui-toast">
 			<view class="weui-primary-loading weui-primary-loading_transparent weui-icon_toast">
@@ -45,7 +46,7 @@
 		</view>
 	</view>
 
-	<view class="fadeIn {{hideTextToast ? 'fadeOut' : ''}}" wx:if="{{textToast}}">
+	<view aria-role="alert" class="fadeIn {{hideTextToast ? 'fadeOut' : ''}}" wx:if="{{textToast}}">
 		<view class="weui-mask_transparent"></view>
 		<view class="weui-toast weui-toast_text">
 			<view class="weui-toast__content">文字提示</view>

@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="page__hd">
 		<view class="page__title">Badge</view>
@@ -6,46 +7,47 @@
 	<view class="page__bd">
 		<view class="weui-cells__title">新消息提示跟摘要信息后，统一在列表右侧</view>
 		<view class="weui-cells">
-			<view class="weui-cell weui-cell_active weui-cell_access">
-				<view class="weui-cell__bd">单行列表</view>
-				<view class="weui-cell__ft" style="font-size: 0;">
-					<text class="demo_badge_tips">详细信息</text>
-					<text class="weui-badge weui-badge_dot"></text>
+			<view aria-labelledby="js_cell_l1_bd js_cell_l1_tips" aria-describedby="js_cell_l1_note" class="weui-cell weui-cell_active weui-cell_access" aria-role="link">
+				<view aria-hidden="true" class="weui-cell__bd" id="js_cell_l1_bd">单行列表</view>
+				<view aria-hidden="true" class="weui-cell__ft" id="js_cell_l1_bd" style="font-size: 0;">
+					<text class="demo_badge_tips" id="js_cell_l1_tips">详细信息</text>
+					<text id="js_cell_l1_note" aria-label="，有更新" class="weui-badge weui-badge_dot"></text>
 				</view>
 			</view>
 		</view>
 		<view class="weui-cells__title">未读数红点跟在主题信息后，统一在列表左侧</view>
 		<view class="weui-cells demo_badge_cells">
-			<view class="weui-cell weui-cell_active">
-				<view class="weui-cell__hd">
-					<image src="../images/pic_160.png"></image>
-					<text class="weui-badge">8</text>
+			<view aria-labelledby="b1_txt1" aria-describedby="b1_n1" class="weui-cell weui-cell_active" aria-role="option">
+				<view class="weui-cell__hd" aria-hidden="true">
+					<image src="../images/pic_160.png" alt></image>
+					<text id="b1_n1" class="weui-badge" aria-label="，8个新通知">8</text>
 				</view>
-				<view class="weui-cell__bd">
-					<view>联系人名称</view>
+				<view class="weui-cell__bd" aria-hidden="true" id="b1_txt1">
+					<text>联系人名称</text>
 					<view class="demo_badge_desc">摘要信息</view>
 				</view>
 			</view>
-			<view class="weui-cell weui-cell_active weui-cell_access">
-				<view class="weui-cell__bd">
-					<text class="demo_badge_title">单行列表</text>
-					<text class="weui-badge">8</text>
-				</view>
-				<view class="weui-cell__ft"></view>
+			<view aria-labelledby="b2_n1" aria-describedby="b2_txt2" class="weui-cell weui-cell_active weui-cell_access" aria-role="link">
+				<text class="weui-cell__bd" aria-hidden="true">
+					<text class="demo_badge_title" id="b2_n1">单行列表</text>
+					<text class="weui-badge" id="b2_txt2" aria-label="，8个新通知">8</text>
+				</text>
+				<text class="weui-cell__ft" aria-hidden="true"></text>
 			</view>
-			<view class="weui-cell weui-cell_active weui-cell_access">
-				<view class="weui-cell__bd">
-					<text class="demo_badge_title">单行列表</text>
-					<text class="weui-badge">8</text>
-				</view>
-				<view class="weui-cell__ft">详细信息</view>
+			<view aria-labelledby="b3_n1 b3_n2" aria-describedby="b3_txt1 b3_txt1_note" class="weui-cell weui-cell_active weui-cell_access" aria-role="link">
+				<text class="weui-cell__bd" aria-hidden="true">
+					<text class="demo_badge_title" id="b3_n1">单行列表</text>
+					<text class="weui-badge" id="b3_txt1" aria-label>8</text>
+					<text id="b3_txt1_note" class="weui-hidden_abs">个新通知，</text>
+				</text>
+				<text class="weui-cell__ft" aria-hidden="true" id="b3_n2">详细信息</text>
 			</view>
-			<view class="weui-cell weui-cell_active weui-cell_access">
-				<view class="weui-cell__bd">
-					<text class="demo_badge_title">单行列表</text>
-					<text class="weui-badge">New</text>
-				</view>
-				<view class="weui-cell__ft"></view>
+			<view aria-labelledby="js_a11y_nt js_a11y_comma js_a11y_nb" class="weui-cell weui-cell_active weui-cell_access" aria-role="link">
+				<text class="weui-cell__bd" aria-hidden="true">
+					<text id="js_a11y_nt" class="demo_badge_title">单行列表</text>
+					<text id="js_a11y_nb" class="weui-badge">New</text>
+				</text>
+				<text class="weui-cell__ft" aria-hidden="true"></text>
 			</view>
 		</view>
 	</view>

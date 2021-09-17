@@ -1,6 +1,6 @@
 /*!
- * WeUI v2.4.4 (https://github.com/weui/weui-wxss)
+ * WeUI v2.5.0 (https://github.com/weui/weui-wxss)
  * Copyright 2021 Tencent, Inc.
  * Licensed under the MIT license
  */
-image{height:50px}.demo_badge_cells .weui-cell__hd{position:relative;margin-right:10px}.demo_badge_cells .weui-cell__hd image{width:50px;display:block}.demo_badge_cells .weui-cell__hd .weui-badge{position:absolute;top:-.4em;right:-.4em}.demo_badge_cells .weui-cell__bd .demo_badge_title{vertical-align:middle}.demo_badge_cells .weui-cell__bd .demo_badge_title+.weui-badge{margin-left:5px}.demo_badge_cells .weui-cell__bd .demo_badge_desc{font-size:13px;color:#888}
+image{height:50px}.weui-cells .demo_badge_tips{font-size:1rem;vertical-align:middle}.weui-cells .demo_badge_tips+.weui-badge{margin-left:5px;margin-right:5px}.demo_badge_cells .weui-cell__hd{position:relative;margin-right:10px}.demo_badge_cells .weui-cell__hd image{width:50px;display:block}.demo_badge_cells .weui-cell__hd .weui-badge{position:absolute;top:-.4em;right:-.4em}.demo_badge_cells .weui-cell__bd .demo_badge_title{vertical-align:middle}.demo_badge_cells .weui-cell__bd .demo_badge_title+.weui-badge{margin-left:5px}.demo_badge_cells .weui-cell__bd .demo_badge_desc{font-size:0.7647058823529411rem;color:#888}

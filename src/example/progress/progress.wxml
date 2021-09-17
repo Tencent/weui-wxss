@@ -1,3 +1,4 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
 	<view class="page__hd">
 		<view class="page__title">Progress</view>
@@ -8,30 +9,33 @@
 			<view class="weui-progress__bar">
 				<view class="weui-progress__inner-bar js_progress" style="width: 0%;"></view>
 			</view>
-			<a class="weui-progress__opr">
-				<i class="weui-icon-cancel"></i>
-			</a>
+			<navigator class="weui-wa-hotarea weui-progress__opr" aria-role="button" url="javascript:">
+				<text aria-label="取消" class="weui-icon-cancel" aria-role="img"></text>
+			</navigator>
+			<text id="js_current" class="weui-hidden_abs" aria-role="alert">0%</text>
 		</view>
 		
 		<view class="weui-progress">
 			<view class="weui-progress__bar">
 				<view class="weui-progress__inner-bar js_progress" style="width: 50%;"></view>
 			</view>
-			<a class="weui-progress__opr">
-				<i class="weui-icon-cancel"></i>
-			</a>
+			<navigator class="weui-wa-hotarea weui-progress__opr" aria-role="button" url="javascript:">
+				<text aria-label="取消" class="weui-icon-cancel" aria-role="img"></text>
+			</navigator>
+			<text id="js_current" class="weui-hidden_abs" aria-role="alert">50%</text>
 		</view>
 		
 		<view class="weui-progress">
 			<view class="weui-progress__bar">
 				<view class="weui-progress__inner-bar js_progress" style="width: 80%;"></view>
 			</view>
-			<a class="weui-progress__opr">
-				<i class="weui-icon-cancel"></i>
-			</a>
+			<navigator class="weui-progress__opr" aria-role="button" url="javascript:">
+				<text aria-label="取消" class="weui-icon-cancel" aria-role="img"></text>
+			</navigator>
+			<text id="js_current" class="weui-hidden_abs" aria-role="alert">80%</text>
 		</view>
 		<view class="weui-btn-area">
-			<a class="weui-btn weui-btn_primary">上传</a>
+			<button type="button" class="weui-btn weui-btn_primary" id="btnUpload">上传</button>
 		</view>
 	</view>
 </view>

@@ -1,17 +1,18 @@
+<page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
         <view class="page__title">Form</view>
         <view class="page__desc">表单页</view>
     </view>
     <view class="page__bd page__bd_spacing">
-        <a bindtap="open" data-url="form_page" class="weui-btn weui-btn_default">表单结构</a>
-        <a bindtap="open" data-url="form_input_status" class="weui-btn weui-btn_default">输入框状态</a>
-        <a bindtap="open" data-url="form_vcode" class="weui-btn weui-btn_default">验证码</a>
-        <a bindtap="open" data-url="form_access" class="weui-btn weui-btn_default">跳转列表项</a>
-        <a bindtap="open" data-url="form_checkbox" class="weui-btn weui-btn_default">复选框</a>
-        <a bindtap="open" data-url="form_radio" class="weui-btn weui-btn_default">单选框</a>
-        <a bindtap="open" data-url="form_switch" class="weui-btn weui-btn_default">开关</a>
-        <a bindtap="open" data-url="form_select" class="weui-btn weui-btn_default">选择框</a>
-        <a bindtap="open" data-url="form_textarea" class="weui-btn weui-btn_default">文本域</a>
+        <view aria-role="button" bindtap="open" data-url="form_page" class="weui-btn weui-btn_default">表单结构</view>
+        <view aria-role="button" bindtap="open" data-url="form_input_status" class="weui-btn weui-btn_default">输入框状态</view>
+        <view aria-role="button" bindtap="open" data-url="form_vcode" class="weui-btn weui-btn_default">验证码</view>
+        <view aria-role="button" bindtap="open" data-url="form_access" class="weui-btn weui-btn_default">跳转列表项</view>
+        <view aria-role="button" bindtap="open" data-url="form_checkbox" class="weui-btn weui-btn_default">复选框</view>
+        <view aria-role="button" bindtap="open" data-url="form_radio" class="weui-btn weui-btn_default">单选框</view>
+        <view aria-role="button" bindtap="open" data-url="form_switch" class="weui-btn weui-btn_default">开关</view>
+        <view aria-role="button" bindtap="open" data-url="form_select" class="weui-btn weui-btn_default">选择框</view>
+        <view aria-role="button" bindtap="open" data-url="form_textarea" class="weui-btn weui-btn_default">文本域</view>
     </view>
 </view>
