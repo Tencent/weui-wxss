@@ -1,3 +1,3 @@
 Page({
-    mixins: [require('../../mixin/themeChanged')],
+  mixins: [require('../../mixin/common')],
 });

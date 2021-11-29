@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-msg">
 		<view class="weui-msg__text-area">
 			<view class="weui-msg__desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现</view>

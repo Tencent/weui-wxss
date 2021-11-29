@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
     <view class="page__hd">
         <view class="page__title">Gallery</view>
         <view class="page__desc">画廊，模拟小程序原生的wx.previewImage。</view>
@@ -9,7 +9,7 @@
             <view aria-role="button" class="weui-btn weui-btn_default" bindtap="open">Gallery</view>
         </view>
     </view>
-    <view wx:if="{{gallery}}" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close">
+    <view wx:if="{{gallery}}" aria-role="dialog" aria-modal="true" tabindex="0" class="weui-gallery fadeIn" bindtap="close">
         <view class="weui-gallery__info">1/17</view>
         <view class="weui-gallery__img__wrp">
             <image mode="aspectFit" class="weui-gallery__img" src="../images/pic_article.png"></image>

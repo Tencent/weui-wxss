@@ -1,13 +1,13 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
     <view class="page__hd">
         <view class="page__title">Button</view>
         <view class="page__desc">按钮</view>
     </view>
     <view class="page__bd">
         <view class="weui-btn-area">
-            <view aria-role="button" class="weui-btn weui-btn_default" bindtap="openDefault">普通按钮</view>
-            <view aria-role="button" class="weui-btn weui-btn_default" bindtap="openBottomfixed">底部悬浮按钮</view>
+            <view aria-role="button" class="weui-btn weui-btn_default" bindtap="openDefault">普通型</view>
+            <view aria-role="button" class="weui-btn weui-btn_default" bindtap="openBottomfixed">底部悬浮型</view>
         </view>
     </view>
 </view>

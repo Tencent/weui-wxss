@@ -4,7 +4,15 @@ page,
 [data-weui-theme='light'] {
     .varsLight();
 }
-
 [data-weui-theme='dark'] {
     .varsDark();
+}
+
+page[data-weui-mode='care'],
+[data-weui-theme='light'][data-weui-mode='care'] {
+    .varsCareLight();
+}
+
+[data-weui-theme='dark'][data-weui-mode='care'] {
+    .varsCareDark();
 }

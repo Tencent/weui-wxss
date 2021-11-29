@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-form">
 		<view class="weui-form__text-area">
 			<h2 class="weui-form__title">原生选择框</h2>
@@ -17,7 +17,7 @@
 					<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-before">
 						<view class="weui-cell__hd">
                             <picker aria-role="combobox" bindchange="bindPicker2Change" range="{{array2}}">
-                                <view class="weui-select" style="width: 3em">{{array2[value2]}}</view>
+                                <view class="weui-select" style="width: 3em;">{{array2[value2]}}</view>
                             </picker>
 						</view>
 						<view class="weui-cell__bd">
@@ -26,7 +26,7 @@
 					</view>
 					<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after">
 						<view class="weui-cell__hd">
-							<label class="weui-label" style="width: 3em">国家</label>
+							<label class="weui-label" style="width: 3em;">国家</label>
 						</view>
 						<view class="weui-cell__bd">
                             <picker aria-role="combobox" bindchange="bindPicker3Change" range="{{array3}}">

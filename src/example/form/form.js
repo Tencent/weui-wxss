@@ -1,8 +1,8 @@
 Page({
-    mixins: [require('../../mixin/themeChanged')],
-    open: function (event) {
-        wx.navigateTo({
-            url: event.currentTarget.dataset.url,
-        })
-    },
+  mixins: [require('../../mixin/common')],
+  open(event) {
+    wx.navigateTo({
+      url: event.currentTarget.dataset.url,
+    });
+  },
 });

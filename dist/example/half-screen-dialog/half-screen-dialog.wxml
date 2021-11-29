@@ -1,18 +1,19 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
-	<view aria-hidden="{{dialog1 || dialog2 || dialog3 ? true : false}}" class="page__hd">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view aria-hidden="{{dialog1 || dialog2 || dialog3 || dialog4 ? true : false}}" class="page__hd">
 		<view class="page__title">Half-screen Dialog</view>
 		<view class="page__desc">半屏组件</view>
 	</view>
-	<view aria-hidden="{{dialog1 || dialog2 || dialog3 ? true : false}}" class="page__bd page__bd_spacing">
+	<view aria-hidden="{{dialog1 || dialog2 || dialog3 || dialog4 ? true : false}}" class="page__bd page__bd_spacing">
 		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open1">样式一</view>
 		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open2">样式二</view>
 		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open3">样式三</view>
+		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open4">样式四</view>
 	</view>
 
-    <view class="fadeIn" wx:if="{{dialog1}}" aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog1_title">
-        <view class="weui-mask" bindtap="close"></view>
-        <view class="weui-half-screen-dialog">
+    <view aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog1_title">
+        <view class="weui-mask weui-transition {{dialog1 ? 'weui-transition_show' : ''}}" bindtap="close"></view>
+        <view class="weui-half-screen-dialog weui-transition {{dialog1 ? 'weui-transition_show' : ''}}">
             <view class="weui-half-screen-dialog__hd">
                 <view class="weui-half-screen-dialog__hd__side" bindtap="close">
                     <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
@@ -22,17 +23,17 @@
                     <view class="weui-half-screen-dialog__subtitle">标题</view>
                 </view>
             </view>
-            <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
+            <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
                 可放自定义内容
             </view>
         </view>
     </view>
-    <view class="fadeIn" wx:if="{{dialog2}}" aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog2_title">
-        <view class="weui-mask" bindtap="close" aria-role="button" aria-label="关闭"></view>
-        <view class="weui-half-screen-dialog weui-half-screen-dialog_bottom-fixed">
+    <view aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog2_title">
+        <view class="weui-mask weui-transition {{dialog2 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+        <view class="weui-half-screen-dialog weui-half-screen-dialog_bottom-fixed weui-transition {{dialog2 ? 'weui-transition_show' : ''}}">
             <view class="weui-half-screen-dialog__hd">
                 <view class="weui-half-screen-dialog__hd__side" bindtap="close">
-                    <view aria-role="button" hidden class="weui-icon-btn weui-wa-hotarea">返回<i class="weui-icon-back-arrow-thin"></i></view>
+                    <view aria-role="button" style="display:none;" class="weui-icon-btn weui-wa-hotarea">返回<i class="weui-icon-back-arrow-thin"></i></view>
                     <view aria-role="button" class="weui-icon-btn weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></view>
                 </view>
                 <view class="weui-half-screen-dialog__hd__main">
@@ -43,7 +44,7 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd">
-                <view class="weui-bottom-fixed-opr-page">
+                <view class="weui-bottom-fixed-opr-page  {{wrap ? 'weui-bottom-fixed-opr-page_btn-wrap' : ''}}">
                   <view class="weui-bottom-fixed-opr-page__content">
                     <view class="weui-half-screen-dialog__desc">
                       辅助描述内容，可根据实际需要安排
@@ -59,15 +60,16 @@
                     </view>
                   </view>
                   <view class="weui-bottom-fixed-opr">
-                    <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">完成</view>
+                    <view id="js_btn1_1" aria-role="button" class="weui-btn weui-btn_default" bindtap="close">取消</view>
+                    <view id="js_btn1_2" aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">阅读并同意</view>
                   </view>
                 </view>
             </view>
         </view>
     </view>
-    <view class="fadeIn" wx:if="{{dialog3}}" aria-role="dialog" aria-modal="true">
-        <view class="weui-mask" bindtap="close" aria-role="button" aria-label="关闭"></view>
-        <view class="weui-half-screen-dialog">
+    <view aria-role="dialog" aria-modal="true">
+        <view class="weui-mask weui-transition {{dialog3 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+        <view class="weui-half-screen-dialog weui-transition {{dialog3 ? 'weui-transition_show' : ''}} {{wrap1 ? 'weui-half-screen-dialog_btn-wrap' : ''}}">
             <view class="weui-half-screen-dialog__hd">
                 <view class="weui-half-screen-dialog__hd__side" bindtap="close">
                     <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
@@ -76,16 +78,37 @@
                     <strong class="weui-half-screen-dialog__title">标题</strong>
                 </view>
             </view>
-            <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
+            <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
                 可放自定义内容
             </view>
             <view class="weui-half-screen-dialog__ft">
               <view class="weui-half-screen-dialog__btn-area">
-                <view aria-role="button" class="weui-btn weui-btn_default" bindtap="close">次要操作</view>
-                <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">主要操作</view>
+                <view aria-role="button" class="weui-btn weui-btn_default" bindtap="close" id="js_btn2_1">取消</view>
+                <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close" id="js_btn2_2">阅读并同意</view>
               </view>
               <view class="weui-half-screen-dialog__attachment-area">
                 <navigator class="weui-link" url="">附加操作</navigator>
+              </view>
+            </view>
+        </view>
+    </view>
+    <view aria-role="dialog" aria-modal="true">
+        <view class="weui-mask weui-transition {{dialog4 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+        <view class="weui-half-screen-dialog weui-half-screen-dialog_large weui-transition {{dialog4 ? 'weui-transition_show' : ''}}">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">标题</strong>
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
+                可放自定义内容
+            </view>
+            <view class="weui-half-screen-dialog__ft">
+              <view class="weui-half-screen-dialog__btn-area">
+                <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">主要操作</view>
               </view>
             </view>
         </view>

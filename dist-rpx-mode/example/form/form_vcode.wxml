@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-form">
 		<view class="weui-form__text-area">
 			<h2 class="weui-form__title">验证码</h2>
@@ -14,7 +14,7 @@
 							<input class="weui-input" type="number" placeholder="请输入手机号" value="12345678907" placeholder-class="weui-input__placeholder" />
 						</view>
 						<view class="weui-cell__ft">
-							<button style="width:auto" class="weui-btn_reset weui-btn_icon">
+							<button style="width: auto;" class="weui-btn_reset weui-btn_icon">
 								<view class="weui-icon-info-circle"></view>
                 <view class="weui-hidden_abs">帮助</view>
 							</button>
@@ -23,7 +23,7 @@
 					<view class="weui-cell weui-cell_active weui-cell_vcode weui-cell_wrap">
 						<view class="weui-cell__hd"><label class="weui-label">验证码</label></view>
 						<view class="weui-cell__bd">
-							<input class="weui-cell__control weui-cell__control_flex weui-input" type="text" placeholder="输入验证码" placeholder-class="weui-input__placeholder" />
+							<input bindinput="bindVcodeInput" class="weui-cell__control weui-cell__control_flex weui-input" type="text" placeholder="输入验证码" placeholder-class="weui-input__placeholder" />
 							<view aria-role="button" class="weui-cell__control weui-btn weui-btn_default weui-vcode-btn">获取验证码</view>
 						</view>
 					</view>
@@ -34,14 +34,17 @@
 			</view>
 		</view>
 		<view class="weui-form__tips-area">
-            <label aria-role="" class="weui-agree">
-                <checkbox aria-labelledby="js_agree_txt js_agree_link" class="weui-agree__checkbox-check" />
-                <span class="weui-agree__checkbox"></span>
-                <span class="weui-agree__text"><text aria-hidden="true" id="js_agree_txt">阅读并同意</text><navigator id="js_agree_link">《相关条款》</navigator></span>
+        <checkbox-group bindchange="checkboxChange">
+            <label aria-role="" class="weui-wa-hotarea weui-agree {{msg ? 'weui-agree_animate' : ''}}">
+                <checkbox aria-role="" value="{{checkValue}}" class="weui-agree__checkbox-check" />
+                <view class="weui-agree__checkbox" aria-labelledby="js_agree_txt js_agree_link" aria-role="checkbox"></view>
+                <view class="weui-agree__text"><text aria-hidden="true" id="js_agree_txt">阅读并同意</text><navigator id="js_agree_link">《相关条款》</navigator></view>
             </label>
+        </checkbox-group>
 		</view>
 		<view class="weui-form__opr-area">
-			<view class="weui-btn weui-btn_primary weui-btn_disabled" aria-role="button">确定</view>
+      <button type="primary" disabled="{{vcodeValue ? false : true}}" bindtap="checkStatus">确定</button>
 		</view>
 	</view>
+  <view aria-role="alert" hidden="{{msg ? false : true}}" class="weui-hidden_abs">未同意《相关条款》</view>
 </view>
