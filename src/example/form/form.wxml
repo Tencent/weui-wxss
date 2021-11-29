@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
     <view class="page__hd">
         <view class="page__title">Form</view>
         <view class="page__desc">表单页</view>

@@ -1,8 +1,8 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
     <view class="page__hd">
         <view class="page__title">Input</view>
-        <view class="page__desc">表单输入。老版本的表单，后续<text style="color:var(--weui-RED)">不再维护</text>。新版本请看 <navigator url="/example/form/form" class="link">表单 - form</navigator> 。</view>
+        <view class="page__desc">表单输入。老版本的表单，后续<text style="color: var(--weui-RED);">不再维护</text>。新版本请看 <navigator url="/example/form/form" class="link">表单 - form</navigator> 。</view>
     </view>
     <view class="page__bd">
         <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
@@ -152,7 +152,7 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__bd">
-                    <textarea class="weui-textarea" placeholder-class="weui-input__placeholder" placeholder="请输入文本" style="height: 3.3em" />
+                    <textarea class="weui-textarea" placeholder-class="weui-input__placeholder" placeholder="请输入文本" style="height: 3.3em;" />
                     <view aria-role="option" title="字数统计" class="weui-textarea-counter">0/200</view>
                 </view>
             </view>

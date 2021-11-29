@@ -1,5 +1,8 @@
 @import 'vars/light';
 @import 'vars/dark';
+@import 'vars/care-light';
+@import 'vars/care-dark';
+
 
 .dark(@rule) {
     [data-weui-theme='dark'] & {
@@ -24,6 +27,32 @@
         @lightRule();
     }
     [data-weui-theme='dark'] {
+        @darkRule();
+    }
+}
+
+.care(@rule) {
+    [data-weui-mode='care'] & {
+        @rule();
+    }
+}
+.setCareColor(@var, @color) {
+    .setCareColor(@var, @color, @color);
+}
+
+.setCareColor(@var, @light, @dark) {
+    ._setCareColor({
+        @{var}: @light;
+    }, {
+        @{var}: @dark;
+    });
+}
+._setCareColor(@lightRule, @darkRule) {
+    page[data-weui-mode='care'],
+    [data-weui-theme='light'][data-weui-mode='care'] {
+        @lightRule();
+    }
+    [data-weui-theme='dark'][data-weui-mode='care'] {
         @darkRule();
     }
 }

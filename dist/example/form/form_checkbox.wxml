@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-form">
 		<view class="weui-form__text-area">
 			<h2 class="weui-form__title">复选框样式展示</h2>

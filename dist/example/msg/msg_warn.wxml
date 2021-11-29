@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-msg">
 		<view class="weui-msg__icon-area"><text class="weui-icon-warn weui-icon_msg"></text></view>
 		<view class="weui-msg__text-area">

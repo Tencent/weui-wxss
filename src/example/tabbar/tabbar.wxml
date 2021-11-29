@@ -1,11 +1,11 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="page__bd" style="height: 100%;">
 		<view class="weui-tab">
 			<view id="panel1" aria-labelledby="tab1" class="weui-tab__panel" aria-role="tabpanel">Lorem repellat eius consectetur ab pariatur! Facere cum dignissimos sequi error perferendis quis Ipsa reiciendis earum cumque reprehenderit tenetur ab vero modi. Soluta tempore minima tempora quae voluptate! Sunt delectus?</view>
-			<view id="panel2" aria-labelledby="tab2" class="weui-tab__panel" style="display:none" aria-role="tabpanel">Dolor eum rerum magnam voluptatem omnis fuga, dolore libero quibusdam cupiditate Sequi vero rem corrupti hic veritatis Atque exercitationem odit odit ducimus esse, sapiente laborum inventore! Ipsum harum quo minus</view>
-			<view id="panel3" aria-labelledby="tab3" class="weui-tab__panel" style="display:none" aria-role="tabpanel">Elit deserunt dolore nemo harum neque libero numquam, minima nam Atque nesciunt iusto aperiam eligendi praesentium ratione? Quasi iste odio itaque doloribus hic? Est aliquam recusandae dolore ratione quos. Saepe</view>
-			<view id="panel4" aria-labelledby="tab4" class="weui-tab__panel" style="display:none" aria-role="tabpanel">Amet dignissimos doloribus voluptate maxime dolorem quia Deleniti eligendi similique nisi corrupti eius aut Unde nesciunt quos quos sapiente dolorem? Odit soluta repudiandae accusantium ducimus totam accusamus. Rem ad numquam</view>
+			<view id="panel2" aria-labelledby="tab2" class="weui-tab__panel" style="display: none;" aria-role="tabpanel">Dolor eum rerum magnam voluptatem omnis fuga, dolore libero quibusdam cupiditate Sequi vero rem corrupti hic veritatis Atque exercitationem odit odit ducimus esse, sapiente laborum inventore! Ipsum harum quo minus</view>
+			<view id="panel3" aria-labelledby="tab3" class="weui-tab__panel" style="display: none;" aria-role="tabpanel">Elit deserunt dolore nemo harum neque libero numquam, minima nam Atque nesciunt iusto aperiam eligendi praesentium ratione? Quasi iste odio itaque doloribus hic? Est aliquam recusandae dolore ratione quos. Saepe</view>
+			<view id="panel4" aria-labelledby="tab4" class="weui-tab__panel" style="display: none;" aria-role="tabpanel">Amet dignissimos doloribus voluptate maxime dolorem quia Deleniti eligendi similique nisi corrupti eius aut Unde nesciunt quos quos sapiente dolorem? Odit soluta repudiandae accusantium ducimus totam accusamus. Rem ad numquam</view>
 			<view aria-label="选项卡标题" class="weui-tabbar" aria-role="tablist">
 				<view id="tab1" aria-labelledby="t1_title" aria-describedby="t1_tips" aria-selected="true" aria-controls="panel1" class="weui-tabbar__item weui-bar__item_on" aria-role="tab">
 					<view id="t1_tips" aria-hidden="true" style="display: inline-block; position: relative;">

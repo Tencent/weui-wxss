@@ -1,95 +1,95 @@
 Page({
-    mixins: [require('../../mixin/themeChanged')],
-    data: {
-        toast: false,
-        warnToast: false,
-        textMoreToast: false,
-        textToast: false,
-        loading: false,
-        hideToast: false,
-        hideWarnToast: false,
-        hideTextMoreToast: false,
-        hideTextToast: false,
-        hideLoading: false
-    },
-    openToast: function() {
+  mixins: [require('../../mixin/common')],
+  data: {
+    toast: false,
+    warnToast: false,
+    textMoreToast: false,
+    textToast: false,
+    loading: false,
+    hideToast: false,
+    hideWarnToast: false,
+    hideTextMoreToast: false,
+    hideTextToast: false,
+    hideLoading: false,
+  },
+  openToast() {
+    this.setData({
+      toast: true,
+    });
+    setTimeout(() => {
+      this.setData({
+        hideToast: true,
+      });
+      setTimeout(() => {
         this.setData({
-            toast: true
+          toast: false,
+          hideToast: false,
         });
-        setTimeout(() => {
-            this.setData({
-                hideToast: true
-            });
-            setTimeout(() => {
-                this.setData({
-                    toast: false,
-                    hideToast: false,
-                });
-            }, 300);
-        }, 3000);
-    },
-    openWarnToast: function() {
+      }, 300);
+    }, 3000);
+  },
+  openWarnToast() {
+    this.setData({
+      warnToast: true,
+    });
+    setTimeout(() => {
+      this.setData({
+        hidewarnToast: true,
+      });
+      setTimeout(() => {
         this.setData({
-            warnToast: true
+          warnToast: false,
+          hidewarnToast: false,
         });
-        setTimeout(() => {
-            this.setData({
-                hidewarnToast: true
-            });
-            setTimeout(() => {
-                this.setData({
-                    warnToast: false,
-                    hidewarnToast: false,
-                });
-            }, 300);
-        }, 3000);
-    },
-    openTextMoreToast: function() {
+      }, 300);
+    }, 3000);
+  },
+  openTextMoreToast() {
+    this.setData({
+      textMoreToast: true,
+    });
+    setTimeout(() => {
+      this.setData({
+        hideTextMoreToast: true,
+      });
+      setTimeout(() => {
         this.setData({
-            textMoreToast: true
+          textMoreToast: false,
+          hideTextMoreToast: false,
         });
-        setTimeout(() => {
-            this.setData({
-                hideTextMoreToast: true
-            });
-            setTimeout(() => {
-                this.setData({
-                    textMoreToast: false,
-                    hideTextMoreToast: false,
-                });
-            }, 300);
-        }, 3000);
-    },
-    openTextToast: function() {
+      }, 300);
+    }, 3000);
+  },
+  openTextToast() {
+    this.setData({
+      textToast: true,
+    });
+    setTimeout(() => {
+      this.setData({
+        hideTextToast: true,
+      });
+      setTimeout(() => {
         this.setData({
-            textToast: true
+          textToast: false,
+          hideTextToast: false,
         });
-        setTimeout(() => {
-            this.setData({
-                hideTextToast: true
-            });
-            setTimeout(() => {
-                this.setData({
-                    textToast: false,
-                    hideTextToast: false,
-                });
-            }, 300);
-        }, 3000);
-    },
-    openLoading: function() {
+      }, 300);
+    }, 3000);
+  },
+  openLoading() {
+    this.setData({
+      loading: true,
+    });
+    setTimeout(() => {
+      this.setData({
+        hideLoading: true,
+      });
+      setTimeout(() => {
         this.setData({
-            loading: true
+          loading: false,
+          hideLoading: false,
         });
-        setTimeout(() => {
-            this.setData({
-                hideLoading: true
-            });
-            setTimeout(() => {
-                this.setData({
-                    loading: false,
-                    hideLoading: false,
-                });
-            }, 300);
-        }, 3000);
-    }
+      }, 300);
+    }, 3000);
+  },
 });

@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="page__hd">
 		<view class="page__title">TopTips</view>
 		<view class="page__desc">顶部提示条</view>

@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
     <view aria-hidden="{{iosDialog1 || iosDialog2 || androidDialog1 || androidDialog2 ? true : false}}" class="page__hd">
         <view class="page__title">Dialog</view>
         <view class="page__desc">对话框</view>

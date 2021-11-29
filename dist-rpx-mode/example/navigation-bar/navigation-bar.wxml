@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
     <view class="page__hd">
         <view class="page__title">Navigation Bar</view>
         <view class="page__desc">导航栏，模拟小程序原生顶部导航栏。</view>
@@ -11,7 +11,7 @@
 
           <view class='weui-navigation-bar__left'>
               <view class="weui-navigation-bar__buttons">
-                <view aria-role="button" aria-label="返回" bindtap="back" class="weui-navigation-bar__button weui-navigation-bar__btn_goback"></view>
+                <view aria-role="button" aria-label="返回" bindtap="back" class="weui-navigation-bar__button weui-navigation-bar__btn_goback weui-wa-hotarea"></view>
               </view>
           </view>
 

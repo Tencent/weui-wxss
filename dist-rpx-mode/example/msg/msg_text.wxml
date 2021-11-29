@@ -1,5 +1,5 @@
 <page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-msg">
 		<view class="weui-msg__text-area">
 			<h2 class="weui-msg__title">操作成功</h2>
