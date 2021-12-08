@@ -6,6 +6,7 @@
     </view>
     <view class="page__bd page__bd_spacing">
         <view aria-role="button" bindtap="open" data-url="form_page" class="weui-btn weui-btn_default">表单结构</view>
+        <view style="display:none;" aria-role="button" bindtap="open" data-url="form_primary" class="weui-btn weui-btn_default">反色表单</view>
         <view aria-role="button" bindtap="open" data-url="form_input_status" class="weui-btn weui-btn_default">输入框状态</view>
         <view aria-role="button" bindtap="open" data-url="form_vcode" class="weui-btn weui-btn_default">验证码</view>
         <view aria-role="button" bindtap="open" data-url="form_access" class="weui-btn weui-btn_default">跳转列表项</view>

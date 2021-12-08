@@ -9,9 +9,9 @@
 				<view class="weui-cells">
 					<view class="weui-cell weui-cell_active weui-cell_select">
 						<view class="weui-cell__bd">
-                            <picker aria-role="combobox" bindchange="bindPicker1Change" range="{{array1}}">
-                                <view class="weui-select">{{array1[value1]}}</view>
-                            </picker>
+                <picker aria-role="combobox" bindchange="bindPicker1Change" range="{{array1}}">
+                    <view class="weui-select">{{array1[value1]}}</view>
+                </picker>
 						</view>
 					</view>
 					<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-before">

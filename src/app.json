@@ -8,6 +8,7 @@
     "example/input/input",
     "example/form/form",
     "example/form/form_page",
+    "example/form/form_primary",
     "example/form/form_input_status",
     "example/form/form_vcode",
     "example/form/form_access",

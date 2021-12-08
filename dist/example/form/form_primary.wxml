@@ -1,0 +1,91 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="weui-form">
+		<view class="weui-form__text-area">
+			<h2 class="weui-form__title">表单结构</h2>
+			<view class="weui-form__desc">展示表单页面的信息结构样式, 分别由头部区域/控件区域/提示区域/操作区域和底部信息区域组成。</view>
+		</view>
+		<view class="weui-form__control-area">
+			<view class="weui-cells__group weui-cells__group_form weui-cells__group_form-primary">
+				<view class="weui-cells__title">表单组标题</view>
+				<view class="weui-cells">
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd"><label class="weui-label">微信号</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="填写本人微信号" placeholder-class="weui-input__placeholder" />
+						</view>
+					</view>
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd">
+                            <label class="weui-label">昵称</label>
+                        </view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="填写本人微信号的昵称" placeholder-class="weui-input__placeholder" />
+						</view>
+					</view>
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd">
+                            <label class="weui-label">联系电话</label>
+                        </view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="填写绑定的电话号码" type="number" placeholder-class="weui-input__placeholder" />
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="weui-cells__group weui-cells__group_form weui-cells__group_form-primary">
+				<view class="weui-cells">
+          <label class="weui-cell weui-cell_active weui-cell_switch">
+              <view class="weui-cell__bd">标题文字</view>
+              <view class="weui-cell__ft">
+                  <view class="weui-switch-cp">
+                      <checkbox class="weui-switch-cp__input" checked="true" />
+                      <view class="weui-switch-cp__box"></view>
+                  </view>
+              </view>
+          </label>
+				</view>
+			</view>
+			<view class="weui-cells__group weui-cells__group_form weui-cells__group_form-primary">
+				<view class="weui-cells">
+					<navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="javascript:;">
+						<view class="weui-cell__bd"><view>cell standard</view></view>
+						<view class="weui-cell__ft"></view>
+					</navigator>
+					<navigator class="weui-cell weui-cell_access" url="javascript:;" hover-class="weui-cell_active">
+						<view class="weui-cell__bd"><view>cell standard</view></view>
+						<view class="weui-cell__ft"></view>
+					</navigator>
+				</view>
+			</view>
+		</view>
+		<view class="weui-form__tips-area">
+			<view class="weui-form__tips">
+表单页提示，居中对齐
+			</view>
+		</view>
+		<view class="weui-form__opr-area">
+			<navigator disabled aria-disabled="true" class="weui-btn weui-btn_primary weui-btn_disabled" id="showTooltips" aria-role="button" url="javascript:">确定</navigator>
+		</view>
+		<view class="weui-form__tips-area">
+			<view class="weui-form__tips">
+表单页提示，居中对齐
+			</view>
+		</view>
+		<view class="weui-form__extra-area">
+			<view class="weui-footer">
+				<view class="weui-footer__links">
+					<navigator class="weui-footer__link" url="javascript:">底部链接文本</navigator>
+				</view>
+				<view class="weui-footer__text">Copyright © 2008-2019 weui.io</view>
+			</view>
+		</view>
+	</view>
+	<view id="js_toast" style="display: none;" aria-role="alert">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast">
+			<text class="weui-icon-success-no-circle weui-icon_toast"></text>
+			<view class="weui-toast__content">已完成</view>
+		</view>
+	</view>
+</view>
