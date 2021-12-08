@@ -8,7 +8,7 @@
 		<view class="weui-form__control-area">
 			<view class="weui-cells__group weui-cells__group_form">
 				<view class="weui-cells__title">表单组标题</view>
-				<view class="weui-cells weui-cells_form">
+				<view class="weui-cells">
 					<view class="weui-cell weui-cell_active">
 						<view class="weui-cell__hd"><label class="weui-label">微信号</label></view>
 						<view class="weui-cell__bd">
@@ -26,6 +26,7 @@
 					<view class="weui-cell weui-cell_active">
 						<view class="weui-cell__hd">
                             <label class="weui-label">联系电话</label>
+                            <view class="weui-cell__desc">副标题</view>
                         </view>
 						<view class="weui-cell__bd">
 							<input class="weui-input" placeholder="填写绑定的电话号码" type="number" placeholder-class="weui-input__placeholder" />

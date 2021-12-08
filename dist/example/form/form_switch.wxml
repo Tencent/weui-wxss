@@ -6,16 +6,16 @@
 		</view>
 		<view class="weui-form__control-area">
 			<view class="weui-cells__group weui-cells__group_form">
-				<view class="weui-cells weui-cells_form">
-                    <label class="weui-cell weui-cell_active weui-cell_switch">
-                        <view class="weui-cell__bd">标题文字</view>
-                        <view class="weui-cell__ft">
-                            <view class="weui-switch-cp">
-                                <checkbox class="weui-switch-cp__input" checked="true" />
-                                <view class="weui-switch-cp__box"></view>
-                            </view>
-                        </view>
-                    </label>
+				<view class="weui-cells">
+          <label class="weui-cell weui-cell_active weui-cell_switch">
+              <view class="weui-cell__bd">标题文字</view>
+              <view class="weui-cell__ft">
+                  <view class="weui-switch-cp">
+                      <checkbox class="weui-switch-cp__input" checked="true" />
+                      <view class="weui-switch-cp__box"></view>
+                  </view>
+              </view>
+          </label>
 				</view>
 			</view>
 		</view>

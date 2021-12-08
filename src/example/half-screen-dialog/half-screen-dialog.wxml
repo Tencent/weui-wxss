@@ -33,8 +33,9 @@
         <view class="weui-half-screen-dialog weui-half-screen-dialog_bottom-fixed weui-transition {{dialog2 ? 'weui-transition_show' : ''}}">
             <view class="weui-half-screen-dialog__hd">
                 <view class="weui-half-screen-dialog__hd__side" bindtap="close">
-                    <view aria-role="button" style="display:none;" class="weui-icon-btn weui-wa-hotarea">返回<i class="weui-icon-back-arrow-thin"></i></view>
-                    <view aria-role="button" class="weui-icon-btn weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></view>
+                    <view aria-role="button" style="display:none;" class="weui-btn_icon weui-wa-hotarea">返回<i class="weui-icon-back-arrow-thin"></i></view>
+                    <view aria-role="button" style="display:none;" class="weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></view>
+                    <view aria-role="button" class="weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-slide-down"></i></view>
                 </view>
                 <view class="weui-half-screen-dialog__hd__main">
                     <strong class="weui-half-screen-dialog__title" id="js_dialog2_title">标题</strong>
