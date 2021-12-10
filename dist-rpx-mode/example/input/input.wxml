@@ -163,7 +163,7 @@
             <view class="weui-cell weui-cell_select weui-cell_select-before">
                 <view class="weui-cell__hd">
                     <picker aria-role="combobox" bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
-                        <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+                        <view class="weui-select" style="width:3.14em">{{countryCodes[countryCodeIndex]}}</view>
                     </picker>
                 </view>
                 <view class="weui-cell__bd weui-cell__bd_in-select-before">

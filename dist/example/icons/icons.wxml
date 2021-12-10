@@ -8,35 +8,35 @@
 		<view class="icon-box">
 			<text title="成功" aria-describedby="tip_1" class="weui-icon-success weui-icon_msg" aria-role="img"></text>
 			<view class="icon-box__ctn" aria-hidden="true">
-				<h3 class="icon-box__title">成功</h3>
+				<view class="icon-box__title">成功</view>
 				<view class="icon-box__desc" id="tip_1">用于表示操作顺利达成</view>
 			</view>
 		</view>
 		<view class="icon-box">
 			<text title="提示" aria-describedby="tip_2" class="weui-icon-info weui-icon_msg" aria-role="img"></text>
 			<view class="icon-box__ctn" aria-hidden="true">
-				<h3 class="icon-box__title">提示</h3>
+				<view class="icon-box__title">提示</view>
 				<view class="icon-box__desc" id="tip_2">用于表示信息提示；也常用于缺乏条件的操作拦截，提示用户所需信息</view>
 			</view>
 		</view>
 		<view class="icon-box">
 			<text title="普通警告" class="weui-icon-warn weui-icon_msg-primary" aria-role="img"></text>
 			<view class="icon-box__ctn" aria-hidden="true">
-				<h3 class="icon-box__title">普通警告</h3>
+				<view class="icon-box__title">普通警告</view>
 				<view class="icon-box__desc">用于表示操作后将引起一定后果的情况</view>
 			</view>
 		</view>
 		<view class="icon-box">
 			<text title="强烈警告" class="weui-icon-warn weui-icon_msg" aria-role="img"></text>
 			<view class="icon-box__ctn" aria-hidden="true">
-				<h3 class="icon-box__title">强烈警告</h3>
+				<view class="icon-box__title">强烈警告</view>
 				<view class="icon-box__desc">用于表示操作后将引起严重的不可挽回的后果的情况</view>
 			</view>
 		</view>
 		<view class="icon-box">
 			<text title="等待" class="weui-icon-waiting weui-icon_msg" aria-role="img"></text>
 			<view class="icon-box__ctn" aria-hidden="true">
-				<h3 class="icon-box__title">等待</h3>
+				<view class="icon-box__title">等待</view>
 				<view class="icon-box__desc">用于表示等待</view>
 			</view>
 		</view>

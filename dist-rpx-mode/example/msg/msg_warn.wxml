@@ -3,7 +3,7 @@
 	<view class="weui-msg">
 		<view class="weui-msg__icon-area"><text class="weui-icon-warn weui-icon_msg"></text></view>
 		<view class="weui-msg__text-area">
-			<h2 class="weui-msg__title">操作失败</h2>
+			<view class="weui-msg__title">操作失败</view>
 			<view class="weui-msg__desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现<navigator class="weui-wa-hotarea weui-link" url="javascript:">文字链接</navigator></view>
 		</view>
 		<view class="weui-msg__tips-area">
