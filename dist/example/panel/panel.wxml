@@ -70,8 +70,8 @@
 							<view aria-hidden="true" id="t4" class="weui-cell__bd weui-cell_primary">
 								<view>文字标题</view>
 							</view>
-							<view class="weui-cell__ft">
-							</view></navigator>
+							<view class="weui-cell__ft"></view>
+						</navigator>
 					</view>
 				</view>
 			</view>

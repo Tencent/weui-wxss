@@ -7,7 +7,7 @@ const cssnano = require('gulp-cssnano');
 const header = require('gulp-header');
 const autoprefixer = require('autoprefixer');
 const pkg = require('./package.json');
-const { exec } = require('child_process');
+const childProcess = require('child_process');
 const replace = require('gulp-replace');
 
 const banner = [
@@ -20,6 +20,21 @@ const banner = [
 ].join('\n');
 
 let watchTimeout = null;
+
+function exec(cmd) {
+  return new Promise((resolve, reject) => {
+    const process = childProcess.exec(cmd, (error) => {
+      if (error) {
+        reject(error);
+      } else {
+        resolve();
+      }
+    });
+    process.stdout.on('data', (data) => {
+      console.log(data);
+    });
+  });
+}
 
 function buildStyle() {
   console.log('buildStyle');
