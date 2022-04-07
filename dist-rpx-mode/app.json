@@ -34,6 +34,9 @@
     "example/panel/panel",
     "example/preview/preview",
     "example/progress/progress",
+    "example/steps/steps",
+    "example/steps/steps_horizonal",
+    "example/steps/steps_vertical",
 
     "example/actionsheet/actionsheet",
     "example/half-screen-dialog/half-screen-dialog",

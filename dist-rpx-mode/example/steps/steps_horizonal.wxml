@@ -1,0 +1,185 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="weui-steps weui-steps_horizonal">
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+	</view>
+	<view class="weui-steps weui-steps_horizonal">
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+	</view>
+	<view class="weui-steps weui-steps_horizonal">
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+	</view>
+	<view class="weui-steps weui-steps_horizonal">
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner" style="display:none">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+	</view>
+	<view class="weui-steps weui-steps_horizonal" style="display:none;">
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+	</view>
+	<view class="weui-steps weui-steps_horizonal-primary" style="display:none;">
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+	</view>
+	<view class="weui-steps weui-steps_horizonal-center" style="display:none;">
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item weui-steps__item_success">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+		<view class="weui-steps__item">
+			<view class="weui-steps__item__inner">
+				<text class="weui-steps__item__title">标题</text>
+				<text class="weui-steps__item__desc">描述内容详情</text>
+			</view>
+		</view>
+	</view>
+</view>

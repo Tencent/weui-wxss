@@ -12,7 +12,7 @@ Page({
         id: 'layout',
         name: '基础组件',
         open: false,
-        pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loading', 'loadmore', 'panel', 'preview', 'progress'],
+        pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loading', 'loadmore', 'panel', 'preview', 'progress', 'steps'],
       },
       {
         id: 'feedback',

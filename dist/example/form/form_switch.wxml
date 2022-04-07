@@ -17,6 +17,15 @@
                   </view>
               </view>
           </label>
+          <label class="weui-cell weui-cell_active weui-cell_switch weui-cell_disabled">
+              <view class="weui-cell__bd">标题文字</view>
+              <view class="weui-cell__ft">
+                  <view class="weui-switch-cp">
+                      <checkbox class="weui-switch-cp__input" checked="true" disabled="true" />
+                      <view class="weui-switch-cp__box"></view>
+                  </view>
+              </view>
+          </label>
 				</view>
 			</view>
 		</view>

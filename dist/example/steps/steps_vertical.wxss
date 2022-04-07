@@ -1,0 +1,6 @@
+/*!
+ * WeUI v2.5.6 (https://github.com/weui/weui-wxss)
+ * Copyright 2022 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.page{background-color:var(--weui-BG-2)}.weui-steps{margin:40px auto;max-width:50%;padding-bottom:40px}

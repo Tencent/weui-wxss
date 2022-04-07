@@ -13,6 +13,9 @@
           <view aria-role="img" aria-label="加载中" class="weui-primary-loading weui-primary-loading_brand">
             <view class="weui-primary-loading__dot"></view>
           </view>
+          <view aria-role="img" aria-label="加载中" class="weui-primary-loading weui-primary-loading_transparent">
+            <view class="weui-primary-loading__dot"></view>
+          </view>
       </view>
       <view class="weui-loading__wrp">
           <view aria-role="img" aria-label="加载中" class="loading wx_dot_loading"></view>

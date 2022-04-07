@@ -1,0 +1,11 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="page__hd">
+		<view class="page__title">Steps</view>
+		<view class="page__desc">步骤条</view>
+	</view>
+	<view class="page__bd">
+		<view class="weui-btn weui-btn_default" aria-role="button" bindtap="openStepsVertical">垂直型</view>
+		<view class="weui-btn weui-btn_default" aria-role="button" bindtap="openStepsHorizonal">水平型</view>
+	</view>
+</view>
