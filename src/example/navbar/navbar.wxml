@@ -6,10 +6,10 @@
 				<view aria-selected="true" aria-controls="panel1" id="tab1" class="weui-navbar__item weui-bar__item_on" aria-role="tab">
 选项一
 				</view>
-				<view aria-selected="true" aria-controls="panel2" id="tab2" class="weui-navbar__item" aria-role="tab">
+				<view aria-controls="panel2" id="tab2" class="weui-navbar__item" aria-role="tab">
 选项二
 				</view>
-				<view aria-selected="true" aria-controls="panel3" id="tab3" class="weui-navbar__item" aria-role="tab">
+				<view aria-controls="panel3" id="tab3" class="weui-navbar__item" aria-role="tab">
 选项三
 				</view>
 			</view>
