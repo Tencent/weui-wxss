@@ -22,23 +22,53 @@
               <view class="weui-article__section">
                 <view class="weui-article__h4">列表示例</view>
                 <view class="weui-article__section">
-                  <view class="weui-article__h5">无序列表</view>
+                  <view class="weui-article__h5">原生无序列表</view>
                   <view class="weui-article__ul">
-                    <view class="weui-article__li">• Elit quo illum ut voluptate possimus. Maxime</view>
+                    <view class="weui-article__li">Elit quo illum ut voluptate possimus. Maxime</view>
                     <view class="weui-article__li">
-                      • Elit quo illum ut voluptate possimus. Maxime
+                      Elit quo illum ut voluptate possimus. Maxime
                       <view class="weui-article__ul">
-                        <view class="weui-article__li">• Elit facilis nam nam</view>
-                        <view class="weui-article__li">• Elit facilis nam nam</view>
-                        <view class="weui-article__li">• Elit facilis nam nam</view>
+                        <view class="weui-article__li">Elit facilis nam nam</view>
+                        <view class="weui-article__li">Elit facilis nam nam</view>
+                        <view class="weui-article__li">Elit facilis nam nam</view>
                       </view>
                     </view>
-                    <view class="weui-article__li">• Elit quo illum ut voluptate possimus. Maxime</view>
+                    <view class="weui-article__li">Elit quo illum ut voluptate possimus. Maxime</view>
                   </view>
                 </view>
                 <view class="weui-article__section">
-                  <view class="weui-article__h5">有序列表</view>
+                  <view class="weui-article__h5">原生有序列表</view>
                   <view class="weui-article__ol">
+                    <view class="weui-article__li">Elit quo illum ut voluptate possimus. Maxime</view>
+                    <view class="weui-article__li">
+                      Elit quo illum ut voluptate possimus. Maxime
+                      <view class="weui-article__ul">
+                        <view class="weui-article__li">Elit facilis nam nam</view>
+                        <view class="weui-article__li">Elit facilis nam nam</view>
+                        <view class="weui-article__li">Elit facilis nam nam</view>
+                      </view>
+                    </view>
+                    <view class="weui-article__li">Elit quo illum ut voluptate possimus. Maxime</view>
+                  </view>
+                </view>
+                <view class="weui-article__section">
+                  <view class="weui-article__h5">原生段落列表</view>
+                  <view class="weui-article__ol weui-article__list_inside">
+                    <view class="weui-article__li">Elit quo illum ut voluptatElit quo illum ut voluptatElit quo illum ut voluptateeeElit quo illum ut voluptate possimus. Maxime</view>
+                    <view class="weui-article__li">
+                      Elit quo illum ut voluptate possimus. Maxime
+                      <view class="weui-article__ol">
+                        <view class="weui-article__li">Elit facilis nam nam</view>
+                        <view class="weui-article__li">Elit facilis nam naElit facilis nam naElit facilis nam naElit facilis nam naElit facilis nam nammmmmElit facilis nam nam</view>
+                        <view class="weui-article__li">Elit facilis nam nam</view>
+                      </view>
+                    </view>
+                    <view class="weui-article__li">Elit quo illum ut voluptate possimus. Maxime</view>
+                  </view>
+                </view>
+                <view class="weui-article__section">
+                  <view class="weui-article__h5">自定义序号列表</view>
+                  <view class="weui-article__ol weui-article__list_none">
                     <view class="weui-article__li">1 Elit quo illum ut voluptate possimus. Maxime</view>
                     <view class="weui-article__li">
                       2 Elit quo illum ut voluptate possimus. Maxime

@@ -70,11 +70,28 @@
 }
 .weui-article__ul ,
 .weui-article__ol {
+  margin-left: 1.2em;
   margin-bottom:24px;
   & .weui-article__ul,
   & .weui-article__ol{
-    padding-left:16px;
-    margin-bottom:0;
+    margin: .5em 0 .5em 1.2em;
+  }
+}
+.weui-article__ol{
+  list-style: decimal;
+}
+.weui-article__ul {
+  list-style: disc;
+}
+.weui-article__li {
+  display:list-item;
+  margin: 0.5em 0;
+
+  .weui-article__list_inside &{
+    list-style-position: inside;
+  }
+  .weui-article__list_none &{
+    list-style: none;
   }
 }
 
