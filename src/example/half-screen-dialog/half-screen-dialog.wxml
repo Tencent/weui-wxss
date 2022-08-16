@@ -9,6 +9,7 @@
 		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open2">样式二</view>
 		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open3">样式三</view>
 		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open4">样式四</view>
+		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open5">样式五</view>
 	</view>
 
     <view aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog1_title">
@@ -111,6 +112,19 @@
               <view class="weui-half-screen-dialog__btn-area">
                 <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="close">主要操作</view>
               </view>
+            </view>
+        </view>
+    </view>
+    <view aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog5_title">
+        <view class="weui-mask weui-transition {{dialog5 ? 'weui-transition_show' : ''}}" bindtap="close"></view>
+        <view class="weui-half-screen-dialog weui-half-screen-dialog_slide weui-transition {{dialog5 ? 'weui-transition_show' : ''}}">
+            <view class="weui-half-screen-dialog__hd">
+              <view style="height:4px;border-radius:2px;" class="weui-half-screen-dialog__slide-icon">
+                <view style="opaicty:0;" class="weui-icon-arrow"></view>
+              </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
+                下拉过程中需要改变slide-icon的height、border-radius，以及arrow的opacity三个参数
             </view>
         </view>
     </view>

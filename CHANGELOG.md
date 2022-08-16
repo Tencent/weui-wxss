@@ -1,3 +1,25 @@
+### v2.5.11 (2022-08-16)
+
+#### Features
+* feat: 小程序新增slide半屏
+* feat: 优化slide半屏、loadmore、button组件的实现
+
+
+#### Bugfixes
+* fix: 去掉弹窗适配无障碍focus时带系统默认聚焦样式
+
+
+
+### v2.5.10 (2022-08-02)
+
+#### Features
+* feat: uploader组件的上传图标大小从固定尺寸改为相对尺寸
+
+#### Bugfixes
+* fix: 优化半屏弹窗样式代码
+
+
+
 ### v2.5.9 (2022-06-16)
 
 #### Features

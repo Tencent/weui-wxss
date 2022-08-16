@@ -5,6 +5,7 @@ Page({
     dialog2: false,
     dialog3: false,
     dialog4: false,
+    dialog5: false,
     wrap: false,
     wrap1: false,
   },
@@ -54,6 +55,7 @@ Page({
       dialog2: false,
       dialog3: false,
       dialog4: false,
+      dialog5: false,
     });
   },
   open1() {
@@ -74,6 +76,11 @@ Page({
   open4() {
     this.setData({
       dialog4: true,
+    });
+  },
+  open5() {
+    this.setData({
+      dialog5: true,
     });
   },
 });
