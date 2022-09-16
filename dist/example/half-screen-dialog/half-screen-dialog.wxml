@@ -12,12 +12,13 @@
 		<view aria-role="button" class="weui-btn weui-btn_default" bindtap="open5">样式五</view>
 	</view>
 
-    <view aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog1_title">
+    <view wx:if="{{dialog1}}" aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog1_title">
         <view class="weui-mask weui-transition {{dialog1 ? 'weui-transition_show' : ''}}" bindtap="close"></view>
         <view class="weui-half-screen-dialog weui-transition {{dialog1 ? 'weui-transition_show' : ''}}">
             <view class="weui-half-screen-dialog__hd">
-                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
-                    <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+                <view class="weui-half-screen-dialog__hd__side">
+                    <view aria-role="button" class="weui-btn_icon weui-wa-hotarea" bindtap="close">关闭<i class="weui-icon-close-thin"></i></view>
+                    <view style="display:none;" aria-role="button" class="weui-icon-btn weui-icon-btn_close" bindtap="close">关闭</view>
                 </view>
                 <view class="weui-half-screen-dialog__hd__main">
                     <strong class="weui-half-screen-dialog__title" id="js_dialog1_title">标题</strong>
@@ -29,7 +30,7 @@
             </view>
         </view>
     </view>
-    <view aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog2_title">
+    <view wx:if="{{dialog2}}" aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog2_title">
         <view class="weui-mask weui-transition {{dialog2 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
         <view class="weui-half-screen-dialog weui-half-screen-dialog_bottom-fixed weui-transition {{dialog2 ? 'weui-transition_show' : ''}}">
             <view class="weui-half-screen-dialog__hd">
@@ -42,7 +43,7 @@
                     <strong class="weui-half-screen-dialog__title" id="js_dialog2_title">标题</strong>
                 </view>
                 <view class="weui-half-screen-dialog__hd__side">
-                    <view aria-role="button" class="weui-icon-btn">更多<i class="weui-icon-more"></i></view>
+                    <view aria-role="button" class="weui-btn_icon">更多<i class="weui-icon-more"></i></view>
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd">
@@ -69,12 +70,12 @@
             </view>
         </view>
     </view>
-    <view aria-role="dialog" aria-modal="true">
+    <view wx:if="{{dialog3}}" aria-role="dialog" aria-modal="true">
         <view class="weui-mask weui-transition {{dialog3 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
         <view class="weui-half-screen-dialog weui-transition {{dialog3 ? 'weui-transition_show' : ''}} {{wrap1 ? 'weui-half-screen-dialog_btn-wrap' : ''}}">
             <view class="weui-half-screen-dialog__hd">
                 <view class="weui-half-screen-dialog__hd__side" bindtap="close">
-                    <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+                    <view aria-role="button" class="weui-btn_icon">关闭<i class="weui-icon-close-thin"></i></view>
                 </view>
                 <view class="weui-half-screen-dialog__hd__main">
                     <strong class="weui-half-screen-dialog__title">标题</strong>
@@ -94,12 +95,12 @@
             </view>
         </view>
     </view>
-    <view aria-role="dialog" aria-modal="true">
+    <view wx:if="{{dialog4}}" aria-role="dialog" aria-modal="true">
         <view class="weui-mask weui-transition {{dialog4 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
         <view class="weui-half-screen-dialog weui-half-screen-dialog_large weui-transition {{dialog4 ? 'weui-transition_show' : ''}}">
             <view class="weui-half-screen-dialog__hd">
                 <view class="weui-half-screen-dialog__hd__side" bindtap="close">
-                    <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+                    <view aria-role="button" class="weui-btn_icon">关闭<i class="weui-icon-close-thin"></i></view>
                 </view>
                 <view class="weui-half-screen-dialog__hd__main">
                     <strong class="weui-half-screen-dialog__title">标题</strong>
@@ -115,7 +116,7 @@
             </view>
         </view>
     </view>
-    <view aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog5_title">
+    <view wx:if="{{dialog5}}" aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog5_title">
         <view class="weui-mask weui-transition {{dialog5 ? 'weui-transition_show' : ''}}" bindtap="close"></view>
         <view class="weui-half-screen-dialog weui-half-screen-dialog_slide weui-transition {{dialog5 ? 'weui-transition_show' : ''}}">
             <view class="weui-half-screen-dialog__hd">
