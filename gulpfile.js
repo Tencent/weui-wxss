@@ -47,6 +47,7 @@ function buildStyle() {
       autoprefixer: false,
       discardComments: { removeAll: true },
       svgo: false,
+      reduceIdents: false,
     }))
     .pipe(header(banner, { pkg }))
     // px版本
