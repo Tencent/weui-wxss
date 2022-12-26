@@ -1,3 +1,16 @@
+### v2.5.15 (2022-12-26)
+
+#### Features
+* feat: 加入色板less变量
+* feat: 色板新增红橙色
+
+#### Bugfixes
+* fix: 弹窗标题缺少默认字体颜色
+* fix: 半屏弹窗demo动画效果
+* fix: weui-animate的keyframe名增加weui前缀
+
+
+
 ### v2.5.14 (2022-09-16)
 
 #### Bugfixes
