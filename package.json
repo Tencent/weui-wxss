@@ -1,6 +1,6 @@
 {
   "name": "weui-wxss",
-  "version": "2.5.15",
+  "version": "2.5.16",
   "description": "weui-wxss",
   "main": "dist/style/weui.wxss",
   "directories": {

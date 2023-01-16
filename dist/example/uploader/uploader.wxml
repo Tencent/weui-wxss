@@ -34,7 +34,7 @@
                                 <view class="weui-uploader__file weui-uploader__file_status">
                                     <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
                                     <view aria-role="alert" class="weui-uploader__file-content">
-                                      <view aria-role="img" aria-label="上传中" class="weui-loading"></view>
+                                      <view aria-role="img" aria-label="正在上传" class="weui-loading"></view>
                                     </view>
                                 </view>
                                 <view class="weui-uploader__file weui-uploader__file_status">

@@ -6,7 +6,7 @@
 	</view>
 	<view class="page__bd">
 		<view class="weui-loadmore" aria-role="alert">
-			<text aria-hidden="true" aria-label="加载中" class="weui-primary-loading" aria-role="img">
+			<text aria-hidden="true" aria-label="正在加载" class="weui-primary-loading" aria-role="img">
 				<text class="weui-primary-loading__dot"></text>
 			</text>
 			<text class="weui-loadmore__tips">正在加载</text>
