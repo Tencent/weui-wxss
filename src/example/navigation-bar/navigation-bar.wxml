@@ -17,7 +17,7 @@
 
           <view class='weui-navigation-bar__center'>
             <view aria-role="alert" class="weui-navigation-bar__loading">
-              <view aria-role="img" aria-label="加载中" class="weui-loading"></view>
+              <view aria-role="img" aria-label="正在加载" class="weui-loading"></view>
             </view>
             <text>标题</text>
           </view>

@@ -2,26 +2,20 @@
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
     <view class="page__hd">
         <view class="page__title">Loading</view>
-        <view class="page__desc">加载中</view>
+        <view class="page__desc">正在加载</view>
     </view>
     <view class="page__bd">
       <view class="weui-loading__wrp">
-          <view aria-role="img" aria-label="加载中" class="weui-loading"></view>
-          <view aria-role="img" aria-label="加载中" class="weui-primary-loading">
-            <view class="weui-primary-loading__dot"></view>
-          </view>
-          <view aria-role="img" aria-label="加载中" class="weui-primary-loading weui-primary-loading_brand">
-            <view class="weui-primary-loading__dot"></view>
-          </view>
-          <view aria-role="img" aria-label="加载中" class="weui-primary-loading weui-primary-loading_transparent">
-            <view class="weui-primary-loading__dot"></view>
-          </view>
+          <view aria-role="img" aria-label="正在加载" class="weui-loading"></view>
+          <view aria-role="img" aria-label="正在加载" class="weui-mask-loading"></view>
+          <view aria-role="img" aria-label="正在加载" class="weui-mask-loading" style="color:var(--weui-BRAND);"></view>
+          <view aria-role="img" aria-label="正在加载" class="weui-mask-loading" style="color:#EDEDED;"></view>
       </view>
       <view class="weui-loading__wrp">
-          <view aria-role="img" aria-label="加载中" class="loading wx_dot_loading"></view>
+          <view aria-role="img" aria-label="正在加载" class="loading wx_dot_loading"></view>
       </view>
       <view class="weui-loading__wrp">
-          <view aria-role="img" aria-label="加载中" class="loading wx_dot_loading wx_dot_loading_white"></view>
+          <view aria-role="img" aria-label="正在加载" class="loading wx_dot_loading wx_dot_loading_white"></view>
       </view>
     </view>
 </view>
