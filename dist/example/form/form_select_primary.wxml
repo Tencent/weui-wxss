@@ -1,51 +1,53 @@
 <page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-form">
-		<view class="weui-form__text-area">
-			<view class="weui-form__title">模拟选择框</view>
-			<view class="weui-form__desc">用于丰富原生选择框结构，使其更具有扩展性</view>
-		</view>
-		<view class="weui-form__control-area">
-			<view class="weui-cells__group weui-cells__group_form">
-				<view class="weui-cells">
-					<view class="weui-cell weui-cell_active weui-cell_select" aria-haspopup="listbox" id="showDatePicker" aria-role="button">
-						<view class="weui-cell__bd"><view class="weui-select">日期</view></view>
-					</view>
-					<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-before">
-						<view class="weui-cell__hd" id="showPhone" aria-haspopup="listbox" aria-role="button"><view class="weui-select">+86</view></view>
-						<view class="weui-cell__bd">
-							<input id="js_input1" class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入号码" value="12345678907"></input>
-						</view>
-					</view>
-					<view id="showPicker" aria-haspopup="listbox" class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after" aria-role="button">
-						<view class="weui-cell__hd">							<label class="weui-label">票种</label></view>
-						<view class="weui-cell__bd"><view class="weui-select">的士票</view></view>
-					</view>
-					<label for="js_input3" class="weui-cell weui-cell_active weui-cell_wrap">
-						<view class="weui-cell__hd">
-							<text class="weui-label">手机号</text>
-						</view>
-						<view class="weui-cell__bd">
-							<text class="weui-cell__control">+86</text>
-							<input id="js_input3" class="weui-input  weui-cell__control weui-cell__control_flex" type="number" pattern="[0-9]*" placeholder="请输入号码" value="12345678907"></input>
-						</view>
-					</label>
-				</view>
+		<view class="weui-form__bd">
+			<view class="weui-form__text-area">
+				<view class="weui-form__title">模拟选择框</view>
+				<view class="weui-form__desc">用于丰富原生选择框结构，使其更具有扩展性</view>
 			</view>
-			<view class="weui-cells__group" style="display:none;">
-				<view class="weui-cells">
-					<view class="weui-cell weui-cell_active weui-cell_select" aria-haspopup="listbox" id="showDatePicker" aria-role="button">
-						<view class="weui-cell__bd">							<view class="weui-select">日期</view></view>
-					</view>
-					<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-before">
-						<view class="weui-cell__hd" id="showPhone" aria-haspopup="listbox" aria-role="button"><view class="weui-select">+86</view></view>
-						<view class="weui-cell__bd">
-							<input id="js_input1" class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入号码" value="12345678907"></input>
+			<view class="weui-form__control-area">
+				<view class="weui-cells__group weui-cells__group_form">
+					<view class="weui-cells">
+						<view class="weui-cell weui-cell_active weui-cell_select" aria-haspopup="listbox" id="showDatePicker" aria-role="button">
+							<view class="weui-cell__bd"><view class="weui-select">日期</view></view>
 						</view>
+						<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-before">
+							<view class="weui-cell__hd" id="showPhone" aria-haspopup="listbox" aria-role="button"><view class="weui-select">+86</view></view>
+							<view class="weui-cell__bd">
+								<input id="js_input1" class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入号码" value="12345678907"></input>
+							</view>
+						</view>
+						<view id="showPicker" aria-haspopup="listbox" class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after" aria-role="button">
+							<view class="weui-cell__hd">								<label class="weui-label">票种</label></view>
+							<view class="weui-cell__bd"><view class="weui-select">的士票</view></view>
+						</view>
+						<label for="js_input3" class="weui-cell weui-cell_active weui-cell_wrap">
+							<view class="weui-cell__hd">
+								<text class="weui-label">手机号</text>
+							</view>
+							<view class="weui-cell__bd">
+								<text class="weui-cell__control">+86</text>
+								<input id="js_input3" class="weui-input  weui-cell__control weui-cell__control_flex" type="number" pattern="[0-9]*" placeholder="请输入号码" value="12345678907"></input>
+							</view>
+						</label>
 					</view>
-					<view id="showPicker" aria-haspopup="listbox" class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after" aria-role="button">
-						<view class="weui-cell__hd">							<label class="weui-label">票种</label></view>
-						<view class="weui-cell__bd"><view class="weui-select">的士票</view></view>
+				</view>
+				<view class="weui-cells__group" style="display:none;">
+					<view class="weui-cells">
+						<view class="weui-cell weui-cell_active weui-cell_select" aria-haspopup="listbox" id="showDatePicker" aria-role="button">
+							<view class="weui-cell__bd">								<view class="weui-select">日期</view></view>
+						</view>
+						<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-before">
+							<view class="weui-cell__hd" id="showPhone" aria-haspopup="listbox" aria-role="button"><view class="weui-select">+86</view></view>
+							<view class="weui-cell__bd">
+								<input id="js_input1" class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入号码" value="12345678907"></input>
+							</view>
+						</view>
+						<view id="showPicker" aria-haspopup="listbox" class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after" aria-role="button">
+							<view class="weui-cell__hd">								<label class="weui-label">票种</label></view>
+							<view class="weui-cell__bd"><view class="weui-select">的士票</view></view>
+						</view>
 					</view>
 				</view>
 			</view>

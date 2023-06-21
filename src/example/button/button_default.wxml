@@ -8,7 +8,6 @@
 		<view class="button-sp-area">
 			<navigator class="weui-btn weui-btn_primary" aria-role="button" url="javascript:">主要操作</navigator>
 			<navigator title="正在操作" class="weui-btn weui-btn_primary weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>主要操作</navigator>
-			<navigator title="正在操作" class="weui-btn weui-btn_primary weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>主要操作</navigator>
 			<navigator aria-disabled="true" disabled class="weui-btn weui-btn_disabled weui-btn_primary" aria-role="button" url="javascript:">主要操作</navigator>
 			<navigator class="weui-btn weui-btn_default" aria-role="button" url="javascript:">次要操作</navigator>
 			<navigator title="正在操作" class="weui-btn weui-btn_default weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>次要操作</navigator>
@@ -16,6 +15,16 @@
 			<navigator class="weui-btn weui-btn_warn" aria-role="button" url="javascript:">警示操作</navigator>
 			<navigator title="正在操作" class="weui-btn weui-btn_warn weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>警示操作</navigator>
 			<navigator aria-disabled="true" disabled class="weui-btn weui-btn_disabled weui-btn_warn" aria-role="button" url="javascript:">警示操作</navigator>
+		</view>
+		<view class="button-sp-area">
+			<navigator class="weui-btn weui-btn_primary weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</navigator>
+			<navigator class="weui-btn weui-btn_default weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</navigator>
+			<navigator class="weui-btn weui-btn_warn weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</navigator>
+		</view>
+		<view class="button-sp-area overlay">
+			<navigator class="weui-btn weui-btn_overlay" aria-role="button" url="javascript:">overlay 按钮</navigator>
+			<navigator class="weui-btn weui-btn_overlay weui-btn_medium" aria-role="button" url="javascript:">overlay 按钮</navigator>
+			<navigator class="weui-btn weui-btn_overlay weui-btn_mini" aria-role="button" url="javascript:">overlay 按钮</navigator>
 		</view>
 		<view class="button-sp-area cell">
 			<navigator class="weui-btn_cell weui-btn_cell-default" aria-role="button" url="javascript:">普通行按钮</navigator>

@@ -9,11 +9,13 @@
         <view style="display:none;" aria-role="button" bindtap="open" data-url="form_primary" class="weui-btn weui-btn_default">反色表单</view>
         <view aria-role="button" bindtap="open" data-url="form_input_status" class="weui-btn weui-btn_default">输入框状态</view>
         <view aria-role="button" bindtap="open" data-url="form_vcode" class="weui-btn weui-btn_default">验证码</view>
+        <view aria-role="button" bindtap="open" data-url="form_bottom_fixed" class="weui-btn weui-btn_default">底部悬浮</view>
         <view aria-role="button" bindtap="open" data-url="form_access" class="weui-btn weui-btn_default">跳转列表项</view>
         <view aria-role="button" bindtap="open" data-url="form_checkbox" class="weui-btn weui-btn_default">复选框</view>
         <view aria-role="button" bindtap="open" data-url="form_radio" class="weui-btn weui-btn_default">单选框</view>
         <view aria-role="button" bindtap="open" data-url="form_switch" class="weui-btn weui-btn_default">开关</view>
         <view aria-role="button" bindtap="open" data-url="form_select" class="weui-btn weui-btn_default">选择框</view>
         <view aria-role="button" bindtap="open" data-url="form_textarea" class="weui-btn weui-btn_default">文本域</view>
+        <view aria-role="button" bindtap="open" data-url="form_vertical" class="weui-btn weui-btn_default">上下结构</view>
     </view>
 </view>

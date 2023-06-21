@@ -1,22 +1,24 @@
 <page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-form">
-		<view class="weui-form__text-area">
-			<h2 class="weui-form__title">跳转列表项</h2>
-		</view>
-		<view class="weui-form__control-area">
-			<view class="weui-cells__group weui-cells__group_form">
-				<view class="weui-cells">
-					<navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="javascript:;">
-						<view class="weui-cell__bd"><view>cell standard</view></view>
-						<view class="weui-cell__ft"></view>
-					</navigator>
-					<navigator class="weui-cell weui-cell_access" url="javascript:;" hover-class="weui-cell_active">
-						<view class="weui-cell__bd"><view>cell standard</view></view>
-						<view class="weui-cell__ft"></view>
-					</navigator>
-				</view>
-			</view>
+    <view class="weui-form__bd">
+      <view class="weui-form__text-area">
+        <h2 class="weui-form__title">跳转列表项</h2>
+      </view>
+      <view class="weui-form__control-area">
+        <view class="weui-cells__group weui-cells__group_form">
+          <view class="weui-cells">
+            <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="javascript:;">
+              <view class="weui-cell__bd"><view>cell standard</view></view>
+              <view class="weui-cell__ft"></view>
+            </navigator>
+            <navigator class="weui-cell weui-cell_access" url="javascript:;" hover-class="weui-cell_active">
+              <view class="weui-cell__bd"><view>cell standard</view></view>
+              <view class="weui-cell__ft"></view>
+            </navigator>
+          </view>
+        </view>
+      </view>
 		</view>
 	</view>
 </view>

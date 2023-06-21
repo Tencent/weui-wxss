@@ -18,7 +18,7 @@ Page({
         id: 'feedback',
         name: '操作反馈',
         open: false,
-        pages: ['actionsheet', 'dialog', 'half-screen-dialog', 'msg', 'picker', 'toast', 'top-tips'],
+        pages: ['actionsheet', 'dialog', 'half-screen-dialog', 'msg', 'picker', 'toast', 'information-bar'],
       },
       {
         id: 'nav',

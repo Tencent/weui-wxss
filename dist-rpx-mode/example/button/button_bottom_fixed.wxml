@@ -5,9 +5,20 @@
 		<view class="weui-bottom-fixed-opr-page__content">
 			<view class="weui-bottom-fixed-opr-demo">Dolor tempora dolore aperiam fuga necessitatibus? Odio atque tempora deleniti voluptates voluptatem. Dolorem earum voluptas blanditiis labore quisquam? Quibusdam nesciunt consequatur aliquam ea corrupti animi, itaque consequatur neque? At porroSit nemo aliquid quas error doloremque Reiciendis ratione repellendus quae sit commodi amet architecto? Aut officiis aliquam fugit nulla at necessitatibus Optio totam quibusdam laboriosam aperiam libero! Officiis reiciendis Elit quaerat sed vero perferendis architecto consequatur. Consequuntur ad illum dolore ut accusamus. Cum possimus odit sequi quaerat beatae, eveniet. Rerum dolore ipsam quia consectetur iste Veniam mollitia dolores tempore? Dolor tempora dolore aperiam fuga necessitatibus? Odio atque tempora deleniti voluptates voluptatem. Dolorem earum voluptas blanditiis labore quisquam? Quibusdam nesciunt consequatur aliquam ea corrupti animi, itaque consequatur neque? At porroSit nemo aliquid quas error doloremque Reiciendis ratione repellendus quae sit commodi amet architecto? Aut officiis aliquam fugit nulla at necessitatibus Optio totam quibusdam laboriosam aperiam libero! Officiis reiciendis Elit quaerat sed vero perferendis architecto consequatur. Consequuntur ad illum dolore ut accusamus. Cum possimus odit sequi quaerat beatae, eveniet. Rerum dolore ipsam quia consectetur iste Veniam mollitia dolores tempore? </view>
 		</view>
-		<view class="weui-bottom-fixed-opr" id="js_opr">
-			<navigator class="weui-btn weui-btn_primary" id="js_btn" aria-role="button" url="javascript:;">阅读并同意</navigator>
-			<navigator class="weui-btn weui-btn_default" aria-role="button" url="javascript:;">取消</navigator>
+		<view class="weui-bottom-fixed-opr-page__tool">
+      <view class="weui-bottom-fixed-opr-page__tips">
+          <checkbox-group bindchange="checkboxChange">
+              <label aria-role="" class="weui-wa-hotarea weui-agree">
+                  <checkbox aria-role="" value="{{checkValue}}" class="weui-agree__checkbox-check" />
+                  <view class="weui-agree__checkbox" aria-labelledby="js_agree_txt js_agree_link" aria-role="checkbox"></view>
+                  <view class="weui-agree__text"><text aria-hidden="true" id="js_agree_txt">阅读并同意</text><navigator id="js_agree_link">《相关条款》</navigator></view>
+              </label>
+          </checkbox-group>
+      </view>
+      <view class="weui-bottom-fixed-opr">
+        <navigator class="weui-btn weui-btn_primary" id="js_btn" aria-role="button" url="javascript:;">阅读并同意</navigator>
+        <navigator class="weui-btn weui-btn_default" aria-role="button" url="javascript:;">取消</navigator>
+      </view>
 		</view>
 	</view>
 </view>
