@@ -1,0 +1,29 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="weui-form">
+    <view class="weui-form__bd">
+      <view class="weui-form__text-area">
+        <h2 class="weui-form__title">文本域</h2>
+        <view class="weui-form__desc">输入更多内容的输入区域样式展示</view>
+      </view>
+      <view class="weui-form__control-area">
+        <view class="weui-cells__group weui-cells__group_form">
+          <view class="weui-cells weui-cells_form">
+              <view class="weui-cell weui-cell_vertical" hover-class="weui-cell_active">
+                  <view class="weui-cell__hd"><label class="weui-label">问题描述</label></view>
+                  <view class="weui-cell__bd">
+                      <textarea class="weui-textarea" placeholder="请描述你所发生的问题" placeholder-class="weui-input__placeholder" rows="3"></textarea>
+                      <view aria-role="option" class="weui-textarea-counter"><span>0</span>/200</view>
+                  </view>
+              </view>
+          </view>
+        </view>
+      </view>
+		</view>
+    <view class="weui-form__ft">
+      <view class="weui-form__opr-area">
+        <view class="weui-btn weui-btn_primary" aria-role="button">确定</view>
+      </view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,64 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="page__hd">
+		<view class="page__title">Information Bar</view>
+		<view class="page__desc">信息提示条</view>
+	</view>
+	<view class="page__bd page__bd_spacing">
+		<view class="weui-information-bar weui-information-bar_warn-strong" id="js_informationBar" aria-role="alert">
+			<view class="weui-information-bar__hd">
+				<text class="weui-icon-outlined-warn"></text>
+			</view>
+			<view class="weui-information-bar__bd">
+信息提示warnstrong
+			</view>
+			<view class="weui-information-bar__ft">
+				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
+			</view>
+		</view>
+		<view class="weui-information-bar weui-information-bar_warn-weak" id="js_informationBar" aria-role="alert">
+			<view class="weui-information-bar__hd">
+				<text class="weui-icon-outlined-warn"></text>
+			</view>
+			<view class="weui-information-bar__bd">
+信息提示warnweak
+			</view>
+			<view class="weui-information-bar__ft">
+				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
+			</view>
+		</view>
+		<view class="weui-information-bar weui-information-bar_warn-no-color" id="js_informationBar" aria-role="alert">
+			<view class="weui-information-bar__hd">
+				<text class="weui-icon-outlined-warn"></text>
+			</view>
+			<view class="weui-information-bar__bd">
+信息提示warnnocolor
+			</view>
+			<view class="weui-information-bar__ft">
+				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
+			</view>
+		</view>
+		<view class="weui-information-bar weui-information-bar_tips-strong" id="js_informationBar" aria-role="alert">
+			<view class="weui-information-bar__hd">
+				<text class="weui-icon-outlined-warn"></text>
+			</view>
+			<view class="weui-information-bar__bd">
+信息提示tipsstrong
+			</view>
+			<view class="weui-information-bar__ft">
+				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
+			</view>
+		</view>
+		<view class="weui-information-bar weui-information-bar_tips-weak" id="js_informationBar" aria-role="alert">
+			<view class="weui-information-bar__hd">
+				<text class="weui-icon-outlined-warn"></text>
+			</view>
+			<view class="weui-information-bar__bd">
+信息提示tipsweak
+			</view>
+			<view class="weui-information-bar__ft">
+				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
+			</view>
+		</view>
+	</view>
+</view>

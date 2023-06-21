@@ -17,7 +17,10 @@
             </view>
             <view class="weui-actionsheet__menu">
                 <view aria-role="button" class="weui-actionsheet__cell">示例菜单</view>
-                <view aria-role="button" class="weui-actionsheet__cell">示例菜单</view>
+                <view aria-role="button" class="weui-actionsheet__cell weui-actionsheet__cell_tips">
+                  示例菜单
+                  <view class="weui-actionsheet__cell__tips">副标题</view>
+                </view>
                 <view aria-role="button" class="weui-actionsheet__cell weui-actionsheet__cell_warn">负向菜单</view>
             </view>
             <view class="weui-actionsheet__action">

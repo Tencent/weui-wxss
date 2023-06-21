@@ -1,0 +1,71 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="weui-form weui-bottom-fixed-opr-page">
+    <view class="weui-form__bd weui-bottom-fixed-opr-page__content">
+      <view class="weui-form__text-area">
+        <h2 class="weui-form__title">验证码</h2>
+        <view class="weui-form__desc">验证手机号样式</view>
+      </view>
+      <view class="weui-form__control-area">
+        <view class="weui-cells__group weui-cells__group_form">
+          <view class="weui-cells weui-cells_form">
+            <view class="weui-cell weui-cell_active">
+              <view class="weui-cell__hd"><label class="weui-label">手机号</label></view>
+              <view class="weui-cell__bd">
+                <input class="weui-input" type="number" placeholder="请输入手机号" value="12345678907" placeholder-class="weui-input__placeholder" />
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_active">
+              <view class="weui-cell__hd"><label class="weui-label">手机号</label></view>
+              <view class="weui-cell__bd">
+                <input class="weui-input" type="number" placeholder="请输入手机号" value="12345678907" placeholder-class="weui-input__placeholder" />
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_active">
+              <view class="weui-cell__hd"><label class="weui-label">手机号</label></view>
+              <view class="weui-cell__bd">
+                <input class="weui-input" type="number" placeholder="请输入手机号" value="12345678907" placeholder-class="weui-input__placeholder" />
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_active">
+              <view class="weui-cell__hd"><label class="weui-label">手机号</label></view>
+              <view class="weui-cell__bd">
+                <input class="weui-input" type="number" placeholder="请输入手机号" value="12345678907" placeholder-class="weui-input__placeholder" />
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_active">
+              <view class="weui-cell__hd"><label class="weui-label">手机号</label></view>
+              <view class="weui-cell__bd">
+                <input class="weui-input" type="number" placeholder="请输入手机号" value="12345678907" placeholder-class="weui-input__placeholder" />
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_active">
+              <view class="weui-cell__hd"><label class="weui-label">手机号</label></view>
+              <view class="weui-cell__bd">
+                <input class="weui-input" type="number" placeholder="请输入手机号" value="12345678907" placeholder-class="weui-input__placeholder" />
+              </view>
+            </view>
+          </view>
+          <view class="weui-cells__tips">
+            <navigator class="weui-link">收不到验证码</navigator>
+          </view>
+        </view>
+      </view>
+		</view>
+    <view class="weui-form__ft weui-bottom-fixed-opr-page__tool">
+      <view class="weui-form__tips-area">
+          <checkbox-group bindchange="checkboxChange">
+              <label aria-role="" class="weui-wa-hotarea weui-agree {{msg ? 'weui-agree_animate' : ''}}">
+                  <checkbox aria-role="" value="{{checkValue}}" class="weui-agree__checkbox-check" />
+                  <view class="weui-agree__checkbox" aria-labelledby="js_agree_txt js_agree_link" aria-role="checkbox"></view>
+                  <view class="weui-agree__text"><text aria-hidden="true" id="js_agree_txt">阅读并同意</text><navigator id="js_agree_link">《相关条款》</navigator></view>
+              </label>
+          </checkbox-group>
+      </view>
+      <view class="weui-form__opr-area">
+        <button type="primary" disabled="{{vcodeValue ? false : true}}" bindtap="checkStatus">确定</button>
+      </view>
+		</view>
+	</view>
+  <view aria-role="alert" hidden="{{msg ? false : true}}" class="weui-hidden_abs">未同意《相关条款》</view>
+</view>

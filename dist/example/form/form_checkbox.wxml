@@ -1,41 +1,45 @@
 <page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-form">
-		<view class="weui-form__text-area">
-			<h2 class="weui-form__title">复选框样式展示</h2>
-		</view>
-		<view class="weui-form__control-area">
-			<view class="weui-cells__group weui-cells__group_form">
-				<view class="weui-cells weui-cells_checkbox">
-                    <checkbox-group bindchange="checkboxChange">
-                        <label class="weui-cell weui-cell_active weui-check__label {{item.disabled ? 'weui-cell_disabled' : ''}}" wx:for="{{items}}" wx:key="name">
-                            <view class="weui-cell__hd">
-                                <checkbox
-                                    class="weui-check"
-                                    value="{{item.name}}"
-                                    checked="{{item.checked}}"
-                                    disabled="{{item.disabled}}"
-                                />
-                                <i class="weui-icon-checked"></i>
-                            </view>
-                            <view class="weui-cell__bd">
-                                <view>{{item.value}}</view>
-                            </view>
-                        </label>
-                    </checkbox-group>
-					<navigator class="weui-cell weui-cell_active weui-cell_link" hover-class="weui-cell_active">
-						<view class="weui-cell__bd">添加更多</view>
-					</navigator>
-				</view>
-			</view>
-		</view>
-		<view class="weui-form__opr-area">
-			<view aria-role="button" class="weui-btn weui-btn_primary">下一步</view>
-		</view>
-		<view class="weui-form__tips-area">
-			<view class="weui-form__tips">
-        <text aria-role="option" aria-labelledby="js_tips_txt js_tips_link" id="js_tips_txt">点击下一步即表示</text><navigator id="js_tips_link" url="javascript:">同意用户协议</navigator>
-			</view>
-		</view>
+    <view class="weui-form__bd">
+      <view class="weui-form__text-area">
+        <h2 class="weui-form__title">复选框样式展示</h2>
+      </view>
+      <view class="weui-form__control-area">
+        <view class="weui-cells__group weui-cells__group_form">
+          <view class="weui-cells weui-cells_checkbox">
+                      <checkbox-group bindchange="checkboxChange">
+                          <label class="weui-cell weui-cell_active weui-check__label {{item.disabled ? 'weui-cell_disabled' : ''}}" wx:for="{{items}}" wx:key="name">
+                              <view class="weui-cell__hd">
+                                  <checkbox
+                                      class="weui-check"
+                                      value="{{item.name}}"
+                                      checked="{{item.checked}}"
+                                      disabled="{{item.disabled}}"
+                                  />
+                                  <i class="weui-icon-checked"></i>
+                              </view>
+                              <view class="weui-cell__bd">
+                                  <view>{{item.value}}</view>
+                              </view>
+                          </label>
+                      </checkbox-group>
+            <navigator class="weui-cell weui-cell_active weui-cell_link" hover-class="weui-cell_active">
+              <view class="weui-cell__bd">添加更多</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-form__ft">
+      <view class="weui-form__opr-area">
+        <view aria-role="button" class="weui-btn weui-btn_primary">下一步</view>
+      </view>
+      <view class="weui-form__tips-area">
+        <view class="weui-form__tips">
+          <text aria-role="option" aria-labelledby="js_tips_txt js_tips_link" id="js_tips_txt">点击下一步即表示</text><navigator id="js_tips_link" url="javascript:">同意用户协议</navigator>
+        </view>
+      </view>
+    </view>
 	</view>
 </view>

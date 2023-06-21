@@ -1,35 +1,39 @@
 <page-meta root-font-size="system"/>
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-form">
-		<view class="weui-form__text-area">
-			<h2 class="weui-form__title">单选框样式展示</h2>
+    <view class="weui-form__bd">
+      <view class="weui-form__text-area">
+        <h2 class="weui-form__title">单选框样式展示</h2>
+      </view>
+      <view class="weui-form__control-area">
+        <view class="weui-cells__group weui-cells__group_form">
+          <view class="weui-cells weui-cells_radio">
+                      <radio-group class="radio-group" bindchange="radioChange">
+                          <label class="weui-cell weui-cell_active weui-check__label" wx:for="{{items}}" wx:key="name">
+                              <view class="weui-cell__bd">
+                                  <view>{{item.value}}</view>
+                              </view>
+                              <view class="weui-cell__ft">
+                                  <radio
+                                      class="weui-check"
+                                      value="{{item.name}}"
+                                      checked="{{item.checked}}"
+                                  />
+                                  <i class="weui-icon-checked"></i>
+                              </view>
+                          </label>
+                      </radio-group>
+            <navigator class="weui-cell weui-cell_active weui-cell_link" hover-class="weui-cell_active">
+              <view class="weui-cell__bd">添加更多</view>
+            </navigator>
+          </view>
+        </view>
+      </view>
 		</view>
-		<view class="weui-form__control-area">
-			<view class="weui-cells__group weui-cells__group_form">
-				<view class="weui-cells weui-cells_radio">
-                    <radio-group class="radio-group" bindchange="radioChange">
-                        <label class="weui-cell weui-cell_active weui-check__label" wx:for="{{items}}" wx:key="name">
-                            <view class="weui-cell__bd">
-                                <view>{{item.value}}</view>
-                            </view>
-                            <view class="weui-cell__ft">
-                                <radio
-                                    class="weui-check"
-                                    value="{{item.name}}"
-                                    checked="{{item.checked}}"
-                                />
-                                <i class="weui-icon-checked"></i>
-                            </view>
-                        </label>
-                    </radio-group>
-					<navigator class="weui-cell weui-cell_active weui-cell_link" hover-class="weui-cell_active">
-						<view class="weui-cell__bd">添加更多</view>
-					</navigator>
-				</view>
-			</view>
-		</view>
-		<view class="weui-form__opr-area">
-			<view class="weui-btn weui-btn_primary" aria-role="button">确定</view>
+    <view class="weui-form__ft">
+      <view class="weui-form__opr-area">
+        <view class="weui-btn weui-btn_primary" aria-role="button">确定</view>
+      </view>
 		</view>
 	</view>
 </view>
