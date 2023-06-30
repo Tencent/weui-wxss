@@ -13,6 +13,7 @@
 信息提示warnstrong
 			</view>
 			<view class="weui-information-bar__ft">
+				<navigator class="weui-link" url="#">详情</navigator>
 				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
 			</view>
 		</view>
@@ -24,6 +25,7 @@
 信息提示warnweak
 			</view>
 			<view class="weui-information-bar__ft">
+				<navigator class="weui-link" url="#">详情</navigator>
 				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
 			</view>
 		</view>
@@ -35,6 +37,7 @@
 信息提示warnnocolor
 			</view>
 			<view class="weui-information-bar__ft">
+				<navigator class="weui-link" url="#">详情</navigator>
 				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
 			</view>
 		</view>
@@ -46,6 +49,7 @@
 信息提示tipsstrong
 			</view>
 			<view class="weui-information-bar__ft">
+				<navigator class="weui-link" url="#">详情</navigator>
 				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
 			</view>
 		</view>
@@ -57,6 +61,7 @@
 信息提示tipsweak
 			</view>
 			<view class="weui-information-bar__ft">
+				<navigator class="weui-link" url="#">详情</navigator>
 				<button class="weui-btn_icon">关闭<text class="weui-icon-close-thin"></text></button>
 			</view>
 		</view>
