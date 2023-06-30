@@ -6,39 +6,39 @@
 	</view>
 	<view class="page__bd">
 		<view class="button-sp-area">
-			<navigator class="weui-btn weui-btn_primary" aria-role="button" url="javascript:">主要操作</navigator>
-			<navigator title="正在操作" class="weui-btn weui-btn_primary weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>主要操作</navigator>
-			<navigator aria-disabled="true" disabled class="weui-btn weui-btn_disabled weui-btn_primary" aria-role="button" url="javascript:">主要操作</navigator>
-			<navigator class="weui-btn weui-btn_default" aria-role="button" url="javascript:">次要操作</navigator>
-			<navigator title="正在操作" class="weui-btn weui-btn_default weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>次要操作</navigator>
-			<navigator aria-disabled="true" disabled class="weui-btn weui-btn_disabled weui-btn_default" aria-role="button" url="javascript:">次要操作</navigator>
-			<navigator class="weui-btn weui-btn_warn" aria-role="button" url="javascript:">警示操作</navigator>
-			<navigator title="正在操作" class="weui-btn weui-btn_warn weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>警示操作</navigator>
-			<navigator aria-disabled="true" disabled class="weui-btn weui-btn_disabled weui-btn_warn" aria-role="button" url="javascript:">警示操作</navigator>
+			<view class="weui-btn weui-btn_primary" aria-role="button" url="javascript:">主要操作</view>
+			<view title="正在操作" class="weui-btn weui-btn_primary weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>主要操作</view>
+			<view aria-disabled="true" disabled="disabled" class="weui-btn weui-btn_disabled weui-btn_primary" aria-role="button" url="javascript:">主要操作</view>
+			<view class="weui-btn weui-btn_default" aria-role="button" url="javascript:">次要操作</view>
+			<view title="正在操作" class="weui-btn weui-btn_default weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>次要操作</view>
+			<view aria-disabled="true" disabled class="weui-btn weui-btn_disabled weui-btn_default" aria-role="button" url="javascript:">次要操作</view>
+			<view class="weui-btn weui-btn_warn" aria-role="button" url="javascript:">警示操作</view>
+			<view title="正在操作" class="weui-btn weui-btn_warn weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>警示操作</view>
+			<view aria-disabled="true" disabled class="weui-btn weui-btn_disabled weui-btn_warn" aria-role="button" url="javascript:">警示操作</view>
 		</view>
 		<view class="button-sp-area">
-			<navigator class="weui-btn weui-btn_primary weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</navigator>
-			<navigator class="weui-btn weui-btn_default weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</navigator>
-			<navigator class="weui-btn weui-btn_warn weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</navigator>
+			<view class="weui-btn weui-btn_primary weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</view>
+			<view class="weui-btn weui-btn_default weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</view>
+			<view class="weui-btn weui-btn_warn weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</view>
 		</view>
 		<view class="button-sp-area overlay">
-			<navigator class="weui-btn weui-btn_overlay" aria-role="button" url="javascript:">overlay 按钮</navigator>
-			<navigator class="weui-btn weui-btn_overlay weui-btn_medium" aria-role="button" url="javascript:">overlay 按钮</navigator>
-			<navigator class="weui-btn weui-btn_overlay weui-btn_mini" aria-role="button" url="javascript:">overlay 按钮</navigator>
+			<view class="weui-btn weui-btn_overlay" aria-role="button" url="javascript:">overlay 按钮</view>
+			<view class="weui-btn weui-btn_overlay weui-btn_medium" aria-role="button" url="javascript:">overlay 按钮</view>
+			<view class="weui-btn weui-btn_overlay weui-btn_mini" aria-role="button" url="javascript:">overlay 按钮</view>
 		</view>
 		<view class="button-sp-area cell">
-			<navigator class="weui-btn_cell weui-btn_cell-default" aria-role="button" url="javascript:">普通行按钮</navigator>
-			<navigator class="weui-btn_cell weui-btn_cell-primary" aria-role="button" url="javascript:">强调行按钮</navigator>
-			<navigator class="weui-btn_cell weui-btn_cell-primary" aria-role="button" url="javascript:">
+			<view class="weui-btn_cell weui-btn_cell-default" aria-role="button" url="javascript:">普通行按钮</view>
+			<view class="weui-btn_cell weui-btn_cell-primary" aria-role="button" url="javascript:">强调行按钮</view>
+			<view class="weui-btn_cell weui-btn_cell-primary" aria-role="button" url="javascript:">
 				<image alt="icon" class="weui-btn_cell__icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII="></image>
 强调行按钮
-			</navigator>
-			<navigator class="weui-btn_cell weui-btn_cell-warn" aria-role="button" url="javascript:">警示行按钮</navigator>
+			</view>
+			<view class="weui-btn_cell weui-btn_cell-warn" aria-role="button" url="javascript:">警示行按钮</view>
 		</view>
 		<view class="button-sp-area">
-			<navigator class="weui-btn weui-btn_mini weui-btn_primary weui-wa-hotarea" aria-role="button" url="javascript:">按钮</navigator>
-			<navigator class="weui-btn weui-btn_mini weui-btn_default weui-wa-hotarea" aria-role="button" url="javascript:">按钮</navigator>
-			<navigator class="weui-btn weui-btn_mini weui-btn_warn weui-wa-hotarea" aria-role="button" url="javascript:">按钮</navigator>
+			<view class="weui-btn weui-btn_mini weui-btn_primary weui-wa-hotarea" aria-role="button" url="javascript:">按钮</view>
+			<view class="weui-btn weui-btn_mini weui-btn_default weui-wa-hotarea" aria-role="button" url="javascript:">按钮</view>
+			<view class="weui-btn weui-btn_mini weui-btn_warn weui-wa-hotarea" aria-role="button" url="javascript:">按钮</view>
 		</view>
 	</view>
 </view>

@@ -9,8 +9,13 @@
 
 
 .dark(@rule) {
-    [data-weui-theme='dark'] & {
+    @media (prefers-color-scheme: dark) {
+      & {
         @rule();
+      }
+    }
+    [data-weui-theme='dark'] & {
+      @rule();
     }
 }
 
@@ -27,10 +32,15 @@
 }
 ._setColor(@lightRule, @darkRule) {
     page,
-    [data-weui-theme='light'] {
+    [data-weui-theme='light']{
         @lightRule();
     }
-    [data-weui-theme='dark'] {
+    @media (prefers-color-scheme: dark) {
+      page{
+        @darkRule();
+      }
+    }
+    [data-weui-theme='dark']{
         @darkRule();
     }
 }
@@ -43,7 +53,6 @@
 .setCareColor(@var, @color) {
     .setCareColor(@var, @color, @color);
 }
-
 .setCareColor(@var, @light, @dark) {
     ._setCareColor({
         @{var}: @light;
@@ -52,11 +61,44 @@
     });
 }
 ._setCareColor(@lightRule, @darkRule) {
-    page[data-weui-mode='care'],
-    [data-weui-theme='light'][data-weui-mode='care'] {
+    [data-weui-mode='care'],
+    [data-weui-mode='care'][data-weui-theme='light'] {
         @lightRule();
     }
-    [data-weui-theme='dark'][data-weui-mode='care'] {
+    @media (prefers-color-scheme: dark) {
+      [data-weui-mode='care']{
+        @darkRule();
+      }
+    }
+    [data-weui-mode='care'][data-weui-theme='dark'] {
         @darkRule();
     }
 }
+
+// 定义局部作用域的颜色变量
+.setThisColor(@var, @color) {
+    .setColor(@var, @color, @color);
+}
+.setThisColor(@var, @light, @dark) {
+    ._setThisColor({
+        @{var}: @light;
+    }, {
+        @{var}: @dark;
+    });
+}
+._setThisColor(@lightRule, @darkRule) {
+    &,
+    [data-weui-theme='light'] &{
+        @lightRule();
+    }
+    @media (prefers-color-scheme: dark) {
+      & {
+        @darkRule();
+      }
+    }
+    [data-weui-theme='dark'] &{
+        @darkRule();
+    }
+}
+
+
