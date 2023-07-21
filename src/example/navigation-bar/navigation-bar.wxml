@@ -6,7 +6,7 @@
     </view>
     <view class="page__bd">
       <view class="weui-navigation-bar">
-        <view class="weui-navigation-bar__placeholder" style="visible: hidden;"></view>
+        <view class="weui-navigation-bar__placeholder" style="visibility: hidden;"></view>
         <view class="weui-navigation-bar__inner">
 
           <view class='weui-navigation-bar__left'>

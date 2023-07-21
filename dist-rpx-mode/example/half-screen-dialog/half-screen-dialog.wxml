@@ -18,7 +18,7 @@
             <view class="weui-half-screen-dialog__hd">
                 <view class="weui-half-screen-dialog__hd__side">
                     <view aria-role="button" class="weui-btn_icon weui-wa-hotarea" bindtap="close">关闭<i class="weui-icon-close-thin"></i></view>
-                    <view style="display:none;" aria-role="button" class="weui-icon-btn weui-icon-btn_close" bindtap="close">关闭</view>
+                    <view style="display: none;" aria-role="button" class="weui-icon-btn weui-icon-btn_close" bindtap="close">关闭</view>
                 </view>
                 <view class="weui-half-screen-dialog__hd__main">
                     <strong class="weui-half-screen-dialog__title" id="js_dialog1_title">标题</strong>
@@ -35,8 +35,8 @@
         <view class="weui-half-screen-dialog weui-bottom-fixed-opr-page {{dialog2 ? 'weui-animate_slide-up' : 'weui-animate_slide-down'}}  {{wrap ? 'weui-half-screen-dialog_btn-wrap' : ''}}">
             <view class="weui-half-screen-dialog__hd">
                 <view class="weui-half-screen-dialog__hd__side" bindtap="close">
-                    <view aria-role="button" style="display:none;" class="weui-btn_icon weui-wa-hotarea">返回<i class="weui-icon-back-arrow-thin"></i></view>
-                    <view aria-role="button" style="display:none;" class="weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></view>
+                    <view aria-role="button" style="display: none;" class="weui-btn_icon weui-wa-hotarea">返回<i class="weui-icon-back-arrow-thin"></i></view>
+                    <view aria-role="button" style="display: none;" class="weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-close-thin"></i></view>
                     <view aria-role="button" class="weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-slide-down"></i></view>
                 </view>
                 <view class="weui-half-screen-dialog__hd__main">
@@ -118,8 +118,8 @@
         <view class="weui-mask {{dialog5 ? 'weui-animate_fade-in' : 'weui-animate_fade-out'}}" bindtap="close"></view>
         <view class="weui-half-screen-dialog weui-half-screen-dialog_slide {{dialog5 ? 'weui-animate_slide-up' : 'weui-animate_slide-down'}}">
             <view class="weui-half-screen-dialog__hd">
-              <view style="height:4px;border-radius:2px;" class="weui-half-screen-dialog__slide-icon">
-                <view style="opaicty:0;" class="weui-icon-arrow"></view>
+              <view style="height: 4px; border-radius: 2px;" class="weui-half-screen-dialog__slide-icon">
+                <view style="opacity: 0;" class="weui-icon-arrow"></view>
               </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">

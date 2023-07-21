@@ -17,24 +17,24 @@
 @import "../../base/fn";
 
 .weui-article {
-    padding: 48px 24px;
-    padding: 48px calc(24px ~"+ constant(safe-area-inset-right)") calc(48px ~"+ constant(safe-area-inset-bottom)") calc(24px ~"+ constant(safe-area-inset-left)");
-    padding: 48px calc(24px ~"+ env(safe-area-inset-right)") calc(48px ~"+ env(safe-area-inset-bottom)") calc(24px ~"+ env(safe-area-inset-left)");
-    color: var(--weui-FG-0);
-    font-size: 17px;
-    line-height: 1.4;
-    .hyphens;
-    image{
-      margin:0;
-      vertical-align:bottom;
-    }
+  padding: 48px 24px;
+  padding: 48px calc(24px ~"+ constant(safe-area-inset-right)") calc(48px ~"+ constant(safe-area-inset-bottom)") calc(24px ~"+ constant(safe-area-inset-left)");
+  padding: 48px calc(24px ~"+ env(safe-area-inset-right)") calc(48px ~"+ env(safe-area-inset-bottom)") calc(24px ~"+ env(safe-area-inset-left)");
+  color: var(--weui-FG-0);
+  font-size: 17px;
+  line-height: 1.4;
+  .hyphens;
+  image {
+    margin: 0;
+    vertical-align: bottom;
+  }
 }
 .weui-article__section {
   margin-bottom: 48px;
-  & &{
+  & & {
     margin-bottom: 32px;
   }
-  & & &{
+  & & & {
     margin-bottom: 24px;
   }
 }
@@ -42,7 +42,7 @@
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 48px;
-  text-align:center;
+  text-align: center;
 }
 .weui-article__h2 {
   font-size: 20px;
@@ -50,47 +50,47 @@
   margin-bottom: 16px;
 }
 .weui-article__h3 {
-  font-size:17px;
+  font-size: 17px;
   font-weight: 500;
   margin-bottom: 8px;
 }
 .weui-article__h4 {
-  font-size:17px;
+  font-size: 17px;
   font-weight: 400;
   margin-bottom: 4px;
 }
-.weui-article__h5 ,
+.weui-article__h5,
 .weui-article__h6 {
-  font-size:17px;
+  font-size: 17px;
   font-weight: 400;
 }
 .weui-article__p {
   margin: 0 0 24px;
-  line-height:1.6;
+  line-height: 1.6;
 }
-.weui-article__ul ,
+.weui-article__ul,
 .weui-article__ol {
   margin-left: 1.2em;
-  margin-bottom:24px;
+  margin-bottom: 24px;
   & .weui-article__ul,
-  & .weui-article__ol{
-    margin: .5em 0 .5em 1.2em;
+  & .weui-article__ol {
+    margin: 0.5em 0 0.5em 1.2em;
   }
 }
-.weui-article__ol{
+.weui-article__ol {
   list-style: decimal;
 }
 .weui-article__ul {
   list-style: disc;
 }
 .weui-article__li {
-  display:list-item;
+  display: list-item;
   margin: 0.5em 0;
 
-  .weui-article__list_inside &{
+  .weui-article__list_inside & {
     list-style-position: inside;
   }
-  .weui-article__list_none &{
+  .weui-article__list_none & {
     list-style: none;
   }
 }

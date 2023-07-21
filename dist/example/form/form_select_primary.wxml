@@ -33,7 +33,7 @@
 						</label>
 					</view>
 				</view>
-				<view class="weui-cells__group" style="display:none;">
+				<view class="weui-cells__group" style="display: none;">
 					<view class="weui-cells">
 						<view class="weui-cell weui-cell_active weui-cell_select" aria-haspopup="listbox" id="showDatePicker" aria-role="button">
 							<view class="weui-cell__bd">								<view class="weui-select">日期</view></view>

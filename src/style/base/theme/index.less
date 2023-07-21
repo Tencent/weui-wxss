@@ -2,26 +2,28 @@
 
 page,
 [data-weui-theme='light'] {
-    .varsLight();
+  .varsLight();
 }
+
 @media (prefers-color-scheme: dark) {
-  page{
+  page {
     .varsDark();
   }
 }
 [data-weui-theme='dark'] {
-    .varsDark();
+  .varsDark();
 }
 
 [data-weui-mode='care'],
 [data-weui-mode='care'][data-weui-theme='light'] {
-    .varsCareDark();
+  .varsCareDark();
 }
+
 @media (prefers-color-scheme: dark) {
-  [data-weui-mode='care']{
+  [data-weui-mode='care'] {
     .varsCareDark();
   }
 }
 [data-weui-mode='care'][data-weui-theme='dark'] {
-    .varsCareDark();
+  .varsCareDark();
 }
