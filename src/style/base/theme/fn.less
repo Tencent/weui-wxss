@@ -9,96 +9,99 @@
 
 
 .dark(@rule) {
-    @media (prefers-color-scheme: dark) {
-      & {
-        @rule();
-      }
-    }
-    [data-weui-theme='dark'] & {
+  @media (prefers-color-scheme: dark) {
+    & {
       @rule();
     }
+  }
+  [data-weui-theme='dark'] & {
+    @rule();
+  }
 }
 
 .setColor(@var, @color) {
-    .setColor(@var, @color, @color);
+  .setColor(@var, @color, @color);
 }
 
 .setColor(@var, @light, @dark) {
-    ._setColor({
-        @{var}: @light;
-    }, {
-        @{var}: @dark;
-    });
+  ._setColor({
+    @{var}: @light;
+  }, {
+    @{var}: @dark;
+  });
 }
 ._setColor(@lightRule, @darkRule) {
-    page,
-    [data-weui-theme='light']{
-        @lightRule();
+  page,
+  [data-weui-theme='light'] {
+    @lightRule();
+  }
+
+  @media (prefers-color-scheme: dark) {
+    page {
+      @darkRule();
     }
-    @media (prefers-color-scheme: dark) {
-      page{
-        @darkRule();
-      }
-    }
-    [data-weui-theme='dark']{
-        @darkRule();
-    }
+  }
+  [data-weui-theme='dark'] {
+    @darkRule();
+  }
 }
 
 .care(@rule) {
-    [data-weui-mode='care'] & {
-        @rule();
-    }
+  [data-weui-mode='care'] & {
+    @rule();
+  }
 }
 .setCareColor(@var, @color) {
-    .setCareColor(@var, @color, @color);
+  .setCareColor(@var, @color, @color);
 }
 .setCareColor(@var, @light, @dark) {
-    ._setCareColor({
-        @{var}: @light;
-    }, {
-        @{var}: @dark;
-    });
+  ._setCareColor({
+    @{var}: @light;
+  }, {
+    @{var}: @dark;
+  });
 }
 ._setCareColor(@lightRule, @darkRule) {
-    [data-weui-mode='care'],
-    [data-weui-mode='care'][data-weui-theme='light'] {
-        @lightRule();
+  [data-weui-mode='care'],
+  [data-weui-mode='care'][data-weui-theme='light'] {
+    @lightRule();
+  }
+
+  @media (prefers-color-scheme: dark) {
+    [data-weui-mode='care'] {
+      @darkRule();
     }
-    @media (prefers-color-scheme: dark) {
-      [data-weui-mode='care']{
-        @darkRule();
-      }
-    }
-    [data-weui-mode='care'][data-weui-theme='dark'] {
-        @darkRule();
-    }
+  }
+  [data-weui-mode='care'][data-weui-theme='dark'] {
+    @darkRule();
+  }
 }
 
 // 定义局部作用域的颜色变量
 .setThisColor(@var, @color) {
-    .setColor(@var, @color, @color);
+  .setColor(@var, @color, @color);
 }
 .setThisColor(@var, @light, @dark) {
-    ._setThisColor({
-        @{var}: @light;
-    }, {
-        @{var}: @dark;
-    });
+  ._setThisColor({
+    @{var}: @light;
+  }, {
+    @{var}: @dark;
+  });
 }
 ._setThisColor(@lightRule, @darkRule) {
-    &,
-    [data-weui-theme='light'] &{
-        @lightRule();
+  &,
+  [data-weui-theme='light'] & {
+    @lightRule();
+  }
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      @darkRule();
     }
-    @media (prefers-color-scheme: dark) {
-      & {
-        @darkRule();
-      }
-    }
-    [data-weui-theme='dark'] &{
-        @darkRule();
-    }
+  }
+  [data-weui-theme='dark'] & {
+    @darkRule();
+  }
 }
 
 

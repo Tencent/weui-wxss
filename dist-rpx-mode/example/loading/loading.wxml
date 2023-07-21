@@ -8,8 +8,8 @@
       <view class="weui-loading__wrp">
           <view aria-role="img" aria-label="正在加载" class="weui-loading"></view>
           <view aria-role="img" aria-label="正在加载" class="weui-mask-loading"></view>
-          <view aria-role="img" aria-label="正在加载" class="weui-mask-loading" style="color:var(--weui-BRAND);"></view>
-          <view aria-role="img" aria-label="正在加载" class="weui-mask-loading" style="color:#EDEDED;"></view>
+          <view aria-role="img" aria-label="正在加载" class="weui-mask-loading" style="color: var(--weui-BRAND);"></view>
+          <view aria-role="img" aria-label="正在加载" class="weui-mask-loading" style="color: #ededed;"></view>
       </view>
       <view class="weui-loading__wrp">
           <view aria-role="img" aria-label="正在加载" class="loading wx_dot_loading"></view>
