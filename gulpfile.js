@@ -43,11 +43,12 @@ function buildStyle() {
     .pipe(less())
     .pipe(postcss([autoprefixer(['iOS >= 8', 'Android >= 4.1'])]))
     .pipe(cssnano({
+      discardComments: { removeAll: true },
+      reduceIdents: false,
       zindex: false,
       autoprefixer: false,
-      discardComments: { removeAll: true },
       svgo: false,
-      reduceIdents: false,
+      minifySelectors: false,
     }))
     .pipe(header(banner, { pkg }))
     // px版本
