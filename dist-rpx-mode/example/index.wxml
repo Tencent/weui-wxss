@@ -28,5 +28,6 @@
     </view>
     <view class="page__ft" bindtap="changeTheme">
         <image aria-label="weui logo" src="images/icon_footer.png" style="width: 84px; height: 19px;"></image>
+        <view class="page_bottom_tips">该小程序仅演示示例，不收集个人信息。</view>
     </view>
 </view>

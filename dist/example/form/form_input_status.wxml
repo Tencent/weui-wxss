@@ -74,6 +74,11 @@
 		<view class="weui-form__opr-area">
 			<view aria-role="button" class="weui-btn weui-btn_primary" bindtap="onConfirm">确定</view>
 		</view>
+    <view class="weui-form__extra-area">
+      <view class="weui-footer">
+        <view class="weui-footer__text">该小程序仅演示示例，不收集个人信息。</view>
+      </view>
+    </view>
 	</view>
   <view aria-role="alert" class="weui-toptips weui-toptips_warn {{isWaring ? 'show_toptips' : ''}}">错误提示</view>
 </view>

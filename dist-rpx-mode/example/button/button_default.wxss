@@ -1,6 +1,6 @@
 /*!
- * WeUI v2.6.6 (https://github.com/weui/weui-wxss)
+ * WeUI v2.6.7 (https://github.com/weui/weui-wxss)
  * Copyright 2023 Tencent, Inc.
  * Licensed under the MIT license
  */
-.button-sp-area{padding-top:30rpx;text-align:center}.weui-btn_mini{margin-right:8rpx}
+.button-sp-area{padding-top:30rpx;text-align:center}.weui-btn_mini{margin-right:8rpx}.button-sp-area.overlay{padding:30rpx 0;background:var(--weui-BRAND)}.button-sp-area.overlay .weui-btn_mini{margin-top:32rpx}

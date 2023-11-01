@@ -1,3 +1,16 @@
+### v2.6.7 (2023-11-01)
+
+#### Features
+* feat: 色板升级，对齐design tokens
+
+
+#### Bugfixes
+* fix: 小程序新增隐私提示
+* fix: 小程序example优化
+* fix: 修复darkmode下小程序版.dark()方法无法切换的问题
+
+
+
 ### v2.6.6 (2023-07-25)
 
 #### Bugfixes

@@ -6,7 +6,7 @@ Page({
         id: 'form',
         name: '表单',
         open: false,
-        pages: ['button', 'input', 'form', 'list', 'slideview', 'slider', 'uploader'],
+        pages: ['button', 'form', 'list', 'slideview', 'slider', 'uploader'],
       },
       {
         id: 'layout',

@@ -10,7 +10,7 @@
 
 .dark(@rule) {
   @media (prefers-color-scheme: dark) {
-    & {
+    .page:not([data-weui-theme='light']) & {
       @rule();
     }
   }
