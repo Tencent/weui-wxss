@@ -48,6 +48,11 @@
       <view class="weui-form__opr-area">
         <button type="primary" disabled="{{vcodeValue ? false : true}}" bindtap="checkStatus">确定</button>
       </view>
+      <view class="weui-form__extra-area">
+        <view class="weui-footer">
+          <view class="weui-footer__text">该小程序仅演示示例，不收集个人信息。</view>
+        </view>
+      </view>
 		</view>
 	</view>
   <view aria-role="alert" hidden="{{msg ? false : true}}" class="weui-hidden_abs">未同意《相关条款》</view>
