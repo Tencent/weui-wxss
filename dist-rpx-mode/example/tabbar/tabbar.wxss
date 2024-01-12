@@ -1,6 +1,6 @@
 /*!
- * WeUI v2.6.7 (https://github.com/weui/weui-wxss)
- * Copyright 2023 Tencent, Inc.
+ * WeUI v2.6.11 (https://github.com/weui/weui-wxss)
+ * Copyright 2024 Tencent, Inc.
  * Licensed under the MIT license
  */
 .weui-tabbar{position:fixed;bottom:0;left:0;right:0}.weui-tab__panel{padding:64rpx}

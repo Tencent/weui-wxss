@@ -21,7 +21,7 @@
                         <view class="weui-uploader__bd">
                             <view class="weui-uploader__files" id="uploaderFiles">
                                 <block wx:for="{{files}}" wx:key="*this">
-                                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                    <view class="weui-uploader__file" id="{{item}}">
                                         <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
                                     </view>
                                 </block>
@@ -49,7 +49,7 @@
                                 </view>
                             </view>
                             <view class="weui-uploader__input-box">
-                                <view aria-role="button" aria-label="上传" class="weui-uploader__input" bindtap="chooseImage"></view>
+                                <view aria-role="button" aria-label="上传" class="weui-uploader__input"></view>
                             </view>
                         </view>
                     </view>
