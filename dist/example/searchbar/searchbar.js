@@ -1,28 +1,23 @@
 Page({
   mixins: [require('../../mixin/common')],
-  data: {
-    inputShowed: false,
-    inputVal: '',
-  },
-  showInput() {
-    this.setData({
-      inputShowed: true,
+  openSearchFilled() {
+    wx.navigateTo({
+      url: 'searchbar_filled',
     });
   },
-  hideInput() {
-    this.setData({
-      inputVal: '',
-      inputShowed: false,
+  openSearchGrey() {
+    wx.navigateTo({
+      url: 'searchbar_grey',
     });
   },
-  clearInput() {
-    this.setData({
-      inputVal: '',
+  openSearchOutlined() {
+    wx.navigateTo({
+      url: 'searchbar_outlined',
     });
   },
-  inputTyping(e) {
-    this.setData({
-      inputVal: e.detail.value,
+  openSearchHomepage() {
+    wx.navigateTo({
+      url: 'searchbar_homepage',
     });
   },
 });

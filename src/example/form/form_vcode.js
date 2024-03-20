@@ -20,11 +20,6 @@ Page({
       });
     }
     const that = this;
-    setTimeout(() => {
-      that.setData({
-        msg: false,
-      });
-    }, 320);
   },
   checkboxChange(e) {
     if (e.detail.value.includes('1')) {

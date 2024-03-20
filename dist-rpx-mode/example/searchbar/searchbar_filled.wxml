@@ -1,0 +1,52 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="page__hd">
+		<view class="page__title">SearchBar</view>
+		<view class="page__desc">搜索栏</view>
+	</view>
+	<view class="page__bd">
+		<view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+			<form class="weui-search-bar__form"
+      aria-role="combobox"
+      aria-haspopup="true"
+      aria-expanded="{{inputVal.length > 0 ? 'true' : 'false'}}"
+      aria-owns="searchResult"
+      >
+        <view aria-hidden="true" class="weui-search-bar__box">
+          <i class="weui-icon-search"></i>
+          <view class="weui-search-bar__words">微信</view>
+          <input aria-controls="searchResult" type="text" class="weui-search-bar__input {{isFocus ? 'weui-search-bar__input_focus' : ''}}" placeholder="搜索" value="{{inputVal}}" bindinput="inputTyping" focus="{{inputShowed}}" bindblur="blurInput"/>
+          <view class="weui-search-bar__mask"></view>
+          <view aria-role="button" aria-label="清除" class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput"></view>
+        </view>
+        <label class="weui-search-bar__label" bindtap="showInput">
+          <i class="weui-icon-search"></i>
+          <span class="weui-search-bar__label__text">搜索</span>
+        </label>
+			</form>
+      <view aria-role="button" class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+		</view>
+		<view aria-role="listbox" id="searchResult" class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+			<view role="option" class="weui-cell weui-cell_active weui-cell_access">
+				<view class="weui-cell__bd weui-cell_primary">
+					<view>实时搜索文本</view>
+				</view>
+			</view>
+			<view role="option" class="weui-cell weui-cell_active weui-cell_access">
+				<view class="weui-cell__bd weui-cell_primary">
+					<view>实时搜索文本</view>
+				</view>
+			</view>
+			<view role="option" class="weui-cell weui-cell_active weui-cell_access">
+				<view class="weui-cell__bd weui-cell_primary">
+					<view>实时搜索文本</view>
+				</view>
+			</view>
+			<view role="option" class="weui-cell weui-cell_active weui-cell_access">
+				<view class="weui-cell__bd weui-cell_primary">
+					<view>实时搜索文本</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
