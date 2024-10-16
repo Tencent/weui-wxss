@@ -9,11 +9,6 @@
 
 
 .dark(@rule) {
-  @media (prefers-color-scheme: dark) {
-    .page:not([data-weui-theme='light']) & {
-      @rule();
-    }
-  }
   [data-weui-theme='dark'] & {
     @rule();
   }
@@ -36,11 +31,6 @@
     @lightRule();
   }
 
-  @media (prefers-color-scheme: dark) {
-    page {
-      @darkRule();
-    }
-  }
   [data-weui-theme='dark'] {
     @darkRule();
   }
@@ -67,11 +57,6 @@
     @lightRule();
   }
 
-  @media (prefers-color-scheme: dark) {
-    [data-weui-mode='care'] {
-      @darkRule();
-    }
-  }
   [data-weui-mode='care'][data-weui-theme='dark'] {
     @darkRule();
   }
@@ -94,11 +79,6 @@
     @lightRule();
   }
 
-  @media (prefers-color-scheme: dark) {
-    & {
-      @darkRule();
-    }
-  }
   [data-weui-theme='dark'] & {
     @darkRule();
   }

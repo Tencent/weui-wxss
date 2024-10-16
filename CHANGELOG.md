@@ -1,3 +1,43 @@
+### v2.6.17 (2024-10-16)
+
+#### Bugfixes
+* fix: 去掉小程序darkmode的媒体查询
+
+
+
+### v2.6.16 (2024-08-12)
+
+#### Features
+* feat: weui-dialog组件UI升级
+
+#### Bugfixes
+* fix: 去掉系统自带的点击效果
+
+
+
+### v2.6.15 (2024-07-23)
+
+#### Bugfixes
+* fix: iOS 18的PingFang字体font-weight开始支持bold，涉及到的组件需要把bold改为medium
+
+
+
+### v2.6.14 (2024-07-23)
+
+#### Features
+* feat: 表单weui-form__tips和weui-agree UI更新，新增weui-form-tips__group和weui-form-tips__wrp结构
+* feat: checkbox图标更新
+* feat: weui-form多选/单选组件disabled态UI更新
+
+
+
+### v2.6.13 (2024-06-03)
+
+#### Bugfixes
+* fix: 修复weui-select组件高度问题
+
+
+
 ### v2.6.12 (2024-03-20)
 
 #### Features

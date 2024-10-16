@@ -37,13 +37,26 @@
 		</view>
     <view class="weui-form__ft">
       <view class="weui-form__tips-area">
-          <checkbox-group bindchange="checkboxChange">
-              <label aria-role="" class="weui-wa-hotarea weui-agree {{msg ? 'weui-agree_warn' : ''}}">
-                  <checkbox aria-role="" value="{{checkValue}}" class="weui-agree__checkbox-check" />
-                  <view class="weui-agree__checkbox" aria-labelledby="js_agree_txt js_agree_link" aria-role="checkbox"></view>
-                  <view class="weui-agree__text"><text aria-hidden="true" id="js_agree_txt">阅读并同意</text><navigator id="js_agree_link">《相关条款》</navigator></view>
-              </label>
-          </checkbox-group>
+        <view class="weui-form__tips__group weui-form__tips__group_primary">
+          <view class="weui-form__tips__wrp">
+              <checkbox-group bindchange="checkboxChange">
+                  <label aria-role="" class="weui-wa-hotarea weui-agree {{msg ? 'weui-agree_warn' : ''}}">
+                      <checkbox aria-role="" value="{{checkValue}}" class="weui-agree__checkbox-check" />
+                      <view class="weui-agree__checkbox" aria-labelledby="js_agree_txt js_agree_link" aria-role="checkbox"></view>
+                      <view class="weui-agree__text"><text aria-hidden="true" id="js_agree_txt">阅读并同意</text><navigator id="js_agree_link">《相关条款》</navigator></view>
+                  </label>
+              </checkbox-group>
+          </view>
+          <view class="weui-form__tips__wrp">
+              <checkbox-group bindchange="checkboxChange">
+                  <label aria-role="" class="weui-wa-hotarea weui-agree {{msg ? 'weui-agree_warn' : ''}}">
+                      <checkbox aria-role="" value="{{checkValue}}" class="weui-agree__checkbox-check" />
+                      <view class="weui-agree__checkbox" aria-labelledby="js_agree_txt1" aria-role="checkbox"></view>
+                      <view class="weui-agree__text"><text aria-hidden="true" id="js_agree_txt1">以上信息用于核对账号绑定的身份</text></view>
+                  </label>
+              </checkbox-group>
+          </view>
+        </view>
       </view>
       <view class="weui-form__opr-area">
         <button type="primary" disabled="{{vcodeValue ? false : true}}" bindtap="checkStatus">确定</button>
