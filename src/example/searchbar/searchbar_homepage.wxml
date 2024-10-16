@@ -1,0 +1,17 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="page__hd">
+		<view class="page__title">SearchBar</view>
+		<view class="page__desc">搜索栏 Homepage</view>
+	</view>
+	<view class="page__bd">
+		<view class="weui-search-bar weui-search-bar_homepage" id="searchBar">
+			<form id="searchForm" aria-haspopup="true" aria-expanded="false" aria-owns="searchResult" class="weui-search-bar__form" aria-role="combobox">
+				<view class="weui-search-bar__box">
+					<view class="weui-search-bar__input weui-search-bar__input_text">搜索</view>
+					<navigator title="拍照" class="weui-icon-camera weui-wa-hotarea" aria-role="button" url="javascript:"></navigator>
+				</view>
+			</form>
+		</view>
+	</view>
+</view>

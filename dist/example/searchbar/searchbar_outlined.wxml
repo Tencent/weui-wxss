@@ -1,0 +1,22 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="page__hd">
+		<view class="page__title">SearchBar</view>
+		<view class="page__desc">搜索栏 Outlined</view>
+	</view>
+	<view class="page__bd">
+		<view class="weui-search-bar weui-search-bar_outlined" id="searchBar">
+      <view href="javascript:" aria-role="button" class="weui-search-bar__back-btn"><view aria-role="img" aria-label="返回" class="weui-icon-back-arrow-thin"></view></view>
+      <view id="searchForm" class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <view class="weui-search-bar__words">微信</view>
+          <input aria-controls="searchResult" type="text" class="weui-search-bar__input {{isFocus ? 'weui-search-bar__input_focus' : ''}}" placeholder="搜索" value="{{inputVal}}" bindinput="inputTyping" focus="{{inputShowed}}" bindblur="blurInput"/>
+          <view class="weui-search-bar__mask"></view>
+          <view aria-role="button" aria-label="清除" class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput"></view>
+        </view>
+      </view>
+      <view href="javascript:" aria-role="button" class="weui-search-bar__search-btn weui-btn weui-btn_primary" id="searchBtn">搜索</view>
+      <view href="javascript:" aria-role="button" class="weui-search-bar__cancel-btn" id="searchCancel">取消</view>
+    </view>
+	</view>
+</view>

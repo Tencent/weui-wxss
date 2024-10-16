@@ -18,6 +18,7 @@
 
 .weui-cell_select {
   padding: 0;
+
   .weui-cell__bd {
     &::after {
       content: " ";
@@ -53,6 +54,10 @@
   color: var(--weui-FG-0);
   vertical-align: bottom;
   box-sizing: border-box;
+
+  div& {
+    .ellipsis;
+  }
 }
 
 .weui-cell_select-before {

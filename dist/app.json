@@ -58,7 +58,11 @@
     "example/navigation-bar/navigation-bar",
     "example/tabbar/tabbar",
 
-    "example/searchbar/searchbar"
+    "example/searchbar/searchbar",
+    "example/searchbar/searchbar_filled",
+    "example/searchbar/searchbar_grey",
+    "example/searchbar/searchbar_outlined",
+    "example/searchbar/searchbar_homepage"
   ],
   "window": {
     "navigationBarTextStyle": "black",
