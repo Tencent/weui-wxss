@@ -24,6 +24,13 @@
                     <strong class="weui-half-screen-dialog__title" id="js_dialog1_title">标题</strong>
                     <view class="weui-half-screen-dialog__subtitle">标题</view>
                 </view>
+                <view class="weui-half-screen-dialog__hd__side">
+                  <view class="weui-half-screen-dialog__hd__action-group">
+                    <view aria-role="button" class="weui-half-screen-dialog__hd__action weui-btn_icon weui-wa-hotarea">搜索<i class="weui-icon-search"></i></view>
+                    <view aria-role="button" class="weui-half-screen-dialog__hd__action weui-btn_icon weui-wa-hotarea">更多<i class="weui-icon-more"></i></view>
+                    <navigator href="#" class="weui-half-screen-dialog__hd__action weui-link weui-wa-hotarea">完成</navigator>
+                  </view>
+                </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">
                 可放自定义内容
@@ -116,10 +123,27 @@
     </view>
     <view wx:if="{{dialog5 || show5}}" aria-role="dialog" aria-modal="true" aria-labelledby="js_dialog5_title">
         <view class="weui-mask {{dialog5 ? 'weui-animate_fade-in' : 'weui-animate_fade-out'}}" bindtap="close"></view>
-        <view class="weui-half-screen-dialog weui-half-screen-dialog_slide {{dialog5 ? 'weui-animate_slide-up' : 'weui-animate_slide-down'}}">
+        <view class="weui-half-screen-dialog weui-half-screen-dialog_grab {{dialog5 ? 'weui-animate_slide-up' : 'weui-animate_slide-down'}}">
             <view class="weui-half-screen-dialog__hd">
-              <view style="height: 4px; border-radius: 2px;" class="weui-half-screen-dialog__slide-icon">
-                <view style="opacity: 0;" class="weui-icon-arrow"></view>
+              <view class="weui-half-screen-dialog__hd__grab">
+                <view style="height: 4px; border-radius: 2px;" class="weui-half-screen-dialog__slide-icon">
+                  <view style="opacity: 0;" class="weui-icon-arrow"></view>
+                </view>
+              </view>
+              <view class="weui-half-screen-dialog__hd__nav">
+                <view class="weui-half-screen-dialog__hd__side">
+                  <view aria-role="button" class="weui-btn_icon weui-wa-hotarea">关闭<i class="weui-icon-slide-down"></i></view>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                  <strong class="weui-half-screen-dialog__title" id="js_dialog5_title">标题</strong>
+                </view>
+                <view class="weui-half-screen-dialog__hd__side">
+                  <view class="weui-half-screen-dialog__hd__action-group">
+                    <view aria-role="button" class="weui-half-screen-dialog__hd__action weui-btn_icon weui-wa-hotarea">搜索<i class="weui-icon-search"></i></view>
+                    <view aria-role="button" class="weui-half-screen-dialog__hd__action weui-btn_icon weui-wa-hotarea">更多<i class="weui-icon-more"></i></view>
+                    <view aria-role="button" class="weui-half-screen-dialog__hd__action weui-btn weui-btn_primary weui-btn_xmini">完成</view>
+                  </view>
+                </view>
               </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top: 32px; height: 50px;">

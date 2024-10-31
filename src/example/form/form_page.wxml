@@ -33,6 +33,12 @@
                 <input class="weui-input" placeholder="填写绑定的电话号码" type="number" placeholder-class="weui-input__placeholder" />
               </view>
             </view>
+            <view class="weui-cell weui-cell_active weui-cell_primary">
+              <view class="weui-cell__hd"><view class="weui-label" lang="en">verification address</view></view>
+              <view class="weui-cell__bd">
+                <textarea class="weui-textarea" placeholder="input your address" rows="3"></textarea>
+              </view>
+            </view>
           </view>
         </view>
       </view>
