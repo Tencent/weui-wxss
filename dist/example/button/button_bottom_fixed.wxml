@@ -16,7 +16,7 @@
           </checkbox-group>
       </view>
       <view class="weui-bottom-fixed-opr">
-        <navigator class="weui-btn weui-btn_primary" id="js_btn" aria-role="button" url="javascript:;">阅读并同意</navigator>
+        <navigator class="weui-btn weui-btn_primary" id="js_btn" aria-role="button" url="javascript:;"><view class="weui-btn__inner">阅读并同意</view></navigator>
         <navigator class="weui-btn weui-btn_default" aria-role="button" url="javascript:;">取消</navigator>
       </view>
 		</view>

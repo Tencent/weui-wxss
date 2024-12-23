@@ -19,6 +19,15 @@
 			<view title="正在操作" class="weui-btn weui-btn_warn weui-btn_loading" aria-role="button" url="javascript:"><text class="weui-mask-loading"></text>警示操作</view>
 			<view aria-disabled="true" disabled class="weui-btn weui-btn_disabled weui-btn_warn" aria-role="button" url="javascript:">警示操作</view>
 		</view>
+
+    <view class="button-sp-area">
+      <view role="button" class="weui-btn weui-btn_primary"><view class="weui-btn__inner">按钮宽度</view></view>
+      <view role="button" class="weui-btn weui-btn_primary"><view class="weui-btn__inner">按钮宽度自适应内容</view></view>
+      <view role="button" class="weui-btn weui-btn_primary"><view class="weui-btn__inner">按钮宽度自适应内容，达到最大值后折行，最大行数两行的示例</view></view>
+      <view role="button" title="正在操作" class="weui-btn weui-btn_primary weui-btn_loading"><view class="weui-btn__inner"><i class="weui-mask-loading"></i>按钮宽度自适应内容</view></view>
+      <view role="button" title="正在操作" class="weui-btn weui-btn_primary weui-btn_loading"><view class="weui-btn__inner"><i class="weui-mask-loading"></i>按钮宽度自适应内容，达到最大值后折行，最大行数两行的示例</view></view>
+    </view>
+
 		<view class="button-sp-area">
 			<view class="weui-btn weui-btn_primary weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</view>
 			<view class="weui-btn weui-btn_default weui-btn_medium" aria-role="button" url="javascript:">medium 按钮</view>
