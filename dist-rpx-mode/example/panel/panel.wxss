@@ -1,6 +1,6 @@
 /*!
- * WeUI v2.6.21 (https://github.com/weui/weui-wxss)
- * Copyright 2024 Tencent, Inc.
+ * WeUI v2.6.22 (https://github.com/weui/weui-wxss)
+ * Copyright 2025 Tencent, Inc.
  * Licensed under the MIT license
  */
 .weui-cell_example .weui-cell__hd image{width:40rpx;height:40rpx;display:block;margin-right:32rpx}
