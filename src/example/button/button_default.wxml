@@ -57,5 +57,10 @@
 			<view class="weui-btn weui-btn_mini weui-btn_default weui-wa-hotarea" aria-role="button" url="javascript:">按钮</view>
 			<view class="weui-btn weui-btn_mini weui-btn_warn weui-wa-hotarea" aria-role="button" url="javascript:">按钮</view>
 		</view>
+		<view class="button-sp-area margin">
+			<view class="weui-btn weui-btn_mini weui-btn_margin-reset weui-btn_primary weui-wa-hotarea" aria-role="button" url="javascript:">按钮</view>
+			<view class="weui-btn weui-btn_mini weui-btn_margin-reset weui-btn_default weui-wa-hotarea" aria-role="button" url="javascript:">按钮</view>
+			<view class="weui-btn weui-btn_mini weui-btn_margin-reset weui-btn_warn weui-wa-hotarea" aria-role="button" url="javascript:">按钮</view>
+		</view>
 	</view>
 </view>

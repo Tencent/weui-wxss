@@ -3,4 +3,4 @@
  * Copyright 2025 Tencent, Inc.
  * Licensed under the MIT license
  */
-.button-sp-area{padding-top:30rpx;text-align:center}.weui-btn_mini{margin-right:8rpx}.button-sp-area.overlay{margin-top:32rpx;padding:30rpx 0;background:var(--weui-BRAND)}.button-sp-area.overlay .weui-btn_mini{margin-top:32rpx}
+.button-sp-area{padding-top:30rpx}.button-sp-area:not(.margin){text-align:center}.button-sp-area:not(.margin) .weui-btn_mini{margin-left:8rpx;margin-right:8rpx}.button-sp-area.margin{padding:30rpx;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between}.button-sp-area.overlay{margin-top:32rpx;padding:30rpx 0;background:var(--weui-BRAND)}.button-sp-area.overlay .weui-btn_mini{margin-top:32rpx}

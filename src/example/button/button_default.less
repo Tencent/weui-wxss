@@ -1,16 +1,30 @@
+
 .button-sp-area {
   padding-top: 15px;
-  text-align: center;
-}
-.weui-btn_mini {
-  margin-right: 4px;
-}
-.button-sp-area.overlay {
-  margin-top: 16px;
-  padding: 15px 0;
-  background: var(--weui-BRAND);
+
+  &:not(.margin) {
+    text-align: center;
+
+    .weui-btn_mini {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+
+  &.margin {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &.overlay {
+    margin-top: 16px;
+    padding: 15px 0;
+    background: var(--weui-BRAND);
+
+    .weui-btn_mini {
+      margin-top: 16px;
+    }
+  }
 }
 
-.button-sp-area.overlay .weui-btn_mini {
-  margin-top: 16px;
-}
